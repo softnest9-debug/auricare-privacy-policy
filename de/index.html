@@ -1,71 +1,157 @@
+```html
 <!doctype html>
 <html lang="de">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Datenschutzerklärung – AuriCare – Hearing Aid App</title>
-  <meta name="description" content="Datenschutzerklärung of the AuriCare – Hearing Aid App" />
+  <meta name="description" content="Datenschutzerklärung für die App AuriCare – Hearing Aid App" />
   <style>
-  :root {
-    --bg: #0b1020;
-    --card: #111730;
-    --text: #e8ecf1;
-    --muted: #aeb7c2;
-    --accent: #82aaff;
-    --border: #1f2942;
-  }
-  html, body { height: 100%; }
-  body {
-    margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-    background: radial-gradient(1200px 800px at 80% -10%, #18213d 0%, var(--bg) 55%), var(--bg);
-    color: var(--text); line-height: 1.6;
-  }
-  .container { max-width: 900px; margin: 0 auto; padding: 32px 20px 64px; }
-  header { padding: 28px 24px; background: linear-gradient(180deg, rgba(130,170,255,.15), rgba(130,170,255,0)); border: 1px solid var(--border); border-radius: 16px; }
-  h1 { font-size: 2rem; margin: 0 0 6px; }
-  .subtitle { color: var(--muted); margin: 0; font-size: .95rem; }
-  .badge { display: inline-block; font-size: .8rem; padding: .25rem .55rem; border: 1px solid var(--border); border-radius: 999px; color: var(--muted); }
-  nav.toc { margin: 28px 0 0; padding: 16px 20px; background: var(--card); border: 1px solid var(--border); border-radius: 14px; }
-  nav.toc a { color: var(--text); text-decoration: none; }
-  nav.toc a:hover { color: var(--accent); }
-  nav.toc ol { margin: 0; padding-left: 20px; }
-  section { margin-top: 28px; background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 22px; }
-  h2 { margin-top: 0; font-size: 1.25rem; }
-  p, li { color: #d7dee7; }
-  pre {
-    white-space: pre-wrap; word-break: break-word; background: #0d1326; border: 1px solid var(--border); border-radius: 12px; padding: 16px; color: #d7e3ff;
-  }
-  ul { padding-left: 20px; }
-  a { color: var(--accent); }
-  footer { margin-top: 28px; color: var(--muted); text-align: center; }
-  .muted { color: var(--muted); }
-  /* RTL support */
-  [dir="rtl"] .container { direction: rtl; }
-  [dir="rtl"] nav.toc ol { padding-right: 20px; padding-left: 0; }
-</style>
+    :root {
+      --bg: #0b1020;
+      --card: #111730;
+      --text: #e8ecf1;
+      --muted: #aeb7c2;
+      --accent: #82aaff;
+      --border: #1f2942;
+    }
+    html, body { height: 100%; }
+    body {
+      margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1200px 800px at 80% -10%, #18213d 0%, var(--bg) 55%), var(--bg);
+      color: var(--text); line-height: 1.6;
+    }
+    .container { max-width: 900px; margin: 0 auto; padding: 32px 20px 64px; }
+    header { padding: 28px 24px; background: linear-gradient(180deg, rgba(130,170,255,.15), rgba(130,170,255,0)); border: 1px solid var(--border); border-radius: 16px; }
+    h1 { font-size: 2rem; margin: 0 0 6px; }
+    .subtitle { color: var(--muted); margin: 0; font-size: .95rem; }
+    .badge { display: inline-block; font-size: .8rem; padding: .25rem .55rem; border: 1px solid var(--border); border-radius: 999px; color: var(--muted); }
+    nav.toc { margin: 28px 0 0; padding: 16px 20px; background: var(--card); border: 1px solid var(--border); border-radius: 14px; }
+    nav.toc a { color: var(--text); text-decoration: none; }
+    nav.toc a:hover { color: var(--accent); }
+    nav.toc ol { margin: 0; padding-left: 20px; }
+    section { margin-top: 28px; background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 22px; }
+    h2 { margin-top: 0; font-size: 1.25rem; }
+    p, li { color: #d7dee7; }
+    code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    pre {
+      white-space: pre-wrap; word-break: break-word; background: #0d1326; border: 1px solid var(--border); border-radius: 12px; padding: 16px; color: #d7e3ff;
+    }
+    ul { padding-left: 20px; }
+    a { color: var(--accent); }
+    footer { margin-top: 28px; color: var(--muted); text-align: center; }
+    .muted { color: var(--muted); }
+  </style>
 </head>
 <body>
   <div class="container">
     <header>
       <div class="badge">Datenschutzerklärung</div>
       <h1>AuriCare – Hearing Aid App</h1>
-      <p class="subtitle">Zuletzt aktualisiert: <strong>August 30, 2025</strong></p>
+      <p class="subtitle">Letzte Aktualisierung: <strong>8. Oktober 2025</strong></p>
     </header>
-    <nav class="toc" aria-label="Table of Contents">
-      <ol><li><a href="#general-info">Allgemeine Informationen</a></li><li><a href="#data-scope">Umfang und Datenverarbeitung</a></li><li><a href="#permissions">App‑Berechtigungen</a></li><li><a href="#trial">Testzeitraum und Zahlungen</a></li><li><a href="#contact">Kontakt</a></li><li><a href="#external">Externe Dienste und Bibliotheken</a></li><li><a href="#security">Sicherheit</a></li><li><a href="#changes">Änderungen</a></li></ol>
+
+    <nav class="toc" aria-label="Inhaltsverzeichnis">
+      <ol>
+        <li><a href="#info-ogolne">Allgemeine Informationen</a></li>
+        <li><a href="#zakres-danych">Umfang und Art der Datenverarbeitung</a></li>
+        <li><a href="#uprawnienia">Von der App benötigte Berechtigungen</a></li>
+        <li><a href="#okres-probny">Testzeitraum und Zahlungen</a></li>
+        <li><a href="#reklamy">Werbung und Datenerfassung</a></li>
+        <li><a href="#zewnetrzne-uslugi">Externe Dienste und Bibliotheken</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+        <li><a href="#bezpieczenstwo">Sicherheit</a></li>
+        <li><a href="#zmiany">Änderungen der Richtlinie</a></li>
+      </ol>
     </nav>
-    <section id="general-info"><h2>1. Allgemeine Informationen</h2><p>Diese Datenschutzerklärung erläutert, wie die <strong>AuriCare – Hearing Aid App</strong> (die „App“) Daten verarbeitet. Wir respektieren die Privatsphäre der Nutzer und beschränken die Verarbeitung auf das für die Funktionsweise der App Erforderliche.</p><p>Die App arbeitet lokal auf dem Gerät – Audio wird direkt auf dem Telefon verarbeitet und <strong>weder an externe Server übertragen noch dort gespeichert</strong>.</p></section><section id="data-scope"><h2>2. Umfang und Datenverarbeitung</h2><ul><li>Die App erhebt, profiliert oder speichert keine personenbezogenen Daten dauerhaft.</li><li>Erfasste Audiodaten werden nur zur Verstärkung/Rauschunterdrückung verwendet und lokal verarbeitet.</li><li>Es werden keine Audiodaten aufgezeichnet oder außerhalb des Geräts des Nutzers übertragen.</li><li>Die App greift nicht auf Standortdaten oder Informationen aus anderen Apps zu.</li></ul></section><section id="permissions"><h2>3. App‑Berechtigungen</h2><p>Die App benötigt folgende Android‑Berechtigungen:</p><ul><li><strong>Mikrofon (Audioaufnahme)</strong> – zum Erfassen und lokalen Verarbeiten von Umgebungsgeräuschen.</li><li><strong>In der Nähe befindliche Geräte / Bluetooth</strong> – zur Unterstützung von Kopfhörern und Audio‑Zubehör.</li><li><strong>Benachrichtigungen</strong> – um anzuzeigen, dass die App im Hintergrund läuft.</li><li><strong>Ausführung im Hintergrund</strong> – zur Gewährleistung eines unterbrechungsfreien Betriebs.</li></ul><p class="muted">Das Verweigern dieser Berechtigungen kann die Funktionalität der App einschränken oder verhindern.</p></section><section id="trial"><h2>4. Testzeitraum und Zahlungen</h2><p>Die App bietet eine <strong>kostenlose 7‑tägige Testphase</strong>. Nach Ablauf kann der Nutzer ein Abonnement oder einen Einmalkauf wählen, um die vollständige Funktionalität weiter zu nutzen.</p><p>Zahlungen werden über <strong>Google Play</strong> abgewickelt und unterliegen der Datenschutzrichtlinie von Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</p></section><section id="contact"><h2>5. Kontakt</h2><p>Die App enthält eine <em>Kontakt</em>-Option, die den Standard‑E‑Mail‑Client des Geräts mit vorausgefüllter Adresse öffnet.</p><p>E‑Mail: <a href="mailto:kontaktsoftnest@gmail.com">kontaktsoftnest@gmail.com</a></p></section><section id="external"><h2>6. Externe Dienste und Bibliotheken</h2><p>Die App verwendet die <strong>WebRTC</strong>-Bibliothek (BSD‑Lizenz). Nachfolgend der erforderliche Lizenztext (auf Englisch, unverändert):</p><pre>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+    <section id="info-ogolne">
+      <h2>1. Allgemeine Informationen</h2>
+      <p>Diese Datenschutzerklärung beschreibt die Regeln für die Datenverarbeitung in der mobilen Anwendung <strong>AuriCare – Hearing Aid App</strong> (im Folgenden „Anwendung“). Wir achten die Privatsphäre der Nutzer und beschränken die Datenverarbeitung ausschließlich auf das, was für den Betrieb der Anwendung notwendig ist.</p>
+      <p>Die Anwendung arbeitet lokal auf dem Gerät – der Ton wird direkt im Speicher des Telefons verarbeitet und <strong>wird nicht an externe Server gesendet oder dort gespeichert</strong>.</p>
+    </section>
+
+    <section id="zakres-danych">
+      <h2>2. Umfang und Art der Datenverarbeitung</h2>
+      <ul>
+        <li>Die Anwendung sammelt, profiliert und speichert keine personenbezogenen Daten der Nutzer dauerhaft.</li>
+        <li>Der aufgenommene Ton wird ausschließlich zur Verstärkung/Bereinigung verwendet und lokal verarbeitet.</li>
+        <li>Wir zeichnen keine Audiodateien auf und senden sie nicht außerhalb des Geräts des Nutzers.</li>
+        <li>Die Anwendung greift nicht auf den Standort des Nutzers oder auf Daten aus anderen Anwendungen zu.</li>
+      </ul>
+    </section>
+
+    <section id="uprawnienia">
+      <h2>3. Von der App benötigte Berechtigungen</h2>
+      <p>Für den ordnungsgemäßen Betrieb bittet die Anwendung um die folgenden Android-Systemberechtigungen:</p>
+      <ul>
+        <li><strong>Audio aufnehmen (Mikrofon)</strong> – ausschließlich zur Erfassung von Umgebungsgeräuschen und deren Verarbeitung in Echtzeit auf dem Gerät.</li>
+        <li><strong>Geräte in der Nähe finden/verbinden (Bluetooth)</strong> – zur Unterstützung von Kopfhörern und Audiozubehör.</li>
+        <li><strong>Benachrichtigungen</strong> – zur Anzeige einer dauerhaften Benachrichtigung, die darüber informiert, dass die Anwendung aktiv ist und im Hintergrund läuft.</li>
+        <li><strong>Akku-Optimierung deaktivieren (optional, aber empfohlen)</strong> – Die Anwendung kann darum bitten, die Akku-Optimierung für sie im Android-System zu deaktivieren. Dies ist notwendig, um einen stabilen und ununterbrochenen Betrieb des Audioverarbeitungsdienstes zu gewährleisten, wenn der Bildschirm des Geräts ausgeschaltet ist.</li>
+      </ul>
+      <p class="muted">Die Verweigerung der Erteilung von Schlüsselberechtigungen (Mikrofon, Bluetooth, Benachrichtigungen) macht die Nutzung der Grundfunktionen der Anwendung unmöglich.</p>
+    </section>
+
+    <section id="okres-probny">
+      <h2>4. Testzeitraum und Zahlungen</h2>
+      <p>Die Anwendung bietet einen <strong>7-tägigen kostenlosen Testzeitraum</strong>. Nach dessen Ablauf kann der Nutzer ein Abonnement oder einen einmaligen Kauf wählen, um die volle Funktionalität der Anwendung weiterhin zu nutzen.</p>
+      <p>Zahlungen werden von <strong>Google Play</strong> abgewickelt. In diesem Zusammenhang gelten die Datenschutzrichtlinien und Nutzungsbedingungen von Google. Details: <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google-Datenschutzerklärung</a>.</p>
+    </section>
+
+    <section id="reklamy">
+        <h2>5. Werbung und Datenerfassung</h2>
+        <p>Die kostenlose Version der Anwendung (<code>Basic</code>-Lizenz) zeigt Werbung an, die von Google über den <strong>AdMob</strong>-Dienst bereitgestellt wird. In diesem Zusammenhang werden in der Anwendung die folgenden Technologien verwendet:</p>
+        <ul>
+            <li><strong>Google Mobile Ads SDK:</strong> Diese Bibliothek kann Daten wie die eindeutige Werbe-ID des Geräts (Advertising ID), die IP-Adresse, Informationen über Interaktionen mit Anzeigen und ungefähre Standortdaten erfassen und verarbeiten, um personalisierte und relevante Werbeinhalte bereitzustellen.</li>
+            <li><strong>User Messaging Platform (UMP) SDK:</strong> In Regionen, die der DSGVO unterliegen (EWR und Großbritannien), verwendet die Anwendung diese Bibliothek, um die Zustimmung der Nutzer zur Erfassung und Verwendung von Daten für die Personalisierung von Werbung einzuholen. Der Nutzer hat die Möglichkeit, seine Präferenzen über das Zustimmungsformular zu verwalten.</li>
+        </ul>
+        <p>Wir haben keinen direkten Zugriff auf die von Google erfassten Daten. Die Verwendung dieser Daten unterliegt der Datenschutzerklärung von Google. Um mehr darüber zu erfahren, wie Google Daten verwendet, lesen Sie bitte das Dokument: <a href="https://policies.google.com/technologies/ads" rel="noopener" target="_blank">Datenschutzerklärung & Nutzungsbedingungen von Google – Werbung</a>.</p>
+    </section>
+
+    <section id="zewnetrzne-uslugi">
+      <h2>6. Externe Dienste und Bibliotheken</h2>
+      <p>Die Anwendung verwendet die folgenden externen Bibliotheken:</p>
+      <ul>
+        <li><strong>WebRTC (BSD-Lizenz):</strong> Wird für die fortgeschrittene Audioverarbeitung in Echtzeit verwendet. Nachfolgend finden Sie die vollständigen Lizenzinformationen:</li>
+      </ul>
+      <pre>
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
 Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
 Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
 Neither the name of Google nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-</pre></section><section id="security"><h2>7. Sicherheit</h2><p>Da die App keine personenbezogenen Daten speichert oder an externe Server überträgt, ist das Risiko für Datenschutzverletzungen minimiert. Alle Audiodaten verbleiben auf dem Gerät des Nutzers.</p></section><section id="changes"><h2>8. Änderungen</h2><p>Wir können diese Datenschutzerklärung aktualisieren, sofern dies gesetzlich erforderlich ist oder aufgrund neuer Funktionen. Die jeweils aktuelle Version ist in der App und im Google Play‑Eintrag verfügbar.</p></section>
+      </pre>
+      <ul>
+        <li><strong>Google Play Billing Library:</strong> Zur Abwicklung von Abonnements und einmaligen Käufen. Transaktionen werden sicher über das Google Play-System abgewickelt.</li>
+      </ul>
+    </section>
+
+    <section id="kontakt">
+      <h2>7. Kontakt</h2>
+      <p>In den Einstellungen der Anwendung gibt es einen Reiter <em>Kontakt</em>, der das Standard-E-Mail-Programm mit unserer Adresse im Empfängerfeld öffnet.</p>
+      <p>Kontaktadresse: <a href="mailto:kontaktsoftnest@gmail.com">kontaktsoftnest@gmail.com</a></p>
+    </section>
+
+    <section id="bezpieczenstwo">
+      <h2>8. Sicherheit</h2>
+      <p>Da die Anwendung keine personenbezogenen Daten speichert oder an externe Server sendet, wird das Risiko einer Datenschutzverletzung minimiert. Alle Audiodaten werden lokal auf dem Gerät des Nutzers verarbeitet.</p>
+    </section>
+
+    <section id="zmiany">
+      <h2>9. Änderungen der Richtlinie</h2>
+      <p>Wir behalten uns das Recht vor, Änderungen an dieser Datenschutzerklärung vorzunehmen, wenn dies durch Gesetzesänderungen oder die Weiterentwicklung der Anwendungsfunktionalität erforderlich wird. Die aktuelle Version des Dokuments wird in der Anwendung und in der Beschreibung bei Google Play verfügbar sein.</p>
+    </section>
+
     <footer>
       <p>© <span id="year"></span> AuriCare – Hearing Aid App</p>
     </footer>
   </div>
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+```
