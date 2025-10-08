@@ -1,71 +1,155 @@
 <!doctype html>
-<html lang="zh-Hans">
+<html lang="zh-CN">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>隐私政策 – AuriCare – Hearing Aid App</title>
-  <meta name="description" content="隐私政策 of the AuriCare – Hearing Aid App" />
+  <meta name="description" content="AuriCare – Hearing Aid App 应用的隐私政策" />
   <style>
-  :root {
-    --bg: #0b1020;
-    --card: #111730;
-    --text: #e8ecf1;
-    --muted: #aeb7c2;
-    --accent: #82aaff;
-    --border: #1f2942;
-  }
-  html, body { height: 100%; }
-  body {
-    margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-    background: radial-gradient(1200px 800px at 80% -10%, #18213d 0%, var(--bg) 55%), var(--bg);
-    color: var(--text); line-height: 1.6;
-  }
-  .container { max-width: 900px; margin: 0 auto; padding: 32px 20px 64px; }
-  header { padding: 28px 24px; background: linear-gradient(180deg, rgba(130,170,255,.15), rgba(130,170,255,0)); border: 1px solid var(--border); border-radius: 16px; }
-  h1 { font-size: 2rem; margin: 0 0 6px; }
-  .subtitle { color: var(--muted); margin: 0; font-size: .95rem; }
-  .badge { display: inline-block; font-size: .8rem; padding: .25rem .55rem; border: 1px solid var(--border); border-radius: 999px; color: var(--muted); }
-  nav.toc { margin: 28px 0 0; padding: 16px 20px; background: var(--card); border: 1px solid var(--border); border-radius: 14px; }
-  nav.toc a { color: var(--text); text-decoration: none; }
-  nav.toc a:hover { color: var(--accent); }
-  nav.toc ol { margin: 0; padding-left: 20px; }
-  section { margin-top: 28px; background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 22px; }
-  h2 { margin-top: 0; font-size: 1.25rem; }
-  p, li { color: #d7dee7; }
-  pre {
-    white-space: pre-wrap; word-break: break-word; background: #0d1326; border: 1px solid var(--border); border-radius: 12px; padding: 16px; color: #d7e3ff;
-  }
-  ul { padding-left: 20px; }
-  a { color: var(--accent); }
-  footer { margin-top: 28px; color: var(--muted); text-align: center; }
-  .muted { color: var(--muted); }
-  /* RTL support */
-  [dir="rtl"] .container { direction: rtl; }
-  [dir="rtl"] nav.toc ol { padding-right: 20px; padding-left: 0; }
-</style>
+    :root {
+      --bg: #0b1020;
+      --card: #111730;
+      --text: #e8ecf1;
+      --muted: #aeb7c2;
+      --accent: #82aaff;
+      --border: #1f2942;
+    }
+    html, body { height: 100%; }
+    body {
+      margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1200px 800px at 80% -10%, #18213d 0%, var(--bg) 55%), var(--bg);
+      color: var(--text); line-height: 1.6;
+    }
+    .container { max-width: 900px; margin: 0 auto; padding: 32px 20px 64px; }
+    header { padding: 28px 24px; background: linear-gradient(180deg, rgba(130,170,255,.15), rgba(130,170,255,0)); border: 1px solid var(--border); border-radius: 16px; }
+    h1 { font-size: 2rem; margin: 0 0 6px; }
+    .subtitle { color: var(--muted); margin: 0; font-size: .95rem; }
+    .badge { display: inline-block; font-size: .8rem; padding: .25rem .55rem; border: 1px solid var(--border); border-radius: 999px; color: var(--muted); }
+    nav.toc { margin: 28px 0 0; padding: 16px 20px; background: var(--card); border: 1px solid var(--border); border-radius: 14px; }
+    nav.toc a { color: var(--text); text-decoration: none; }
+    nav.toc a:hover { color: var(--accent); }
+    nav.toc ol { margin: 0; padding-left: 20px; }
+    section { margin-top: 28px; background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 22px; }
+    h2 { margin-top: 0; font-size: 1.25rem; }
+    p, li { color: #d7dee7; }
+    code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    pre {
+      white-space: pre-wrap; word-break: break-word; background: #0d1326; border: 1px solid var(--border); border-radius: 12px; padding: 16px; color: #d7e3ff;
+    }
+    ul { padding-left: 20px; }
+    a { color: var(--accent); }
+    footer { margin-top: 28px; color: var(--muted); text-align: center; }
+    .muted { color: var(--muted); }
+  </style>
 </head>
 <body>
   <div class="container">
     <header>
       <div class="badge">隐私政策</div>
       <h1>AuriCare – Hearing Aid App</h1>
-      <p class="subtitle">最后更新：<strong>August 30, 2025</strong></p>
+      <p class="subtitle">最后更新日期：<strong>2025年10月8日</strong></p>
     </header>
-    <nav class="toc" aria-label="Table of Contents">
-      <ol><li><a href="#general-info">概述</a></li><li><a href="#data-scope">数据范围与处理方式</a></li><li><a href="#permissions">应用权限</a></li><li><a href="#trial">试用期与付款</a></li><li><a href="#contact">联系方式</a></li><li><a href="#external">外部服务与库</a></li><li><a href="#security">安全性</a></li><li><a href="#changes">变更</a></li></ol>
+
+    <nav class="toc" aria-label="目录">
+      <ol>
+        <li><a href="#info-ogolne">一般信息</a></li>
+        <li><a href="#zakres-danych">数据处理的范围和方式</a></li>
+        <li><a href="#uprawnienia">应用所需的权限</a></li>
+        <li><a href="#okres-probny">试用期和付款</a></li>
+        <li><a href="#reklamy">广告和数据收集</a></li>
+        <li><a href="#zewnetrzne-uslugi">外部服务和库</a></li>
+        <li><a href="#kontakt">联系方式</a></li>
+        <li><a href="#bezpieczenstwo">安全性</a></li>
+        <li><a href="#zmiany">政策变更</a></li>
+      </ol>
     </nav>
-    <section id="general-info"><h2>1. 概述</h2><p>本《隐私政策》说明 <strong>AuriCare – Hearing Aid App</strong>（“本应用”）如何处理数据。我们尊重用户隐私，并将处理限制在维持应用功能所必需的范围内。</p><p>本应用在设备本地运行——音频在手机上直接处理，<strong>不会传输或存储到任何外部服务器</strong>。</p></section><section id="data-scope"><h2>2. 数据范围与处理方式</h2><ul><li>本应用不收集、建档或永久存储个人数据。</li><li>捕获的音频仅用于放大/降噪，并在本地处理。</li><li>不会录制音频或将其传输到用户设备之外。</li><li>本应用不访问位置数据，也不访问其他应用的数据。</li></ul></section><section id="permissions"><h2>3. 应用权限</h2><p>本应用需要以下 Android 权限：</p><ul><li><strong>麦克风（录音）</strong>——用于本地捕获并处理环境声音。</li><li><strong>附近的设备/蓝牙</strong>——支持耳机及音频配件。</li><li><strong>通知</strong>——告知应用在后台运行。</li><li><strong>后台运行</strong>——确保不中断的使用体验。</li></ul><p class="muted">拒绝上述权限可能会限制或阻止应用的功能。</p></section><section id="trial"><h2>4. 试用期与付款</h2><p>本应用提供 <strong>7 天免费试用</strong>。试用期结束后，用户可选择订阅或一次性购买以继续使用全部功能。</p><p>付款由 <strong>Google Play</strong> 处理，并遵循 Google 隐私政策：<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>。</p></section><section id="contact"><h2>5. 联系方式</h2><p>应用内提供 <em>联系</em> 选项，将打开设备默认邮件客户端并预填我们的地址。</p><p>邮箱：<a href="mailto:kontaktsoftnest@gmail.com">kontaktsoftnest@gmail.com</a></p></section><section id="external"><h2>6. 外部服务与库</h2><p>本应用使用 <strong>WebRTC</strong> 库（BSD 许可）。以下为所需的英文许可证原文：</p><pre>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+    <section id="info-ogolne">
+      <h2>1. 一般信息</h2>
+      <p>本隐私政策描述了移动应用 <strong>AuriCare – Hearing Aid App</strong>（以下简称“应用”）中的数据处理规则。我们关心用户的隐私，并将数据处理限制在应用运行所必需的范围内。</p>
+      <p>应用在设备上本地运行——音频直接在手机内存中处理，<strong>不会被发送或存储在任何外部服务器上</strong>。</p>
+    </section>
+
+    <section id="zakres-danych">
+      <h2>2. 数据处理的范围和方式</h2>
+      <ul>
+        <li>应用不会永久收集、分析或存储用户的个人数据。</li>
+        <li>捕获的音频仅用于增强/净化，并在本地进行处理。</li>
+        <li>我们不录制音频文件，也不将其发送到用户设备之外。</li>
+        <li>应用不访问用户的位置或其他应用的数据。</li>
+      </ul>
+    </section>
+
+    <section id="uprawnienia">
+      <h2>3. 应用所需的权限</h2>
+      <p>为了正常运行，应用会请求以下安卓系统权限：</p>
+      <ul>
+        <li><strong>录制音频（麦克风）</strong> – 仅用于捕获环境声音并在设备上进行实时处理。</li>
+        <li><strong>查找/连接附近的设备（蓝牙）</strong> – 用于支持耳机和音频配件。</li>
+        <li><strong>通知</strong> – 用于显示一个常驻通知，告知应用处于活动状态并在后台运行。</li>
+        <li><strong>禁用电池优化（可选，但建议）</strong> – 应用可能会请求在安卓系统中为其禁用电池优化。这对于确保在设备屏幕关闭时音频处理服务能够稳定不间断地运行是必要的。</li>
+      </ul>
+      <p class="muted">拒绝授予关键权限（麦克风、蓝牙、通知）将导致无法使用应用的基本功能。</p>
+    </section>
+
+    <section id="okres-probny">
+      <h2>4. 试用期和付款</h2>
+      <p>应用提供为期 <strong>7 天的免费试用期</strong>。试用期结束后，用户可以选择订阅或一次性购买，以继续使用应用的全部功能。</p>
+      <p>付款由 <strong>Google Play</strong> 处理。在此方面，适用 Google 的隐私政策和条款。详情请见：<a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google 隐私政策</a>。</p>
+    </section>
+
+    <section id="reklamy">
+        <h2>5. 广告和数据收集</h2>
+        <p>应用的免费版本（<code>Basic</code> 许可证）会显示由 Google 通过 <strong>AdMob</strong> 服务提供的广告。因此，应用中使用了以下技术：</p>
+        <ul>
+            <li><strong>Google Mobile Ads SDK：</strong> 该库可能会收集和处理数据，例如设备的唯一广告标识符（Advertising ID）、IP 地址、与广告互动的信息以及大致位置数据，以提供个性化和相关的广告内容。</li>
+            <li><strong>User Messaging Platform (UMP) SDK：</strong> 在受 GDPR 约束的地区（欧洲经济区和英国），应用使用此库来获取用户对为广告个性化目的收集和使用数据的同意。用户可以通过同意书表格管理自己的偏好。</li>
+        </ul>
+        <p>我们无法直接访问 Google 收集的数据。这些数据的使用受 Google 隐私政策的约束。要了解有关 Google 如何使用数据的更多信息，请参阅文档：<a href="https://policies.google.com/technologies/ads" rel="noopener" target="_blank">Google 隐私权及条款 – 广告</a>。</p>
+    </section>
+
+    <section id="zewnetrzne-uslugi">
+      <h2>6. 外部服务和库</h2>
+      <p>应用使用以下外部库：</p>
+      <ul>
+        <li><strong>WebRTC（BSD 许可证）：</strong> 用于高级实时音频处理。以下是完整的许可证信息：</li>
+      </ul>
+      <pre>
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
 Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
 Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
 Neither the name of Google nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-</pre></section><section id="security"><h2>7. 安全性</h2><p>由于本应用不存储个人数据，也不将其传输到外部服务器，隐私风险被降至最低。所有音频均保留在用户设备上。</p></section><section id="changes"><h2>8. 变更</h2><p>如因法律要求或功能更新，本政策可能会变更。最新版本将始终在应用内及 Google Play 上提供。</p></section>
+      </pre>
+      <ul>
+        <li><strong>Google Play Billing Library：</strong> 用于处理订阅和一次性购买。交易通过 Google Play 系统安全地进行。</li>
+      </ul>
+    </section>
+
+    <section id="kontakt">
+      <h2>7. 联系方式</h2>
+      <p>在应用的设置中，有一个<em>联系</em>选项卡，它会打开默认的邮件程序，并将我们的地址填入收件人字段。</p>
+      <p>联系地址：<a href="mailto:kontaktsoftnest@gmail.com">kontaktsoftnest@gmail.com</a></p>
+    </section>
+
+    <section id="bezpieczenstwo">
+      <h2>8. 安全性</h2>
+      <p>由于应用不存储个人数据或将其发送到外部服务器，因此侵犯隐私的风险已降至最低。所有音频数据都在用户设备上本地处理。</p>
+    </section>
+
+    <section id="zmiany">
+      <h2>9. 政策变更</h2>
+      <p>如果法律变更或应用功能发展需要，我们保留更改本隐私政策的权利。文件的当前版本将在应用内以及 Google Play 的描述中提供。</p>
+    </section>
+
     <footer>
       <p>© <span id="year"></span> AuriCare – Hearing Aid App</p>
     </footer>
   </div>
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
