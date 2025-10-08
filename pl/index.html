@@ -47,7 +47,7 @@
     <header>
       <div class="badge">Polityka prywatności</div>
       <h1>AuriCare – Hearing Aid App</h1>
-      <p class="subtitle">Data ostatniej aktualizacji: <strong>30 sierpnia 2025</strong></p>
+      <p class="subtitle">Data ostatniej aktualizacji: <strong>8 października 2025</strong></p>
     </header>
 
     <nav class="toc" aria-label="Spis treści">
@@ -56,8 +56,9 @@
         <li><a href="#zakres-danych">Zakres i sposób przetwarzania danych</a></li>
         <li><a href="#uprawnienia">Uprawnienia wymagane przez aplikację</a></li>
         <li><a href="#okres-probny">Okres próbny i płatności</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
+        <li><a href="#reklamy">Reklamy i gromadzenie danych</a></li>
         <li><a href="#zewnetrzne-uslugi">Usługi i biblioteki zewnętrzne</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
         <li><a href="#bezpieczenstwo">Bezpieczeństwo</a></li>
         <li><a href="#zmiany">Zmiany w Polityce</a></li>
       </ol>
@@ -83,12 +84,12 @@
       <h2>3. Uprawnienia wymagane przez aplikację</h2>
       <p>Do prawidłowego działania Aplikacja prosi o następujące uprawnienia systemowe Android:</p>
       <ul>
-        <li><strong>Nagrywanie dźwięku (mikrofon)</strong> – wyłącznie do przechwytywania dźwięku z otoczenia i jego przetwarzania lokalnie na urządzeniu.</li>
+        <li><strong>Nagrywanie dźwięku (mikrofon)</strong> – wyłącznie do przechwytywania dźwięku z otoczenia i jego przetwarzania w czasie rzeczywistym na urządzeniu.</li>
         <li><strong>Znajdowanie/łączenie z urządzeniami w pobliżu (Bluetooth)</strong> – do obsługi słuchawek i akcesoriów audio.</li>
-        <li><strong>Powiadomienia</strong> – do informowania, że Aplikacja działa w tle.</li>
-        <li><strong>Zezwolenie na działanie w tle</strong> – w celu zapewnienia nieprzerwanego działania Aplikacji, np. podczas korzystania ze słuchawek.</li>
+        <li><strong>Powiadomienia</strong> – do wyświetlania stałego powiadomienia informującego, że Aplikacja jest aktywna i działa w tle.</li>
+        <li><strong>Wyłączenie optymalizacji baterii (opcjonalne, ale zalecane)</strong> – Aplikacja może poprosić o wyłączenie dla niej optymalizacji baterii w systemie Android. Jest to konieczne, aby zapewnić stabilne i nieprzerwane działanie serwisu przetwarzania dźwięku, gdy ekran urządzenia jest wyłączony.</li>
       </ul>
-      <p class="muted">Odmowa udzielenia powyższych uprawnień może ograniczyć działanie Aplikacji lub uniemożliwić korzystanie z jej funkcji.</p>
+      <p class="muted">Odmowa udzielenia kluczowych uprawnień (mikrofon, Bluetooth, powiadomienia) uniemożliwi korzystanie z podstawowych funkcji Aplikacji.</p>
     </section>
 
     <section id="okres-probny">
@@ -97,15 +98,22 @@
       <p>Płatności obsługuje <strong>Google Play</strong>. W tym zakresie stosowane są zasady prywatności i regulaminy Google. Szczegóły: <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Polityka prywatności Google</a>.</p>
     </section>
 
-    <section id="kontakt">
-      <h2>5. Kontakt</h2>
-      <p>W ustawieniach Aplikacji dostępna jest zakładka <em>Kontakt</em>, która otwiera domyślny program pocztowy z naszym adresem w polu odbiorcy.</p>
-      <p>Adres kontaktowy: <a href="mailto:kontaktsoftnest@gmail.com">kontaktsoftnest@gmail.com</a></p>
+    <section id="reklamy">
+        <h2>5. Reklamy i gromadzenie danych</h2>
+        <p>Wersja darmowa Aplikacji (licencja <code>Basic</code>) wyświetla reklamy dostarczane przez firmę Google za pośrednictwem usługi <strong>AdMob</strong>. W związku z tym, w Aplikacji wykorzystywane są następujące technologie:</p>
+        <ul>
+            <li><strong>Google Mobile Ads SDK:</strong> Biblioteka ta może gromadzić i przetwarzać dane, takie jak unikalny identyfikator reklamowy urządzenia (Advertising ID), adres IP, informacje o interakcjach z reklamami oraz przybliżone dane o lokalizacji w celu dostarczania spersonalizowanych i trafnych treści reklamowych.</li>
+            <li><strong>User Messaging Platform (UMP) SDK:</strong> W regionach podlegających pod RODO (EOG i Wielka Brytania), Aplikacja korzysta z tej biblioteki do pozyskiwania od użytkowników zgody na gromadzenie i wykorzystywanie danych na potrzeby personalizacji reklam. Użytkownik ma możliwość zarządzania swoimi preferencjami za pośrednictwem formularza zgody.</li>
+        </ul>
+        <p>Nie mamy bezpośredniego dostępu do danych gromadzonych przez Google. Wykorzystywanie tych danych podlega polityce prywatności Google. Aby dowiedzieć się więcej o tym, jak Google wykorzystuje dane, zapoznaj się z dokumentem: <a href="https://policies.google.com/technologies/ads" rel="noopener" target="_blank">Polityka Prywatności i Warunki korzystania z usług Google – Reklamy</a>.</p>
     </section>
 
     <section id="zewnetrzne-uslugi">
       <h2>6. Usługi i biblioteki zewnętrzne</h2>
-      <p>Aplikacja korzysta z biblioteki <strong>WebRTC</strong> (licencja BSD). Poniżej pełna informacja licencyjna wymagana do udostępnienia w dokumentacji:</p>
+      <p>Aplikacja korzysta z następujących zewnętrznych bibliotek:</p>
+      <ul>
+        <li><strong>WebRTC (licencja BSD):</strong> Wykorzystywana do zaawansowanego przetwarzania dźwięku w czasie rzeczywistym. Poniżej znajduje się pełna informacja licencyjna:</li>
+      </ul>
       <pre>
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
@@ -115,15 +123,24 @@ Neither the name of Google nor the names of its contributors may be used to endo
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       </pre>
+      <ul>
+        <li><strong>Google Play Billing Library:</strong> Do obsługi subskrypcji i zakupów jednorazowych. Transakcje są realizowane bezpiecznie przez system Google Play.</li>
+      </ul>
+    </section>
+
+    <section id="kontakt">
+      <h2>7. Kontakt</h2>
+      <p>W ustawieniach Aplikacji dostępna jest zakładka <em>Kontakt</em>, która otwiera domyślny program pocztowy z naszym adresem w polu odbiorcy.</p>
+      <p>Adres kontaktowy: <a href="mailto:kontaktsoftnest@gmail.com">kontaktsoftnest@gmail.com</a></p>
     </section>
 
     <section id="bezpieczenstwo">
-      <h2>7. Bezpieczeństwo</h2>
+      <h2>8. Bezpieczeństwo</h2>
       <p>Ponieważ Aplikacja nie przechowuje danych osobowych ani nie przesyła ich na zewnętrzne serwery, ryzyko naruszenia prywatności jest zminimalizowane. Wszystkie dane dźwiękowe są przetwarzane lokalnie na urządzeniu użytkownika.</p>
     </section>
 
     <section id="zmiany">
-      <h2>8. Zmiany w Polityce</h2>
+      <h2>9. Zmiany w Polityce</h2>
       <p>Zastrzegamy sobie prawo do wprowadzania zmian w niniejszej Polityce prywatności, jeśli wymagają tego zmiany w prawie lub rozwój funkcjonalności Aplikacji. Aktualna wersja dokumentu będzie dostępna w Aplikacji oraz w opisie w Google Play.</p>
     </section>
 
