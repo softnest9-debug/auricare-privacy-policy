@@ -1,120 +1,157 @@
+```html
 <!doctype html>
 <html lang="hu">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Adatvédelmi tájékoztató – AuriCare – Hearing Aid App</title>
-  <meta name="description" content="Az AuriCare – Hearing Aid App adatvédelmi tájékoztatója" />
+  <title>Adatvédelmi irányelvek – AuriCare – Hearing Aid App</title>
+  <meta name="description" content="Az AuriCare – Hearing Aid App adatvédelmi irányelvei" />
   <style>
-    :root{--bg:#0b1020;--card:#111730;--text:#e8ecf1;--muted:#aeb7c2;--accent:#82aaff;--border:#1f2942}
-    html,body{height:100%}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";background:radial-gradient(1200px 800px at 80% -10%,#18213d 0%,var(--bg) 55%),var(--bg);color:var(--text);line-height:1.6}
-    .container{max-width:900px;margin:0 auto;padding:32px 20px 64px}
-    header{padding:28px 24px;background:linear-gradient(180deg,rgba(130,170,255,.15),rgba(130,170,255,0));border:1px solid var(--border);border-radius:16px}
-    h1{font-size:2rem;margin:0 0 6px}
-    .subtitle{color:var(--muted);margin:0;font-size:.95rem}
-    .badge{display:inline-block;font-size:.8rem;padding:.25rem .55rem;border:1px solid var(--border);border-radius:999px;color:var(--muted)}
-    nav.toc{margin:28px 0 0;padding:16px 20px;background:var(--card);border:1px solid var(--border);border-radius:14px}
-    nav.toc a{color:var(--text);text-decoration:none}
-    nav.toc a:hover{color:var(--accent)}
-    nav.toc ol{margin:0;padding-left:20px}
-    section{margin-top:28px;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:22px}
-    h2{margin-top:0;font-size:1.25rem}
-    p,li{color:#d7dee7}
-    pre{white-space:pre-wrap;word-break:break-word;background:#0d1326;border:1px solid var(--border);border-radius:12px;padding:16px;color:#d7e3ff}
-    ul{padding-left:20px}
-    a{color:var(--accent)}
-    footer{margin-top:28px;color:var(--muted);text-align:center}
-    .muted{color:var(--muted)}
+    :root {
+      --bg: #0b1020;
+      --card: #111730;
+      --text: #e8ecf1;
+      --muted: #aeb7c2;
+      --accent: #82aaff;
+      --border: #1f2942;
+    }
+    html, body { height: 100%; }
+    body {
+      margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1200px 800px at 80% -10%, #18213d 0%, var(--bg) 55%), var(--bg);
+      color: var(--text); line-height: 1.6;
+    }
+    .container { max-width: 900px; margin: 0 auto; padding: 32px 20px 64px; }
+    header { padding: 28px 24px; background: linear-gradient(180deg, rgba(130,170,255,.15), rgba(130,170,255,0)); border: 1px solid var(--border); border-radius: 16px; }
+    h1 { font-size: 2rem; margin: 0 0 6px; }
+    .subtitle { color: var(--muted); margin: 0; font-size: .95rem; }
+    .badge { display: inline-block; font-size: .8rem; padding: .25rem .55rem; border: 1px solid var(--border); border-radius: 999px; color: var(--muted); }
+    nav.toc { margin: 28px 0 0; padding: 16px 20px; background: var(--card); border: 1px solid var(--border); border-radius: 14px; }
+    nav.toc a { color: var(--text); text-decoration: none; }
+    nav.toc a:hover { color: var(--accent); }
+    nav.toc ol { margin: 0; padding-left: 20px; }
+    section { margin-top: 28px; background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 22px; }
+    h2 { margin-top: 0; font-size: 1.25rem; }
+    p, li { color: #d7dee7; }
+    code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    pre {
+      white-space: pre-wrap; word-break: break-word; background: #0d1326; border: 1px solid var(--border); border-radius: 12px; padding: 16px; color: #d7e3ff;
+    }
+    ul { padding-left: 20px; }
+    a { color: var(--accent); }
+    footer { margin-top: 28px; color: var(--muted); text-align: center; }
+    .muted { color: var(--muted); }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <div class="badge">Adatvédelmi tájékoztató</div>
+      <div class="badge">Adatvédelmi irányelvek</div>
       <h1>AuriCare – Hearing Aid App</h1>
-      <p class="subtitle">Utolsó frissítés: <strong>2025. augusztus 30.</strong></p>
+      <p class="subtitle">Utolsó frissítés: <strong>2025. október 8.</strong></p>
     </header>
 
     <nav class="toc" aria-label="Tartalomjegyzék">
       <ol>
-        <li><a href="#general-info">Általános információk</a></li>
-        <li><a href="#data-scope">Adatkezelés terjedelme</a></li>
-        <li><a href="#permissions">Alkalmazás-engedélyek</a></li>
-        <li><a href="#trial">Próbaidőszak és fizetések</a></li>
-        <li><a href="#contact">Kapcsolat</a></li>
-        <li><a href="#external">Külső szolgáltatások és könyvtárak</a></li>
-        <li><a href="#security">Biztonság</a></li>
-        <li><a href="#changes">Változások</a></li>
+        <li><a href="#altalanos-informaciok">Általános információk</a></li>
+        <li><a href="#adatkezeles-hatokore">Adatkezelés hatóköre és módja</a></li>
+        <li><a href="#engedelyek">Az alkalmazás által igényelt engedélyek</a></li>
+        <li><a href="#probaidoszak-fizetesek">Próbaidőszak és fizetések</a></li>
+        <li><a href="#hirdetesek-adatgyujtes">Hirdetések és adatgyűjtés</a></li>
+        <li><a href="#kulso-szolgaltatasok">Külső szolgáltatások és könyvtárak</a></li>
+        <li><a href="#kapcsolat">Kapcsolat</a></li>
+        <li><a href="#biztonsag">Biztonság</a></li>
+        <li><a href="#modositasok">Az irányelvek módosítása</a></li>
       </ol>
     </nav>
 
-    <section id="general-info">
+    <section id="altalanos-informaciok">
       <h2>1. Általános információk</h2>
-      <p>Jelen adatvédelmi tájékoztató ismerteti, hogy az <strong>AuriCare – Hearing Aid App</strong> (a „Alkalmazás”) miként kezeli az adatokat. Tiszteletben tartjuk a felhasználók magánéletét, és az adatkezelést az Alkalmazás működéséhez szükséges minimumra korlátozzuk.</p>
-      <p>Az Alkalmazás helyben, az eszközön működik – a hangfeldolgozás közvetlenül a telefonon történik, és <strong>nem kerül továbbításra vagy tárolásra külső szervereken</strong>.</p>
+      <p>Jelen Adatvédelmi irányelvek az <strong>AuriCare – Hearing Aid App</strong> mobilalkalmazás (a továbbiakban: „Alkalmazás”) adatkezelési elveit írják le. Törődünk a felhasználók magánéletével, és az adatkezelést kizárólag arra korlátozzuk, ami az Alkalmazás működéséhez szükséges.</p>
+      <p>Az Alkalmazás helyileg, az eszközön működik – a hang feldolgozása közvetlenül a telefon memóriájában történik, és <strong>nem kerül továbbításra vagy tárolásra semmilyen külső szerveren</strong>.</p>
     </section>
 
-    <section id="data-scope">
-      <h2>2. Adatkezelés terjedelme</h2>
+    <section id="adatkezeles-hatokore">
+      <h2>2. Adatkezelés hatóköre és módja</h2>
       <ul>
-        <li>Az Alkalmazás nem gyűjt, nem profiloz és nem tárol tartósan személyes adatokat.</li>
-        <li>A rögzített hang kizárólag erősítésre/zajcsökkentésre szolgál, és helyben kerül feldolgozásra.</li>
-        <li>Hangfelvétel nem készül és adat nem kerül továbbításra a felhasználó eszközén kívülre.</li>
-        <li>Az Alkalmazás nem fér hozzá helyadatokhoz és más alkalmazások adataihoz.</li>
+        <li>Az Alkalmazás nem gyűjti, nem profilozza és nem tárolja tartósan a felhasználók személyes adatait.</li>
+        <li>A rögzített hangot kizárólag erősítésre/tisztításra használjuk, és helyben dolgozzuk fel.</li>
+        <li>Nem rögzítünk hangfájlokat, és nem továbbítjuk azokat a felhasználó eszközén kívülre.</li>
+        <li>Az Alkalmazás nem fér hozzá a felhasználó tartózkodási helyéhez vagy más alkalmazások adataihoz.</li>
       </ul>
     </section>
 
-    <section id="permissions">
-      <h2>3. Alkalmazás-engedélyek</h2>
-      <p>Az Alkalmazás az alábbi Android-engedélyeket kéri:</p>
+    <section id="engedelyek">
+      <h2>3. Az alkalmazás által igényelt engedélyek</h2>
+      <p>A megfelelő működéshez az Alkalmazás a következő Android rendszerengedélyeket kéri:</p>
       <ul>
-        <li><strong>Mikrofon (hangfelvétel)</strong> – a környezeti hang helyi rögzítéséhez és feldolgozásához.</li>
-        <li><strong>Közeli eszközök / Bluetooth</strong> – fejhallgatók és audiotartozékok támogatásához.</li>
-        <li><strong>Értesítések</strong> – a háttérben futás jelzéséhez.</li>
-        <li><strong>Háttérben történő működés</strong> – a folyamatos használat biztosításához.</li>
+        <li><strong>Hangrögzítés (mikrofon)</strong> – kizárólag a környezeti hangok rögzítésére és valós idejű feldolgozására az eszközön.</li>
+        <li><strong>Közeli eszközök keresése/csatlakoztatása (Bluetooth)</strong> – fejhallgatók és audio-kiegészítők kezeléséhez.</li>
+        <li><strong>Értesítések</strong> – egy állandó értesítés megjelenítéséhez, amely jelzi, hogy az Alkalmazás aktív és a háttérben fut.</li>
+        <li><strong>Akkumulátor-optimalizálás kikapcsolása (opcionális, de ajánlott)</strong> – Az Alkalmazás kérheti az akkumulátor-optimalizálás kikapcsolását az Android rendszerben. Ez szükséges a hangfeldolgozó szolgáltatás stabil és megszakítás nélküli működésének biztosításához, amikor az eszköz képernyője ki van kapcsolva.</li>
       </ul>
-      <p class="muted">Az engedélyek megtagadása az Alkalmazás működését korlátozhatja vagy megakadályozhatja.</p>
+      <p class="muted">A kulcsfontosságú engedélyek (mikrofon, Bluetooth, értesítések) megadásának megtagadása megakadályozza az Alkalmazás alapvető funkcióinak használatát.</p>
     </section>
 
-    <section id="trial">
+    <section id="probaidoszak-fizetesek">
       <h2>4. Próbaidőszak és fizetések</h2>
-      <p>Az Alkalmazás <strong>7 napos ingyenes próbaidőszakot</strong> kínál. Ezt követően az összes funkció további használatához előfizetés vagy egyszeri vásárlás választható.</p>
-      <p>A fizetéseket a <strong>Google Play</strong> dolgozza fel, és a Google adatvédelmi irányelvei érvényesek: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</p>
+      <p>Az Alkalmazás <strong>7 napos ingyenes próbaidőszakot</strong> kínál. Ennek lejárta után a felhasználó előfizetést vagy egyszeri vásárlást választhat az Alkalmazás teljes funkcionalitásának további használatához.</p>
+      <p>A fizetéseket a <strong>Google Play</strong> kezeli. E tekintetben a Google adatvédelmi irányelvei és szolgáltatási feltételei érvényesek. Részletek: <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">A Google adatvédelmi irányelvei</a>.</p>
     </section>
 
-    <section id="contact">
-      <h2>5. Kapcsolat</h2>
-      <p>Az Alkalmazás <em>Kapcsolat</em> opciója megnyitja az eszköz alapértelmezett levelezőklien­sét az előre kitöltött címünkkel.</p>
-      <p>E-mail: <a href="mailto:kontaktsoftnest@gmail.com">kontaktsoftnest@gmail.com</a></p>
+    <section id="hirdetesek-adatgyujtes">
+        <h2>5. Hirdetések és adatgyűjtés</h2>
+        <p>Az Alkalmazás ingyenes verziója (<code>Basic</code> licenc) a Google által az <strong>AdMob</strong> szolgáltatáson keresztül biztosított hirdetéseket jelenít meg. Ezzel összefüggésben az Alkalmazás a következő technológiákat használja:</p>
+        <ul>
+            <li><strong>Google Mobile Ads SDK:</strong> Ez a könyvtár gyűjthet és feldolgozhat olyan adatokat, mint az eszköz egyedi hirdetési azonosítója (Advertising ID), IP-cím, a hirdetésekkel való interakciókra vonatkozó információk és hozzávetőleges helyadatok a személyre szabott és releváns hirdetési tartalmak megjelenítése érdekében.</li>
+            <li><strong>User Messaging Platform (UMP) SDK:</strong> A GDPR hatálya alá tartozó régiókban (EGT és Egyesült Királyság) az Alkalmazás ezt a könyvtárat használja a felhasználók hozzájárulásának megszerzéséhez a hirdetések személyre szabása céljából történő adatgyűjtéshez és -felhasználáshoz. A felhasználónak lehetősége van a hozzájárulási űrlapon keresztül kezelni preferenciáit.</li>
+        </ul>
+        <p>Nincs közvetlen hozzáférésünk a Google által gyűjtött adatokhoz. Ezen adatok felhasználására a Google adatvédelmi irányelvei vonatkoznak. Ha többet szeretne megtudni arról, hogyan használja a Google az adatokat, kérjük, olvassa el a következő dokumentumot: <a href="https://policies.google.com/technologies/ads" rel="noopener" target="_blank">Google Adatvédelem és Általános Szerződési Feltételek – Hirdetések</a>.</p>
     </section>
 
-    <section id="external">
+    <section id="kulso-szolgaltatasok">
       <h2>6. Külső szolgáltatások és könyvtárak</h2>
-      <p>Az Alkalmazás a <strong>WebRTC</strong> könyvtárat használja (BSD-licenc). Az előírt licencszöveg (angolul, változtatás nélkül) alább olvasható:</p>
-      <pre>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+      <p>Az Alkalmazás a következő külső könyvtárakat használja:</p>
+      <ul>
+        <li><strong>WebRTC (BSD licenc):</strong> Fejlett, valós idejű hangfeldolgozásra használatos. Az alábbiakban található a teljes licencinformáció:</li>
+      </ul>
+      <pre>
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
 Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
 Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
 Neither the name of Google nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
 
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre>
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+      </pre>
+      <ul>
+        <li><strong>Google Play Billing Library:</strong> Előfizetések és egyszeri vásárlások kezelésére. A tranzakciókat a Google Play rendszere biztonságosan dolgozza fel.</li>
+      </ul>
     </section>
 
-    <section id="security">
-      <h2>7. Biztonság</h2>
-      <p>Mivel az Alkalmazás nem tárol személyes adatokat és nem továbbítja azokat külső szerverekre, az adatvédelmi kockázat minimális. Minden hangadat a felhasználó eszközén marad.</p>
+    <section id="kapcsolat">
+      <h2>7. Kapcsolat</h2>
+      <p>Az Alkalmazás beállításaiban található egy <em>Kapcsolat</em> fül, amely megnyitja az alapértelmezett levelezőprogramot a mi címünkkel a címzett mezőben.</p>
+      <p>Kapcsolattartási cím: <a href="mailto:kontaktsoftnest@gmail.com">kontaktsoftnest@gmail.com</a></p>
     </section>
 
-    <section id="changes">
-      <h2>8. Változások</h2>
-      <p>Az adatvédelmi tájékoztatót jogszabályi kötelezettség vagy új funkciók esetén frissíthetjük. A legújabb verzió az Alkalmazásban és a Google Playen érhető el.</p>
+    <section id="biztonsag">
+      <h2>8. Biztonság</h2>
+      <p>Mivel az Alkalmazás nem tárol személyes adatokat és nem továbbítja azokat külső szerverekre, az adatvédelmi incidens kockázata minimális. Minden hangadat helyileg, a felhasználó eszközén kerül feldolgozásra.</p>
+    </section>
+
+    <section id="modositasok">
+      <h2>9. Az irányelvek módosítása</h2>
+      <p>Fenntartjuk a jogot, hogy módosítsuk jelen Adatvédelmi irányelveket, ha azt a jogszabályi változások vagy az Alkalmazás funkcionalitásának fejlesztése megköveteli. A dokumentum aktuális verziója elérhető lesz az Alkalmazásban és a Google Play leírásában.</p>
     </section>
 
     <footer>
       <p>© <span id="year"></span> AuriCare – Hearing Aid App</p>
     </footer>
   </div>
-  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+```
