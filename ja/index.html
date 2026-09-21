@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>プライバシーポリシー – AuriCare - Hearing Amplifier</title>
-  <meta name="description" content="AuriCare – Hearing Aid Appのプライバシーポリシー" />
+  <meta name="description" content="AuriCare – Hearing Aid App アプリケーションのプライバシーポリシー" />
   <style>
     :root {
       --bg: #0b1020;
@@ -46,73 +46,97 @@
   <div class="container">
     <header>
       <div class="badge">プライバシーポリシー</div>
-      <h1>AuriCare – AuriCare - Hearing Amplifier</h1>
-      <p class="subtitle">最終更新日: <strong>2025年10月8日</strong></p>
+      <h1>AuriCare - Hearing Amplifier</h1>
+      <p class="subtitle">最終更新日: <strong>2026年9月22日</strong></p>
     </header>
 
     <nav class="toc" aria-label="目次">
       <ol>
-        <li><a href="#general-info">一般情報</a></li>
-        <li><a href="#data-processing">データ処理の範囲と方法</a></li>
-        <li><a href="#permissions">アプリが必要とする権限</a></li>
-        <li><a href="#trial-payments">試用期間と支払い</a></li>
-        <li><a href="#ads-data-collection">広告とデータ収集</a></li>
-        <li><a href="#external-services">外部サービスとライブラリ</a></li>
-        <li><a href="#contact">お問い合わせ</a></li>
-        <li><a href="#security">セキュリティ</a></li>
-        <li><a href="#policy-changes">ポリシーの変更</a></li>
+        <li><a href="#info-ogolne">一般情報</a></li>
+        <li><a href="#zakres-danych">データの処理範囲と方法</a></li>
+        <li><a href="#nagrania-audio">音声録音機能（ローカルファイル）</a></li>
+        <li><a href="#uprawnienia">アプリが必要とする権限</a></li>
+        <li><a href="#okres-probny">無料トライアルと支払い</a></li>
+        <li><a href="#reklamy">広告とデータ収集</a></li>
+        <li><a href="#zewnetrzne-uslugi">サードパーティ製サービスおよびライブラリ（Firebase、WebRTC）</a></li>
+        <li><a href="#kontakt">お問い合わせ</a></li>
+        <li><a href="#bezpieczenstwo">セキュリティ</a></li>
+        <li><a href="#zmiany">本ポリシーの変更</a></li>
       </ol>
     </nav>
 
-    <section id="general-info">
+    <section id="info-ogolne">
       <h2>1. 一般情報</h2>
-      <p>本プライバシーポリシーは、モバイルアプリケーション<strong>AuriCare – Hearing Aid App</strong>（以下、「本アプリ」）におけるデータ処理の原則を説明するものです。私たちはユーザーのプライバシーを尊重し、データ処理を本アプリの機能に必要な範囲に限定します。</p>
-      <p>本アプリはデバイス上でローカルに動作します。音声はスマートフォンのメモリ内で直接処理され、<strong>いかなる外部サーバーにも送信または保存されません</strong>。</p>
+      <p>本プライバシーポリシーは、モバイルアプリケーション<strong>AuriCare – Hearing Aid App</strong>（以下「本アプリ」）におけるデータ処理の取り扱いについて説明するものです。当社はユーザーのプライバシーを尊重し、データ処理を本アプリの適切かつ安全な動作に必要不可欠な範囲のみに限定しています。</p>
+      <p>主要な音声処理パイプラインは、お使いの端末上で100%ローカルに動作します。マイクからの音声信号は、スマートフォンのRAM（メモリ）内でリアルタイムに直接処理され、<strong>外部サーバーへの送信やストリーミングは一切行われません</strong>。</p>
     </section>
 
-    <section id="data-processing">
-      <h2>2. データ処理の範囲と方法</h2>
+    <section id="zakres-danych">
+      <h2>2. データの処理範囲と方法</h2>
       <ul>
-        <li>本アプリは、ユーザーの個人データを収集、プロファイリング、または恒久的に保存することはありません。</li>
-        <li>取得した音声は、増幅・クリーニングの目的でのみ使用され、ローカルで処理されます。</li>
-        <li>音声ファイルを録音したり、ユーザーのデバイス外に送信したりすることはありません。</li>
-        <li>本アプリは、ユーザーの位置情報や他のアプリケーションのデータにアクセスすることはありません。</li>
+        <li>本アプリは、ユーザーの個人を特定できる情報（氏名、メールアドレス、電話番号など）の収集、プロファイリング、恒久的な保存を行いません。</li>
+        <li>マイクから取得した音声は、端末上でのリアルタイムな音声増幅、ノイズ除去、周波数イコライジング（補正）にのみ使用されます。</li>
+        <li>本アプリは、音声サンプルの収集や、分析、広告、人工知能（AI）モデルの学習を目的とした会話内容の処理を行いません。</li>
+        <li>本アプリは、ユーザーのGPS位置情報や他のアプリケーションに保存されている個人データにアクセスしません。</li>
+        <li>本アプリは、ソフトウェアの安定性の確保および品質向上のために必要な、匿名の診断データおよびテレメトリデータのみを処理します（詳細はセクション7を参照）。</li>
       </ul>
     </section>
 
-    <section id="permissions">
-      <h2>3. アプリが必要とする権限</h2>
-      <p>本アプリが正常に動作するために、以下のAndroidシステム権限を要求します：</p>
+    <section id="nagrania-audio">
+      <h2>3. 音声録音機能（ローカルファイル）</h2>
+      <p>本アプリは、WAV形式（PCM 48 kHz / 16ビット）の音声ファイルとして音声を録音できるオプション機能を提供します。録音に関する規定は以下の通りです：</p>
       <ul>
-        <li><strong>音声の録音（マイク）</strong> – 周囲の音を取得し、デバイス上でリアルタイムに処理するためにのみ使用します。</li>
-        <li><strong>近くのデバイスの検索・接続（Bluetooth）</strong> – ヘッドフォンやオーディオアクセサリの管理に使用します。</li>
-        <li><strong>通知</strong> – 本アプリがアクティブであり、バックグラウンドで動作していることを示す永続的な通知を表示するために使用します。</li>
-        <li><strong>バッテリー最適化の無効化（任意ですが推奨）</strong> – 本アプリは、Androidシステムでバッテリー最適化を無効にするよう要求することがあります。これは、デバイスの画面がオフのときに音声処理サービスが安定して中断なく動作するために必要です。</li>
+        <li><strong>手動による開始:</strong> 録音は、ユーザーの明確かつ意図的な操作（アプリ内の録音ボタンのタップ）によってのみ開始および終了します。本アプリがユーザーの許可や関知なしにバックグラウンドで自動的または密かに音声を録音することは決してありません。</li>
+        <li><strong>ローカル保存:</strong> 録音されたすべての音声ファイルは、ユーザーの端末内のローカルストレージ（本アプリ専用の保護されたディレクトリ内）にのみ保存されます。</li>
+        <li><strong>クラウドへの非送信:</strong> 録音された音声ファイルが、外部サーバーやクラウドストレージサービスへ<strong>自動的に送信、同期、またはアーカイブされることは一切ありません</strong>。</li>
+        <li><strong>ユーザーによる完全な制御:</strong> ユーザーは内蔵プレーヤーを使用して録音を再生したり、端末ストレージから完全に削除したり、Androidの安全な共有フレームワーク（<code>FileProvider</code>）を介して他のアプリ（メッセージングアプリやメールクライアントなど）に手動で共有する完全な権利を有します。</li>
       </ul>
-      <p class="muted">主要な権限（マイク、Bluetooth、通知）の付与を拒否した場合、本アプリの基本機能は利用できなくなります。</p>
     </section>
 
-    <section id="trial-payments">
-      <h2>4. 試用期間と支払い</h2>
-      <p>本アプリは<strong>7日間の無料試用期間</strong>を提供しています。試用期間終了後、ユーザーはサブスクリプションまたは一回限りの購入を選択して、本アプリの全機能を引き続き利用できます。</p>
-      <p>支払いは<strong>Google Play</strong>によって処理されます。これに関しては、Googleのプライバシーポリシーと利用規約が適用されます。詳細：<a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google プライバシー ポリシー</a>。</p>
-    </section>
-
-    <section id="ads-data-collection">
-        <h2>5. 広告とデータ収集</h2>
-        <p>本アプリの無料版（<code>Basic</code>ライセンス）では、<strong>AdMob</strong>サービスを通じてGoogleから提供される広告が表示されます。これに関連して、本アプリは以下の技術を使用します：</p>
-        <ul>
-            <li><strong>Google Mobile Ads SDK:</strong> このライブラリは、パーソナライズされた関連性の高い広告コンテンツを配信するために、デバイス固有の広告ID、IPアドレス、広告とのインタラクションに関する情報、おおよその位置情報などのデータを収集・処理することがあります。</li>
-            <li><strong>User Messaging Platform (UMP) SDK:</strong> GDPRの対象地域（EEAおよび英国）では、本アプリはこのライブラリを使用して、広告のパーソナライズを目的としたデータの収集と利用についてユーザーの同意を得ます。ユーザーは同意フォームを通じて設定を管理できます。</li>
-        </ul>
-        <p>私たちはGoogleが収集したデータに直接アクセスすることはありません。このデータの利用はGoogleのプライバシーポリシーに従います。Googleがデータをどのように利用するかについての詳細は、次のドキュメントをご参照ください：<a href="https://policies.google.com/technologies/ads" rel="noopener" target="_blank">Google のプライバシーと利用規約 – 広告</a>。</p>
-    </section>
-
-    <section id="external-services">
-      <h2>6. 外部サービスとライブラリ</h2>
-      <p>本アプリは以下の外部ライブラリを使用しています：</p>
+    <section id="uprawnienia">
+      <h2>4. アプリが必要とする権限</h2>
+      <p>正常に動作するために、本アプリは以下のAndroidシステム権限をリクエストします：</p>
       <ul>
-        <li><strong>WebRTC（BSDライセンス）:</strong> 高度なリアルタイム音声処理に使用されます。完全なライセンス情報は以下の通りです：</li>
+        <li><strong>音声録音 / マイク（<code>RECORD_AUDIO</code>、<code>FOREGROUND_SERVICE_MICROPHONE</code>）</strong> – 周囲の音声をキャプチャし、リアルタイムで処理および増幅すること、ならびにユーザーの要求に応じて音声録音を保存することのみに使用されます。</li>
+        <li><strong>付近のデバイスの検出と接続 / Bluetooth（<code>BLUETOOTH_CONNECT</code>、<code>BLUETOOTH</code>）</strong> – Bluetoothヘッドフォン、補聴器、オーディオアクセサリとのワイヤレス接続に必要です。</li>
+        <li><strong>通知（<code>POST_NOTIFICATIONS</code>）</strong> – バックグラウンドでオーディオサービスがアクティブであることを知らせる常駐通知を表示するため（Androidシステムの要件）、および重要なお知らせやアップデート通知を受信するために必要です。</li>
+        <li><strong>スリープモードの無効化（<code>WAKE_LOCK</code>）</strong> – 端末の画面が消灯しているときでも、DSPプロセッサによる中断のない継続的なリアルタイム音声処理を維持するために必要です。</li>
+        <li><strong>バッテリー最適化の除外（任意、推奨）</strong> – スマートフォンメーカー独自の省電力機能によってバックグラウンドのオーディオサービスが強制終了されるのを防ぐため、Androidのバッテリー制限の無効化をリクエストする場合があります。</li>
+      </ul>
+      <p class="muted">主要な権限（マイク、通知、Bluetooth）の付与を拒否した場合、本アプリの基本機能をご利用いただけなくなります。</p>
+    </section>
+
+    <section id="okres-probny">
+      <h2>5. 無料トライアルと支払い</h2>
+      <p>本アプリは、PROプランのサブスクリプション向けに<strong>7日間の無料トライアル期間</strong>を提供しています。トライアル終了後、ユーザーは自動更新サブスクリプションまたは無期限ライセンス（Lifetime）の購入を選択することで、広告なしで無制限にすべての機能を利用できます。</p>
+      <p>すべての決済取引は、<strong>Google Play Billing</strong>を通じて直接かつ安全に処理されます。当社がユーザーのクレジットカード情報や請求先情報を処理・保存することは一切ありません。詳細については、<a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google プライバシーポリシー</a>をご覧ください。</p>
+    </section>
+
+    <section id="reklamy">
+      <h2>6. 広告とデータ収集</h2>
+      <p>本アプリの無料版（<code>FREE</code>ライセンス）では、<strong>Google AdMob</strong>サービスを通じてGoogleが配信する広告が表示されます。これに伴い、以下の技術が使用されています：</p>
+      <ul>
+        <li><strong>Google Mobile Ads SDK:</strong> 本ライブラリは、広告の配信および効果測定のために、端末の一意の広告識別子（Advertising ID）、IPアドレス、広告とのインタラクションデータ、および大まかな診断データなどの情報を収集・処理する場合があります。</li>
+        <li><strong>User Messaging Platform (UMP) SDK:</strong> GDPR/ePrivacy規制の対象地域（EEAおよび英国）において、本アプリはデータ収集および広告のパーソナライズに関するユーザーの同意を取得・管理するためにUMPプラットフォームを使用しています。ユーザーはアプリ内の設定からいつでも設定を変更できます。</li>
+      </ul>
+      <p class="muted">注: 有料版（TRIAL、PRO、PRO LIFETIME）には広告が一切表示されず、広告表示モジュールは完全に無効化されています。</p>
+      <p>Googleによるデータの使用方法に関する詳細: <a href="https://policies.google.com/technologies/ads" rel="noopener" target="_blank">Google プライバシーと規約 – 広告</a>。</p>
+    </section>
+
+    <section id="zewnetrzne-uslugi">
+      <h2>7. サードパーティ製サービスおよびライブラリ</h2>
+      <p>最高の音質、安定性、および機能を提供するため、本アプリは以下のサードパーティ製サービスおよびライブラリを使用しています：</p>
+      <ul>
+        <li><strong>Google Firebase サービス:</strong>
+          <ul>
+            <li><strong>Firebase Analytics:</strong> 匿名のアプリ利用統計（画面の表示回数、オーディオモードの選択、マイクの調整イベント、購入イベントなど）。アナリティクスは音声データや会話の内容を<em>収集しません</em>。</li>
+            <li><strong>Firebase Crashlytics &amp; Crashlytics NDK:</strong> 不具合を迅速に修正するための、匿名のクラッシュレポートおよびC++/Kotlinネイティブエラーの収集。技術的な診断データ（端末モデル、Androidバージョン、接続されたヘッドフォンの種類、サンプリングレートなど）を記録します。</li>
+            <li><strong>Firebase Remote Config:</strong> アプリの設定パラメータ（無料版における制限時間や録音の最大長など）のリモート同期。</li>
+            <li><strong>Firebase Cloud Messaging (FCM):</strong> 匿名の端末トークンを使用した、重要な技術的通知やアップデート通知のプッシュ受信。</li>
+          </ul>
+          Firebaseにおけるプライバシーの詳細: <a href="https://firebase.google.com/support/privacy" rel="noopener" target="_blank">Firebase のプライバシーとセキュリティ</a>。
+        </li>
+        <li><strong>WebRTC（BSDライセンス）:</strong> リアルタイムの音声信号処理およびノイズリダクションのための高度なエンジン。ライセンス全文は以下の通りです：</li>
       </ul>
       <pre>
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -124,24 +148,29 @@ Neither the name of Google nor the names of its contributors may be used to endo
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       </pre>
       <ul>
-        <li><strong>Google Play Billing Library:</strong> サブスクリプションと一回限りの購入の処理に使用されます。取引はGoogle Playシステムによって安全に処理されます。</li>
+        <li><strong>Google Play Billing Library:</strong> Google Playのインフラを介したサブスクリプションおよびアプリ内課金（ワンタイム購入）の安全な管理。</li>
       </ul>
     </section>
 
-    <section id="contact">
-      <h2>7. お問い合わせ</h2>
-      <p>本アプリの設定には<em>お問い合わせ</em>タブがあり、これをタップすると、受信者欄に私たちのアドレスが入力された状態で、デフォルトのメールクライアントが開きます。</p>
-      <p>連絡先アドレス: <a href="mailto:kontaktsoftnest@gmail.com">kontaktsoftnest@gmail.com</a></p>
+    <section id="kontakt">
+      <h2>8. お問い合わせ</h2>
+      <p>本アプリの設定内に<em>お問い合わせ</em>項目があり、端末のデフォルトのメールアプリが起動します。</p>
+      <p>プライバシーやアプリの動作に関するご質問窓口: <a href="mailto:kontaktsoftnest@gmail.com">kontaktsoftnest@gmail.com</a></p>
     </section>
 
-    <section id="security">
-      <h2>8. セキュリティ</h2>
-      <p>本アプリは個人データを保存したり、外部サーバーに送信したりしないため、プライバシー侵害のリスクは最小限に抑えられています。すべての音声データはユーザーのデバイス上でローカルに処理されます。</p>
+    <section id="bezpieczenstwo">
+      <h2>9. セキュリティ</h2>
+      <p>当社は厳格なデータセキュリティ基準を適用しています：</p>
+      <ul>
+        <li>すべての音声データは端末のRAM内でリアルタイムに処理されるか、アプリの分離された保護領域にローカル保存されます。</li>
+        <li>ライセンスキーや機密性の高いローカル設定は、Androidハードウェアキーストア（<code>EncryptedSharedPreferences</code>）を用いて暗号化されています。</li>
+        <li>Google FirebaseおよびGoogle Playサービスとのテレメトリおよび設定データの通信は、HTTPS/TLSプロトコルによる暗号化接続を介してのみ行われます。</li>
+      </ul>
     </section>
 
-    <section id="policy-changes">
-      <h2>9. ポリシーの変更</h2>
-      <p>法律の変更や本アプリの機能開発により必要が生じた場合、当社は本プライバシーポリシーを変更する権利を留保します。最新版のドキュメントは、本アプリ内およびGoogle Playのストア掲載情報でご確認いただけます。</p>
+    <section id="zmiany">
+      <h2>10. 本ポリシーの変更</h2>
+      <p>当社は、法令の改正や本アプリの機能向上に伴い、本プライバシーポリシーを変更する権利を留保します。改定された最新バージョンは常に同じURLに公開され、本アプリ内およびGoogle Playストアのページから直接確認できます。</p>
     </section>
 
     <footer>
@@ -153,4 +182,3 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
   </script>
 </body>
 </html>
-```
