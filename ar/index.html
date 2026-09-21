@@ -28,15 +28,16 @@
     nav.toc { margin: 28px 0 0; padding: 16px 20px; background: var(--card); border: 1px solid var(--border); border-radius: 14px; }
     nav.toc a { color: var(--text); text-decoration: none; }
     nav.toc a:hover { color: var(--accent); }
-    nav.toc ol { margin: 0; padding-right: 20px; }
+    nav.toc ol { margin: 0; padding-right: 20px; padding-left: 0; }
     section { margin-top: 28px; background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 22px; }
     h2 { margin-top: 0; font-size: 1.25rem; }
     p, li { color: #d7dee7; }
-    code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; direction: ltr; text-align: left; }
+    code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
     pre {
       white-space: pre-wrap; word-break: break-word; background: #0d1326; border: 1px solid var(--border); border-radius: 12px; padding: 16px; color: #d7e3ff;
+      direction: ltr; text-align: left;
     }
-    ul { padding-right: 20px; }
+    ul { padding-right: 20px; padding-left: 0; }
     a { color: var(--accent); }
     footer { margin-top: 28px; color: var(--muted); text-align: center; }
     .muted { color: var(--muted); }
@@ -47,72 +48,96 @@
     <header>
       <div class="badge">سياسة الخصوصية</div>
       <h1>AuriCare - Hearing Amplifier</h1>
-      <p class="subtitle">تاريخ آخر تحديث: <strong>8 أكتوبر 2025</strong></p>
+      <p class="subtitle">تاريخ آخر تحديث: <strong>22 سبتمبر 2026</strong></p>
     </header>
 
     <nav class="toc" aria-label="جدول المحتويات">
       <ol>
         <li><a href="#info-ogolne">معلومات عامة</a></li>
-        <li><a href="#zakres-danych">نطاق وطريقة معالجة البيانات</a></li>
-        <li><a href="#uprawnienia">الأذونات المطلوبة من قبل التطبيق</a></li>
+        <li><a href="#zakres-danych">نطاق وطرق معالجة البيانات</a></li>
+        <li><a href="#nagrania-audio">ميزة تسجيل الصوت (الملفات المحلية)</a></li>
+        <li><a href="#uprawnienia">الأذونات التي يتطلبها التطبيق</a></li>
         <li><a href="#okres-probny">الفترة التجريبية والمدفوعات</a></li>
         <li><a href="#reklamy">الإعلانات وجمع البيانات</a></li>
-        <li><a href="#zewnetrzne-uslugi">الخدمات والمكتبات الخارجية</a></li>
-        <li><a href="#kontakt">الاتصال</a></li>
+        <li><a href="#zewnetrzne-uslugi">الخدمات والمكتبات الخارجية (Firebase، WebRTC)</a></li>
+        <li><a href="#kontakt">اتصل بنا</a></li>
         <li><a href="#bezpieczenstwo">الأمان</a></li>
-        <li><a href="#zmiany">التغييرات في السياسة</a></li>
+        <li><a href="#zmiany">التغييرات في هذه السياسة</a></li>
       </ol>
     </nav>
 
     <section id="info-ogolne">
       <h2>1. معلومات عامة</h2>
-      <p>تصف سياسة الخصوصية هذه قواعد معالجة البيانات في تطبيق الهاتف المحمول <strong>AuriCare – Hearing Aid App</strong> (المشار إليه فيما يلي باسم "التطبيق"). نحن نهتم بخصوصية المستخدمين ونحد من معالجة البيانات فقط إلى ما هو ضروري لتشغيل التطبيق.</p>
-      <p>يعمل التطبيق محليًا على الجهاز - تتم معالجة الصوت مباشرة في ذاكرة الهاتف و<strong>لا يتم إرساله أو تخزينه على أي خوادم خارجية</strong>.</p>
+      <p>توضح سياسة الخصوصية هذه قواعد معالجة البيانات في تطبيق الهاتف المحمول <strong>AuriCare – Hearing Aid App</strong> (المشار إليه فيما بعد بـ "التطبيق"). نحن نحرص على خصوصية المستخدمين ونقصر معالجة البيانات حصراً على ما هو ضروري للتشغيل السليم والآمن للتطبيق.</p>
+      <p>يعمل مسار معالجة الصوت الأساسي بنسبة 100% محلياً على جهازك – حيث يتم تعديل الإشارة الصوتية الملتقطة من الميكروفون مباشرة في ذاكرة الوصول العشوائي (RAM) للهاتف في الوقت الفعلي و<strong>لا يتم إرسالها أو بثها إلى أي خوادم خارجية</strong>.</p>
     </section>
 
     <section id="zakres-danych">
-      <h2>2. نطاق وطريقة معالجة البيانات</h2>
+      <h2>2. نطاق وطرق معالجة البيانات</h2>
       <ul>
-        <li>لا يقوم التطبيق بجمع أو تحليل أو تخزين بيانات المستخدمين الشخصية بشكل دائم.</li>
-        <li>يُستخدم الصوت الملتقط فقط لتعزيزه/تنقيته ويتم معالجته محليًا.</li>
-        <li>نحن لا نسجل ملفات صوتية ولا نرسلها خارج جهاز المستخدم.</li>
-        <li>لا يصل التطبيق إلى موقع المستخدم أو بيانات من تطبيقات أخرى.</li>
+        <li>لا يجمع التطبيق البيانات الشخصية للمستخدمين (مثل الاسم أو عنوان البريد الإلكتروني أو رقم الهاتف)، ولا ينشئ ملفات تعريفية، ولا يخزنها بشكل دائم.</li>
+        <li>يُستخدم الصوت الملتقط من الميكروفون حصرياً لتضخيم الصوت، وتصفيته من الضوضاء، وضبط الترددات في الوقت الفعلي مباشرة على الجهاز.</li>
+        <li>لا يجمع التطبيق عينات صوتية ولا يعالج محتوى المحادثات لأغراض تحليلية أو إعلانية أو لتدريب نماذج الذكاء الاصطناعي.</li>
+        <li>لا يصل التطبيق إلى موقع GPS الخاص بك أو إلى البيانات الخاصة المخزنة بواسطة تطبيقات أخرى.</li>
+        <li>يعالج التطبيق فقط البيانات التشخيصية والقياس عن بُعد مجهولة الهوية الضرورية لضمان استقرار البرنامج وتحسين جودته (التفاصيل في القسم 7).</li>
+      </ul>
+    </section>
+
+    <section id="nagrania-audio">
+      <h2>3. ميزة تسجيل الصوت (الملفات المحلية)</h2>
+      <p>يوفر التطبيق ميزة اختيارية تتيح تسجيل الصوت في ملفات بتنسيق WAV (PCM 48 kHz / 16-bit). القواعد المتعلقة بالتسجيلات:</p>
+      <ul>
+        <li><strong>التشغيل اليدوي:</strong> يبدأ التسجيل ويتوقف حصرياً بناءً على إجراء واعٍ وصريح من المستخدم (بالضغط على زر التسجيل في التطبيق). لا يقوم التطبيق بتسجيل الصوت تلقائياً أو بشكل خفي في الخلفية دون علم المستخدم أبداً.</li>
+        <li><strong>التخزين المحلي:</strong> يتم حفظ جميع الملفات الصوتية المسجلة حصرياً في الذاكرة المحلية لجهاز المستخدم (داخل مجلد التطبيق المخصص).</li>
+        <li><strong>عدم الإرسال إلى السحابة:</strong> ملفات الصوت المسجلة <strong>لا يتم رفعها أو مزامنتها أو أرشفتها تلقائياً على أي خوادم خارجية</strong> أو خدمات تخزين سحابية.</li>
+        <li><strong>تحكم كامل للمستخدم:</strong> يمتلك المستخدم كامل الحق في الاستماع إلى التسجيلات عبر المشغل المدمج، وحذفها نهائياً من ذاكرة الجهاز، ومشاركتها يدوياً مع تطبيقات أخرى (مثل تطبيقات المراسلة أو عملاء البريد) عبر آلية المشاركة الآمنة لنظام Android (<code>FileProvider</code>).</li>
       </ul>
     </section>
 
     <section id="uprawnienia">
-      <h2>3. الأذونات المطلوبة من قبل التطبيق</h2>
-      <p>لتشغيل التطبيق بشكل صحيح، يطلب الأذونات التالية من نظام أندرويد:</p>
+      <h2>4. الأذونات التي يتطلبها التطبيق</h2>
+      <p>للعمل بشكل صحيح، يطلب التطبيق أذونات نظام Android التالية:</p>
       <ul>
-        <li><strong>تسجيل الصوت (الميكروفون)</strong> – فقط لالتقاط الصوت من البيئة المحيطة ومعالجته في الوقت الفعلي على الجهاز.</li>
-        <li><strong>العثور على/الاتصال بالأجهزة القريبة (بلوتوث)</strong> – لدعم سماعات الرأس والملحقات الصوتية.</li>
-        <li><strong>الإشعارات</strong> – لعرض إشعار دائم يفيد بأن التطبيق نشط ويعمل في الخلفية.</li>
-        <li><strong>تعطيل تحسين البطارية (اختياري، لكن موصى به)</strong> – قد يطلب التطبيق تعطيل تحسين البطارية له في نظام أندرويد. هذا ضروري لضمان تشغيل خدمة معالجة الصوت بشكل مستقر ودون انقطاع عندما تكون شاشة الجهاز مغلقة.</li>
+        <li><strong>تسجيل الصوت / الميكروفون (<code>RECORD_AUDIO</code>، <code>FOREGROUND_SERVICE_MICROPHONE</code>)</strong> – يُستخدم فقط لالتقاط الصوت المحيط ومعالجته وتضخيمه في الوقت الفعلي، ولحفظ التسجيلات الصوتية بناءً على طلب المستخدم.</li>
+        <li><strong>البحث عن الأجهزة القريبة والاتصال بها / البلوتوث (<code>BLUETOOTH_CONNECT</code>، <code>BLUETOOTH</code>)</strong> – مطلوب للاتصال اللاسلكي بسماعات الرأس، والمعينات السمعية، والملحقات الصوتية.</li>
+        <li><strong>الإشعارات (<code>POST_NOTIFICATIONS</code>)</strong> – مطلوب لعرض إشعار دائم يُفيد بأن خدمة معالجة الصوت نشطة في الخلفية (أحد متطلبات نظام Android) ولتلقي الإشعارات الفنية وإعلانات التحديثات.</li>
+        <li><strong>منع معالج الجهاز من الدخول في وضع السكون (<code>WAKE_LOCK</code>)</strong> – للحفاظ على معالجة مستمرة ودون انقطاع للصوت بواسطة معالج الإشارات الرقمية (DSP) عند إيقاف تشغيل شاشة الجهاز.</li>
+        <li><strong>تعطيل تحسين استهلاك البطارية (اختياري، موصى به)</strong> – قد يطلب التطبيق تعطيل قيود توفير طاقة البطارية في نظام Android، مما يمنع آليات توفير الطاقة التابعة للشركة المصنعة للهاتف من إيقاف خدمة الصوت في الخلفية.</li>
       </ul>
-      <p class="muted">سيؤدي رفض منح الأذونات الرئيسية (الميكروفون، البلوتوث، الإشعارات) إلى عدم القدرة على استخدام الوظائف الأساسية للتطبيق.</p>
+      <p class="muted">إن رفض منح الأذونات الأساسية (الميكروفون، الإشعارات، البلوتوث) سيمنع استخدام الوظائف الأساسية للتطبيق.</p>
     </section>
 
     <section id="okres-probny">
-      <h2>4. الفترة التجريبية والمدفوعات</h2>
-      <p>يقدم التطبيق <strong>فترة تجريبية مجانية لمدة 7 أيام</strong>. بعد انتهائها، يمكن للمستخدم اختيار اشتراك أو شراء لمرة واحدة لمواصلة استخدام الوظائف الكاملة للتطبيق.</p>
-      <p>تتم معالجة المدفوعات بواسطة <strong>Google Play</strong>. في هذا الصدد، يتم تطبيق سياسات الخصوصية وشروط خدمة Google. التفاصيل: <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">سياسة خصوصية Google</a>.</p>
+      <h2>5. الفترة التجريبية والمدفوعات</h2>
+      <p>يقدم التطبيق <strong>فترة تجريبية مجانية لمدة 7 أيام</strong> لاشتراك فئة PRO. بعد انتهائها، يمكن للمستخدم اختيار اشتراك يتجدد تلقائياً أو شراء ترخيص مدى الحياة (Lifetime) للاستمتاع بجميع الميزات بلا حدود وبدون إعلانات.</p>
+      <p>تتم جميع المعاملات المالية بشكل مباشر وآمن عبر <strong>Google Play Billing</strong>. نحن لا نعالج أو نخزن بيانات بطاقات الدفع أو معلومات الفواتير الخاصة بالمستخدمين. لمزيد من التفاصيل: <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">سياسة خصوصية Google</a>.</p>
     </section>
 
     <section id="reklamy">
-        <h2>5. الإعلانات وجمع البيانات</h2>
-        <p>يعرض الإصدار المجاني من التطبيق (ترخيص <code>Basic</code>) إعلانات مقدمة من Google عبر خدمة <strong>AdMob</strong>. ونتيجة لذلك، يتم استخدام التقنيات التالية في التطبيق:</p>
-        <ul>
-            <li><strong>Google Mobile Ads SDK:</strong> قد تقوم هذه المكتبة بجمع ومعالجة بيانات مثل معرّف الإعلانات الفريد للجهاز (Advertising ID)، وعنوان IP، ومعلومات حول التفاعلات مع الإعلانات، وبيانات تقريبية عن الموقع لتقديم محتوى إعلاني مخصص وملائم.</li>
-            <li><strong>User Messaging Platform (UMP) SDK:</strong> في المناطق الخاضعة للائحة العامة لحماية البيانات (GDPR) (المنطقة الاقتصادية الأوروبية والمملكة المتحدة)، يستخدم التطبيق هذه المكتبة للحصول على موافقة المستخدمين على جمع واستخدام البيانات لأغراض تخصيص الإعلانات. لدى المستخدم خيار إدارة تفضيلاته عبر نموذج الموافقة.</li>
-        </ul>
-        <p>ليس لدينا وصول مباشر إلى البيانات التي تجمعها Google. يخضع استخدام هذه البيانات لسياسة خصوصية Google. لمعرفة المزيد حول كيفية استخدام Google للبيانات، يرجى الرجوع إلى المستند: <a href="https://policies.google.com/technologies/ads" rel="noopener" target="_blank">سياسة الخصوصية وشروط الخدمة لدى Google – الإعلانات</a>.</p>
+      <h2>6. الإعلانات وجمع البيانات</h2>
+      <p>يعرض الإصدار المجاني من التطبيق (ترخيص <code>FREE</code>) إعلانات مقدمة من شركة Google عبر خدمة <strong>Google AdMob</strong>. تحقيقاً لهذه الغاية، تُستخدم التقنيات التالية:</p>
+      <ul>
+        <li><strong>Google Mobile Ads SDK:</strong> قد تجمع هذه المكتبة وتعالج بيانات مثل المعرّف الإعلاني الفريد للجهاز (Advertising ID)، وعنوان IP، وبيانات التفاعل مع الإعلانات، وبيانات تشخيصية تقريبية لتقديم الإعلانات وقياس فعاليتها.</li>
+        <li><strong>User Messaging Platform (UMP) SDK:</strong> في المناطق الخاضعة للائحة العامة لحماية البيانات (GDPR) وقوانين الخصوصية الإلكترونية (المنطقة الاقتصادية الأوروبية والمملكة المتحدة)، يستخدم التطبيق منصة UMP لجمع وإدارة موافقات المستخدمين بشأن جمع البيانات وتخصيص الإعلانات. يمكن للمستخدم تغيير تفضيلاته في أي وقت داخل إعدادات التطبيق.</li>
+      </ul>
+      <p class="muted">ملاحظة: الإصدارات المدفوعة (TRIAL، PRO، PRO LIFETIME) خالية تماماً من الإعلانات، وتظل وحدة عرض الإعلانات معطلة بالكامل فيها.</p>
+      <p>لمزيد من المعلومات حول كيفية استخدام Google للبيانات: <a href="https://policies.google.com/technologies/ads" rel="noopener" target="_blank">سياسة الخصوصية وبنود الخدمة من Google – الإعلانات</a>.</p>
     </section>
 
     <section id="zewnetrzne-uslugi">
-      <h2>6. الخدمات والمكتبات الخارجية</h2>
-      <p>يستخدم التطبيق المكتبات الخارجية التالية:</p>
+      <h2>7. الخدمات والمكتبات الخارجية</h2>
+      <p>لضمان أعلى مستويات جودة الصوت، واستقرار التطبيق، وأداء وظائفه، يستخدم التطبيق الخدمات والمكتبات الخارجية التالية:</p>
       <ul>
-        <li><strong>WebRTC (ترخيص BSD):</strong> تُستخدم لمعالجة الصوت المتقدمة في الوقت الفعلي. فيما يلي معلومات الترخيص الكاملة:</li>
+        <li><strong>خدمات Google Firebase:</strong>
+          <ul>
+            <li><strong>Firebase Analytics:</strong> إحصاءات استخدام مجهولة المصدر (مثل مشاهدات الشاشات، واختيار أوضاع الصوت، وأحداث معايرة الميكروفون، وأحداث الشراء). التحليلات <em>لا تجمع</em> أي بيانات صوتية أو محتوى محادثات.</li>
+            <li><strong>Firebase Crashlytics &amp; Crashlytics NDK:</strong> جمع تقارير مجهولة المصدر عن الأعطال وأخطاء C++ وKotlin لمعالجة المشكلات التقنية على الفور. يسجل بيانات تشخيصية تقنية (مثل طراز الجهاز، وإصدار Android، ونوع سماعات الرأس المتصلة، ومعدل أخذ العينات).</li>
+            <li><strong>Firebase Remote Config:</strong> المزامنة عن بُعد لمعلمات تهيئة التطبيق (مثل الحدود الزمنية والحد الأقصى لطول التسجيلات في الإصدار المجاني).</li>
+            <li><strong>Firebase Cloud Messaging (FCM):</strong> استلام إشعارات فورية تحتوي على رسائل تقنية هامة وتنبيهات التحديثات (باستخدام رمز مميز مجهول للجهاز).</li>
+          </ul>
+          مزيد من المعلومات حول الخصوصية في Firebase: <a href="https://firebase.google.com/support/privacy" rel="noopener" target="_blank">الخصوصية والأمان في Firebase</a>.
+        </li>
+        <li><strong>WebRTC (ترخيص BSD):</strong> محرك متقدم لمعالجة الإشارات الصوتية في الوقت الفعلي وتقليل الضوضاء. فيما يلي إشعار الترخيص الكامل:</li>
       </ul>
       <pre>
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -124,28 +149,33 @@ Neither the name of Google nor the names of its contributors may be used to endo
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       </pre>
       <ul>
-        <li><strong>Google Play Billing Library:</strong> لمعالجة الاشتراكات والمشتريات لمرة واحدة. تتم المعاملات بشكل آمن من خلال نظام Google Play.</li>
+        <li><strong>Google Play Billing Library:</strong> إدارة آمنة للاشتراكات وعمليات الشراء لمرة واحدة عبر البنية التحتية لـ Google Play.</li>
       </ul>
     </section>
 
     <section id="kontakt">
-      <h2>7. الاتصال</h2>
-      <p>في إعدادات التطبيق، تتوفر علامة تبويب <em>الاتصال</em>، والتي تفتح برنامج البريد الإلكتروني الافتراضي مع عنواننا في حقل المستلم.</p>
-      <p>عنوان الاتصال: <a href="mailto:kontaktsoftnest@gmail.com">kontaktsoftnest@gmail.com</a></p>
+      <h2>8. اتصل بنا</h2>
+      <p>يتوفر في إعدادات التطبيق قسم <em>اتصل بنا</em>، والذي يفتح تطبيق البريد الإلكتروني الافتراضي على جهازك.</p>
+      <p>عنوان البريد الإلكتروني للتواصل لأي أسئلة تتعلق بالخصوصية وتشغيل التطبيق: <a href="mailto:kontaktsoftnest@gmail.com">kontaktsoftnest@gmail.com</a></p>
     </section>
 
     <section id="bezpieczenstwo">
-      <h2>8. الأمان</h2>
-      <p>نظرًا لأن التطبيق لا يخزن بيانات شخصية أو يرسلها إلى خوادم خارجية، يتم تقليل مخاطر انتهاك الخصوصية إلى الحد الأدنى. تتم معالجة جميع البيانات الصوتية محليًا على جهاز المستخدم.</p>
+      <h2>9. الأمان</h2>
+      <p>نطبق معايير أمان صارمة لحماية البيانات:</p>
+      <ul>
+        <li>تتم معالجة جميع تدفقات الصوت بشكل فوري في ذاكرة الوصول العشوائي (RAM) للجهاز أو تُحفظ محلياً في مساحة التطبيق المعزولة والمحمية.</li>
+        <li>يتم تشفير مفاتيح التراخيص والإعدادات المحلية الحساسة باستخدام نظام تخزين المفاتيح المشفر للأجهزة Android KeyStore (<code>EncryptedSharedPreferences</code>).</li>
+        <li>تتم جميع عمليات تبادل بيانات القياس عن بُعد وبيانات التهيئة مع خدمات Google Firebase وGoogle Play حصرياً عبر اتصالات مشفرة باستخدام بروتوكول HTTPS/TLS.</li>
+      </ul>
     </section>
 
     <section id="zmiany">
-      <h2>9. التغييرات في السياسة</h2>
-      <p>نحتفظ بالحق في إجراء تغييرات على سياسة الخصوصية هذه إذا تطلبت ذلك التغييرات في القانون أو تطوير وظائف التطبيق. سيكون الإصدار الحالي من المستند متاحًا في التطبيق وفي الوصف على Google Play.</p>
+      <h2>10. التغييرات في هذه السياسة</h2>
+      <p>نحتفظ بالحق في إجراء تغييرات على سياسة الخصوصية هذه إذا تطلبت ذلك التغييرات في القوانين واللوائح أو تطوير وظائف التطبيق. سيتم نشر أي نسخة محدثة تحت نفس رابط URL وستكون متاحة مباشرة من داخل التطبيق ومن صفحته على متجر Google Play.</p>
     </section>
 
     <footer>
-      <p>© <span id="year"></span>AuriCare - Hearing Amplifier</p>
+      <p>© <span id="year"></span> AuriCare - Hearing Amplifier</p>
     </footer>
   </div>
   <script>
