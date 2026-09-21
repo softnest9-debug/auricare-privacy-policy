@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>隐私政策 – AuriCare - Hearing Amplifier</title>
-  <meta name="description" content="AuriCare – Hearing Aid App 应用的隐私政策" />
+  <meta name="description" content="AuriCare – Hearing Aid App 应用程序隐私政策" />
   <style>
     :root {
       --bg: #0b1020;
@@ -47,72 +47,96 @@
     <header>
       <div class="badge">隐私政策</div>
       <h1>AuriCare - Hearing Amplifier</h1>
-      <p class="subtitle">最后更新日期：<strong>2025年10月8日</strong></p>
+      <p class="subtitle">最后更新日期：<strong>2026年9月22日</strong></p>
     </header>
 
     <nav class="toc" aria-label="目录">
       <ol>
-        <li><a href="#info-ogolne">一般信息</a></li>
-        <li><a href="#zakres-danych">数据处理的范围和方式</a></li>
+        <li><a href="#info-ogolne">常规信息</a></li>
+        <li><a href="#zakres-danych">数据处理范围与方式</a></li>
+        <li><a href="#nagrania-audio">录音功能（本地文件）</a></li>
         <li><a href="#uprawnienia">应用所需的权限</a></li>
-        <li><a href="#okres-probny">试用期和付款</a></li>
-        <li><a href="#reklamy">广告和数据收集</a></li>
-        <li><a href="#zewnetrzne-uslugi">外部服务和库</a></li>
-        <li><a href="#kontakt">联系方式</a></li>
-        <li><a href="#bezpieczenstwo">安全性</a></li>
+        <li><a href="#okres-probny">免费试用与付款</a></li>
+        <li><a href="#reklamy">广告与数据收集</a></li>
+        <li><a href="#zewnetrzne-uslugi">第三方服务与开源库 (Firebase, WebRTC)</a></li>
+        <li><a href="#kontakt">联系我们</a></li>
+        <li><a href="#bezpieczenstwo">安全保障</a></li>
         <li><a href="#zmiany">政策变更</a></li>
       </ol>
     </nav>
 
     <section id="info-ogolne">
-      <h2>1. 一般信息</h2>
-      <p>本隐私政策描述了移动应用 <strong>AuriCare – Hearing Aid App</strong>（以下简称“应用”）中的数据处理规则。我们关心用户的隐私，并将数据处理限制在应用运行所必需的范围内。</p>
-      <p>应用在设备上本地运行——音频直接在手机内存中处理，<strong>不会被发送或存储在任何外部服务器上</strong>。</p>
+      <h2>1. 常规信息</h2>
+      <p>本隐私政策说明了移动应用程序 <strong>AuriCare – Hearing Aid App</strong>（以下简称“本应用”）中的数据处理规则。我们高度重视用户的隐私，仅在保证本应用正常且安全运行所必需的最低限度内处理数据。</p>
+      <p>核心音频处理流程 100% 在您的设备本地运行——来自麦克风的音频信号在手机内存（RAM）中进行实时处理，<strong>绝不会上传或流式传输至任何外部服务器</strong>。</p>
     </section>
 
     <section id="zakres-danych">
-      <h2>2. 数据处理的范围和方式</h2>
+      <h2>2. 数据处理范围与方式</h2>
       <ul>
-        <li>应用不会永久收集、分析或存储用户的个人数据。</li>
-        <li>捕获的音频仅用于增强/净化，并在本地进行处理。</li>
-        <li>我们不录制音频文件，也不将其发送到用户设备之外。</li>
-        <li>应用不访问用户的位置或其他应用的数据。</li>
+        <li>本应用不收集、不进行用户画像分析，亦不持久化存储用户的个人身份信息（例如姓名、电子邮箱或电话号码）。</li>
+        <li>麦克风捕获的声音仅用于在设备上进行实时的声音放大、降噪与频响均衡处理。</li>
+        <li>本应用绝不收集声音样本，亦不会出于数据分析、广告推广或训练人工智能（AI）模型的目的处理对话内容。</li>
+        <li>本应用不会获取用户的 GPS 地理位置，亦不会访问其他应用程序的私有数据。</li>
+        <li>本应用仅处理为保障软件稳定性及提升产品质量所必需的匿名诊断与遥测数据（详见第 7 节）。</li>
+      </ul>
+    </section>
+
+    <section id="nagrania-audio">
+      <h2>3. 录音功能（本地文件）</h2>
+      <p>本应用提供可选的录音功能，可将音频保存为 WAV 格式（PCM 48 kHz / 16 位）。录音相关规则如下：</p>
+      <ul>
+        <li><strong>手动触发：</strong>录音仅在用户明确且主动操作时（点击应用内的录音按钮）开始和结束。本应用绝不会在用户不知情的情况下在后台自动或隐蔽录音。</li>
+        <li><strong>本地存储：</strong>所有录制的音频文件均仅保存在用户设备的本地存储空间中（应用专属的受保护目录内）。</li>
+        <li><strong>禁止云端上传：</strong>录制的音频文件<strong>绝不会自动上传、同步或归档至任何外部服务器</strong>或云存储服务。</li>
+        <li><strong>用户完全控制：</strong>用户拥有完全的自主权，可通过内置播放器收听录音、从设备存储中永久删除录音，或通过 Android 系统的安全共享机制（<code>FileProvider</code>）手动分享给其他应用（如即时通讯应用、电子邮件客户端）。</li>
       </ul>
     </section>
 
     <section id="uprawnienia">
-      <h2>3. 应用所需的权限</h2>
-      <p>为了正常运行，应用会请求以下安卓系统权限：</p>
+      <h2>4. 应用所需的权限</h2>
+      <p>为了正常运行，本应用需要申请以下 Android 系统权限：</p>
       <ul>
-        <li><strong>录制音频（麦克风）</strong> – 仅用于捕获环境声音并在设备上进行实时处理。</li>
-        <li><strong>查找/连接附近的设备（蓝牙）</strong> – 用于支持耳机和音频配件。</li>
-        <li><strong>通知</strong> – 用于显示一个常驻通知，告知应用处于活动状态并在后台运行。</li>
-        <li><strong>禁用电池优化（可选，但建议）</strong> – 应用可能会请求在安卓系统中为其禁用电池优化。这对于确保在设备屏幕关闭时音频处理服务能够稳定不间断地运行是必要的。</li>
+        <li><strong>录音 / 麦克风 (<code>RECORD_AUDIO</code>, <code>FOREGROUND_SERVICE_MICROPHONE</code>)</strong> – 仅用于采集环境声音、进行实时处理与放大，以及根据用户指令保存录音文件。</li>
+        <li><strong>发现并连接附近设备 / 蓝牙 (<code>BLUETOOTH_CONNECT</code>, <code>BLUETOOTH</code>)</strong> – 用于无线连接蓝牙耳机、助听设备及音频配件。</li>
+        <li><strong>通知权限 (<code>POST_NOTIFICATIONS</code>)</strong> – 用于显示常驻前台服务通知以提示后台音频服务正在运行（Android 系统强制要求），并用于接收重要的技术通知与版本更新提示。</li>
+        <li><strong>保持唤醒状态 (<code>WAKE_LOCK</code>)</strong> – 用于在设备屏幕关闭时，确保 DSP 芯片能够持续、不受干扰地进行实时音频处理。</li>
+        <li><strong>忽略电池优化（可选，推荐）</strong> – 本应用可能会请求免除 Android 系统的省电限制，以防止手机厂商的后台节能策略意外终止后台音频服务。</li>
       </ul>
-      <p class="muted">拒绝授予关键权限（麦克风、蓝牙、通知）将导致无法使用应用的基本功能。</p>
+      <p class="muted">拒绝授予核心权限（麦克风、通知、蓝牙）将导致本应用的核心功能无法正常使用。</p>
     </section>
 
     <section id="okres-probny">
-      <h2>4. 试用期和付款</h2>
-      <p>应用提供为期 <strong>7 天的免费试用期</strong>。试用期结束后，用户可以选择订阅或一次性购买，以继续使用应用的全部功能。</p>
-      <p>付款由 <strong>Google Play</strong> 处理。在此方面，适用 Google 的隐私政策和条款。详情请见：<a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google 隐私政策</a>。</p>
+      <h2>5. 免费试用与付款</h2>
+      <p>本应用为 PRO 会员提供 <strong>7 天免费试用期</strong>。试用期结束后，用户可选择自动续费订阅或购买终身授权（Lifetime），以无限制且无广告地使用所有高级功能。</p>
+      <p>所有支付交易均直接通过 <strong>Google Play Billing</strong> 安全结算。我们绝不处理或存储任何银行卡信息或用户结算账单信息。详情请参阅：<a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google 隐私权政策</a>。</p>
     </section>
 
     <section id="reklamy">
-        <h2>5. 广告和数据收集</h2>
-        <p>应用的免费版本（<code>Basic</code> 许可证）会显示由 Google 通过 <strong>AdMob</strong> 服务提供的广告。因此，应用中使用了以下技术：</p>
-        <ul>
-            <li><strong>Google Mobile Ads SDK：</strong> 该库可能会收集和处理数据，例如设备的唯一广告标识符（Advertising ID）、IP 地址、与广告互动的信息以及大致位置数据，以提供个性化和相关的广告内容。</li>
-            <li><strong>User Messaging Platform (UMP) SDK：</strong> 在受 GDPR 约束的地区（欧洲经济区和英国），应用使用此库来获取用户对为广告个性化目的收集和使用数据的同意。用户可以通过同意书表格管理自己的偏好。</li>
-        </ul>
-        <p>我们无法直接访问 Google 收集的数据。这些数据的使用受 Google 隐私政策的约束。要了解有关 Google 如何使用数据的更多信息，请参阅文档：<a href="https://policies.google.com/technologies/ads" rel="noopener" target="_blank">Google 隐私权及条款 – 广告</a>。</p>
+      <h2>6. 广告与数据收集</h2>
+      <p>本应用的免费版本（<code>FREE</code> 授权）展示由 Google 通过 <strong>Google AdMob</strong> 服务提供的广告。为此，本应用集成了以下技术：</p>
+      <ul>
+        <li><strong>Google Mobile Ads SDK：</strong>该库可能会收集和处理诸如设备的唯一广告标识符（Advertising ID）、IP 地址、广告互动数据以及粗略的诊断信息，用于投放并衡量广告。</li>
+        <li><strong>User Messaging Platform (UMP) SDK：</strong>在受 GDPR/ePrivacy 规则约束的地区（欧洲经济区与英国），本应用使用 UMP 平台获取并管理用户关于数据收集和个性化广告的授权许可。用户可随时在应用设置中修改自己的偏好设置。</li>
+      </ul>
+      <p class="muted">注：付费版本（TRIAL、PRO、PRO LIFETIME）完全没有广告，且广告展示模块在这些版本中会被彻底禁用。</p>
+      <p>了解更多关于 Google 如何使用广告数据的信息：<a href="https://policies.google.com/technologies/ads" rel="noopener" target="_blank">Google 隐私权与条款 – 广告</a>。</p>
     </section>
 
     <section id="zewnetrzne-uslugi">
-      <h2>6. 外部服务和库</h2>
-      <p>应用使用以下外部库：</p>
+      <h2>7. 第三方服务与开源库</h2>
+      <p>为确保卓越的音频质量、系统稳定性与完整功能，本应用使用了以下第三方服务与开源库：</p>
       <ul>
-        <li><strong>WebRTC（BSD 许可证）：</strong> 用于高级实时音频处理。以下是完整的许可证信息：</li>
+        <li><strong>Google Firebase 服务：</strong>
+          <ul>
+            <li><strong>Firebase Analytics：</strong>收集匿名的应用使用统计数据（如界面浏览量、音频模式选择、麦克风校准事件、购买事件）。统计分析<em>绝不收集</em>任何音频数据或对话内容。</li>
+            <li><strong>Firebase Crashlytics &amp; Crashlytics NDK：</strong>收集匿名的崩溃报告以及 C++ 和 Kotlin 原生错误日志，以便迅速排查故障。记录技术诊断信息（如设备型号、Android 版本、所连接的耳机类型、采样率等）。</li>
+            <li><strong>Firebase Remote Config：</strong>远程同步应用的配置参数（例如免费版本的时间阈值与最大录音时长限制）。</li>
+            <li><strong>Firebase Cloud Messaging (FCM)：</strong>接收包含重要技术通知和更新提示的推送消息（基于匿名的设备令牌）。</li>
+          </ul>
+          有关 Firebase 数据保护的更多信息：<a href="https://firebase.google.com/support/privacy" rel="noopener" target="_blank">Firebase 隐私与安全</a>。
+        </li>
+        <li><strong>WebRTC（BSD 许可证）：</strong>先进的实时音频信号处理与降噪引擎。完整的开源许可声明如下：</li>
       </ul>
       <pre>
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -124,24 +148,29 @@ Neither the name of Google nor the names of its contributors may be used to endo
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       </pre>
       <ul>
-        <li><strong>Google Play Billing Library：</strong> 用于处理订阅和一次性购买。交易通过 Google Play 系统安全地进行。</li>
+        <li><strong>Google Play Billing Library：</strong>通过 Google Play 官方架构安全管理订阅及单次内购。</li>
       </ul>
     </section>
 
     <section id="kontakt">
-      <h2>7. 联系方式</h2>
-      <p>在应用的设置中，有一个<em>联系</em>选项卡，它会打开默认的邮件程序，并将我们的地址填入收件人字段。</p>
-      <p>联系地址：<a href="mailto:kontaktsoftnest@gmail.com">kontaktsoftnest@gmail.com</a></p>
+      <h2>8. 联系我们</h2>
+      <p>应用设置中提供<em>联系我们</em>选项，可调用您设备上的默认邮件客户端。</p>
+      <p>如对本隐私政策或应用功能有任何疑问，请联系：<a href="mailto:kontaktsoftnest@gmail.com">kontaktsoftnest@gmail.com</a></p>
     </section>
 
     <section id="bezpieczenstwo">
-      <h2>8. 安全性</h2>
-      <p>由于应用不存储个人数据或将其发送到外部服务器，因此侵犯隐私的风险已降至最低。所有音频数据都在用户设备上本地处理。</p>
+      <h2>9. 安全保障</h2>
+      <p>我们采取严格的数据安全标准与保护措施：</p>
+      <ul>
+        <li>所有音频数据均在设备的运行内存（RAM）中实时即时处理，或严格保存在应用受保护的本地隔离沙盒空间内。</li>
+        <li>授权密钥与敏感的本地设置均使用 Android 硬件级密钥库（<code>EncryptedSharedPreferences</code>）进行高强度加密存储。</li>
+        <li>与 Google Firebase 及 Google Play 服务之间的数据传输均完全通过加密的 HTTPS/TLS 安全连接进行。</li>
+      </ul>
     </section>
 
     <section id="zmiany">
-      <h2>9. 政策变更</h2>
-      <p>如果法律变更或应用功能发展需要，我们保留更改本隐私政策的权利。文件的当前版本将在应用内以及 Google Play 的描述中提供。</p>
+      <h2>10. 政策变更</h2>
+      <p>我们保留在法律法规变更或应用功能升级需要时修订本隐私政策的权利。最新修订的版本将发布在同一网址下，并可直接在应用内及 Google Play 应用商店页面中随时查阅。</p>
     </section>
 
     <footer>
