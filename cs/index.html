@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Zásady ochrany osobních údajů – AuriCare - Hearing Amplifier</title>
-  <meta name="description" content="Zásady ochrany osobních údajů pro aplikaci AuriCare – Hearing Aid App" />
+  <meta name="description" content="Zásady ochrany osobních údajů aplikace AuriCare – Hearing Aid App" />
   <style>
     :root {
       --bg: #0b1020;
@@ -47,72 +47,96 @@
     <header>
       <div class="badge">Zásady ochrany osobních údajů</div>
       <h1>AuriCare - Hearing Amplifier</h1>
-      <p class="subtitle">Datum poslední aktualizace: <strong>8. října 2025</strong></p>
+      <p class="subtitle">Datum poslední aktualizace: <strong>22. září 2026</strong></p>
     </header>
 
     <nav class="toc" aria-label="Obsah">
       <ol>
         <li><a href="#info-ogolne">Obecné informace</a></li>
         <li><a href="#zakres-danych">Rozsah a způsob zpracování údajů</a></li>
+        <li><a href="#nagrania-audio">Funkce nahrávání zvuku (místní soubory)</a></li>
         <li><a href="#uprawnienia">Oprávnění vyžadovaná aplikací</a></li>
-        <li><a href="#okres-probny">Zkušební období a platby</a></li>
+        <li><a href="#okres-probny">Zkušební doba a platby</a></li>
         <li><a href="#reklamy">Reklamy a shromažďování údajů</a></li>
-        <li><a href="#zewnetrzne-uslugi">Externí služby a knihovny</a></li>
+        <li><a href="#zewnetrzne-uslugi">Externí služby a knihovny (Firebase, WebRTC)</a></li>
         <li><a href="#kontakt">Kontakt</a></li>
-        <li><a href="#bezpieczenstwo">Bezpečnost</a></li>
-        <li><a href="#zmiany">Změny v Zásadách</a></li>
+        <li><a href="#bezpieczenstwo">Zabezpečení</a></li>
+        <li><a href="#zmiany">Změny zásad</a></li>
       </ol>
     </nav>
 
     <section id="info-ogolne">
       <h2>1. Obecné informace</h2>
-      <p>Tyto Zásady ochrany osobních údajů popisují pravidla pro zpracování údajů v mobilní aplikaci <strong>AuriCare – Hearing Aid App</strong> (dále jen „Aplikace“). Dbáme na soukromí uživatelů a omezujeme zpracování údajů pouze na to, co je nezbytné pro fungování Aplikace.</p>
-      <p>Aplikace funguje lokálně na zařízení – zvuk je zpracováván přímo v paměti telefonu a <strong>není odesílán ani ukládán na žádné externí servery</strong>.</p>
+      <p>Tyto Zásady ochrany osobních údajů popisují pravidla zpracování údajů v mobilní aplikaci <strong>AuriCare – Hearing Aid App</strong> (dále jen: „Aplikace“). Dbáme na soukromí uživatelů a zpracování údajů omezujeme výhradně na to, co je nezbytné pro řádné a bezpečné fungování Aplikace.</p>
+      <p>Hlavní kanál pro zpracování zvuku funguje ze 100 % lokálně na vašem zařízení – zvukový signál z mikrofonu je upravován přímo v operační paměti (RAM) telefonu v reálném čase a <strong>není odesílán ani streamován na žádné externí servery</strong>.</p>
     </section>
 
     <section id="zakres-danych">
       <h2>2. Rozsah a způsob zpracování údajů</h2>
       <ul>
-        <li>Aplikace neshromažďuje, neprofiluje a trvale neukládá osobní údaje uživatelů.</li>
-        <li>Zaznamenaný zvuk se používá výhradně k zesílení/čištění a je zpracováván lokálně.</li>
-        <li>Nenahráváme zvukové soubory a neodesíláme je mimo zařízení uživatele.</li>
-        <li>Aplikace nepřistupuje k poloze uživatele ani k údajům z jiných aplikací.</li>
+        <li>Aplikace neshromažďuje, neprofiluje ani trvale neukládá osobní údaje uživatelů (jako je jméno, příjmení, e-mailová adresa nebo telefonní číslo).</li>
+        <li>Zvuk zachycený mikrofonem se používá výhradně k zesílení, čištění od šumu a ekvalizaci v reálném čase přímo v zařízení.</li>
+        <li>Aplikace neshromažďuje hlasové vzorky ani nezpracovává obsah konverzací pro analytické, reklamní účely nebo pro trénování modelů umělé inteligence (AI).</li>
+        <li>Aplikace nemá přístup k poloze GPS uživatele ani k soukromým datům jiných aplikací.</li>
+        <li>Aplikace zpracovává výhradně anonymní diagnostické a telemetrické údaje nezbytné pro zajištění stability a zlepšování kvality softwaru (podrobnosti v sekci 7).</li>
+      </ul>
+    </section>
+
+    <section id="nagrania-audio">
+      <h2>3. Funkce nahrávání zvuku (místní soubory)</h2>
+      <p>Aplikace nabízí volitelnou funkci nahrávání zvuku do zvukových souborů ve formátu WAV (PCM 48 kHz / 16-bit). Pravidla týkající se nahrávek:</p>
+      <ul>
+        <li><strong>Ruční spuštění:</strong> Nahrávání začíná a končí výhradně na základě výslovného a vědomého pokynu uživatele (stisknutím tlačítka nahrávání v Aplikaci). Aplikace nikdy nenahrává zvuk automaticky na pozadí bez vědomí uživatele.</li>
+        <li><strong>Místní úložiště:</strong> Všechny nahrané zvukové soubory se ukládají výhradně do místní paměti zařízení uživatele (ve vyhrazeném adresáři aplikace).</li>
+        <li><strong>Žádné odesílání do cloudu:</strong> Nahrané zvukové soubory <strong>nejsou nikdy automaticky odesílány, synchronizovány ani archivovány na žádných externích serverech</strong> či cloudových službách.</li>
+        <li><strong>Plná kontrola uživatele:</strong> Uživatel má plné právo přehrávat nahrávky prostřednictvím vestavěného přehrávače, trvale je mazat z paměti zařízení a ručně je sdílet s jinými aplikacemi (např. komunikátory, e-mailovými klienty) prostřednictvím bezpečného systémového mechanismu sdílení systému Android (<code>FileProvider</code>).</li>
       </ul>
     </section>
 
     <section id="uprawnienia">
-      <h2>3. Oprávnění vyžadovaná aplikací</h2>
-      <p>Pro správné fungování Aplikace žádá o následující systémová oprávnění Android:</p>
+      <h2>4. Oprávnění vyžadovaná aplikací</h2>
+      <p>Pro správné fungování vyžaduje Aplikace následující systémová oprávnění Android:</p>
       <ul>
-        <li><strong>Nahrávání zvuku (mikrofon)</strong> – výhradně pro zachycení zvuku z okolí a jeho zpracování v reálném čase na zařízení.</li>
-        <li><strong>Vyhledávání/připojování k zařízením v okolí (Bluetooth)</strong> – pro podporu sluchátek a audio příslušenství.</li>
-        <li><strong>Oznámení</strong> – pro zobrazení trvalého oznámení informujícího, že Aplikace je aktivní a běží na pozadí.</li>
-        <li><strong>Vypnutí optimalizace baterie (volitelné, ale doporučené)</strong> – Aplikace může požádat o vypnutí optimalizace baterie v systému Android. To je nezbytné pro zajištění stabilního a nepřerušovaného provozu služby zpracování zvuku, když je obrazovka zařízení vypnutá.</li>
+        <li><strong>Nahrávání zvuku / Mikrofon (<code>RECORD_AUDIO</code>, <code>FOREGROUND_SERVICE_MICROPHONE</code>)</strong> – výhradně k zachycení okolního zvuku, jeho zpracování a zesílení v reálném čase a k ukládání zvukových nahrávek na žádost uživatele.</li>
+        <li><strong>Hledání a připojení k zařízením v okolí / Bluetooth (<code>BLUETOOTH_CONNECT</code>, <code>BLUETOOTH</code>)</strong> – pro bezdrátovou podporu sluchátek, naslouchátek a audio příslušenství.</li>
+        <li><strong>Oznámení (<code>POST_NOTIFICATIONS</code>)</strong> – k zobrazení trvalého oznámení informujícího o aktivní zvukové službě na pozadí (požadavek systému Android) a k přijímání informačních oznámení a zpráv o aktualizacích.</li>
+        <li><strong>Zabránění přechodu procesoru do režimu spánku (<code>WAKE_LOCK</code>)</strong> – k udržení nepřetržitého a nerušeného zpracování zvuku procesorem DSP při zhasnuté obrazovce zařízení.</li>
+        <li><strong>Vypnutí optimalizace baterie (volitelné, doporučeno)</strong> – Aplikace může požádat o zrušení omezení baterie v systému Android, což zabraňuje ukončení zvukové služby na pozadí mechanismy úspory energie výrobce smartphonu.</li>
       </ul>
-      <p class="muted">Odmítnutí udělení klíčových oprávnění (mikrofon, Bluetooth, oznámení) znemožní používání základních funkcí Aplikace.</p>
+      <p class="muted">Odmítnutí udělení klíčových oprávnění (mikrofon, oznámení, Bluetooth) znemožní používání základních funkcí Aplikace.</p>
     </section>
 
     <section id="okres-probny">
-      <h2>4. Zkušební období a platby</h2>
-      <p>Aplikace nabízí <strong>7denní bezplatné zkušební období</strong>. Po jeho skončení si uživatel může zvolit předplatné nebo jednorázový nákup, aby mohl nadále využívat plnou funkčnost Aplikace.</p>
-      <p>Platby zpracovává <strong>Google Play</strong>. V tomto ohledu se uplatňují zásady ochrany osobních údajů a smluvní podmínky společnosti Google. Podrobnosti: <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Zásady ochrany soukromí společnosti Google</a>.</p>
+      <h2>5. Zkušební doba a platby</h2>
+      <p>Aplikace nabízí <strong>7denní bezplatnou zkušební dobu</strong> pro předplatné verze PRO. Po jejím skončení si může uživatel zvolit automaticky obnovované předplatné nebo zakoupení doživotní licence (Lifetime), aby mohl využívat veškeré funkce bez omezení a bez reklam.</p>
+      <p>Veškeré platební transakce jsou realizovány přímo a bezpečně prostřednictvím <strong>Google Play Billing</strong>. Nezpracováváme ani neukládáme údaje o platebních kartách ani fakturační údaje uživatelů. Podrobnosti naleznete zde: <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Zásady ochrany soukromí Google</a>.</p>
     </section>
 
     <section id="reklamy">
-        <h2>5. Reklamy a shromažďování údajů</h2>
-        <p>Bezplatná verze Aplikace (licence <code>Basic</code>) zobrazuje reklamy poskytované společností Google prostřednictvím služby <strong>AdMob</strong>. V souvislosti s tím jsou v Aplikaci využívány následující technologie:</p>
-        <ul>
-            <li><strong>Google Mobile Ads SDK:</strong> Tato knihovna může shromažďovat a zpracovávat údaje, jako je jedinečný reklamní identifikátor zařízení (Advertising ID), IP adresa, informace o interakcích s reklamami a přibližné údaje o poloze za účelem poskytování personalizovaného a relevantního reklamního obsahu.</li>
-            <li><strong>User Messaging Platform (UMP) SDK:</strong> V regionech podléhajících GDPR (EHP a Velká Británie) Aplikace používá tuto knihovnu k získání souhlasu uživatelů se shromažďováním a používáním údajů pro účely personalizace reklam. Uživatel má možnost spravovat své preference prostřednictvím formuláře souhlasu.</li>
-        </ul>
-        <p>Nemáme přímý přístup k údajům shromážděným společností Google. Používání těchto údajů podléhá zásadám ochrany osobních údajů společnosti Google. Chcete-li se dozvědět více o tom, jak Google používá údaje, přečtěte si dokument: <a href="https://policies.google.com/technologies/ads" rel="noopener" target="_blank">Zásady ochrany soukromí a smluvní podmínky společnosti Google – Reklamy</a>.</p>
+      <h2>6. Reklamy a shromažďování údajů</h2>
+      <p>Bezplatná verze Aplikace (licence <code>FREE</code>) zobrazuje reklamy poskytované společností Google prostřednictvím služby <strong>Google AdMob</strong>. V souvislosti s tím jsou využívány následující technologie:</p>
+      <ul>
+        <li><strong>Google Mobile Ads SDK:</strong> Tato knihovna může shromažďovat a zpracovávat údaje, jako je jedinečný reklamní identifikátor zařízení (Advertising ID), IP adresa, informace o interakcích s reklamami a přibližné diagnostické údaje za účelem poskytování a měření reklam.</li>
+        <li><strong>User Messaging Platform (UMP) SDK:</strong> V regionech podléhajících předpisům GDPR/ePrivacy (EHP a Spojené království) využívá Aplikace platformu UMP k získávání a správě souhlasů uživatelů se shromažďováním údajů a personalizací reklam. Uživatel může své předvolby kdykoli změnit v nastavení Aplikace.</li>
+      </ul>
+      <p class="muted">Upozornění: Placené verze (TRIAL, PRO, PRO LIFETIME) jsou zcela bez reklam a modul pro zobrazování reklam zůstává u těchto verzí zcela deaktivován.</p>
+      <p>Více informací o tom, jak společnost Google využívá data: <a href="https://policies.google.com/technologies/ads" rel="noopener" target="_blank">Ochrana soukromí a smluvní podmínky Google – Reklama</a>.</p>
     </section>
 
     <section id="zewnetrzne-uslugi">
-      <h2>6. Externí služby a knihovny</h2>
-      <p>Aplikace využívá následující externí knihovny:</p>
+      <h2>7. Externí služby a knihovny</h2>
+      <p>Pro zajištění nejvyšší kvality zvuku, stability a funkčnosti využívá Aplikace následující externí služby a knihovny:</p>
       <ul>
-        <li><strong>WebRTC (licence BSD):</strong> Používá se pro pokročilé zpracování zvuku v reálném čase. Níže je uvedena úplná licenční informace:</li>
+        <li><strong>Služby Google Firebase:</strong>
+          <ul>
+            <li><strong>Firebase Analytics:</strong> Anonymní statistiky používání aplikace (např. zobrazení obrazovek, výběr zvukových režimů, události kalibrace mikrofonu, nákupní události). Analytika <em>neshromažďuje</em> žádná zvuková data ani obsah konverzací.</li>
+            <li><strong>Firebase Crashlytics &amp; Crashlytics NDK:</strong> Shromažďování anonymních zpráv o selháních a chybách v nativním kódu C++ a Kotlin za účelem rychlého odstraňování závad. Zaznamenává technické diagnostické údaje (např. model zařízení, verze systému Android, typ připojených sluchátek, vzorkovací frekvence).</li>
+            <li><strong>Firebase Remote Config:</strong> Vzdálená synchronizace konfiguračních parametrů Aplikace (např. časové limity, limity délky nahrávek v bezplatné verzi).</li>
+            <li><strong>Firebase Cloud Messaging (FCM):</strong> Příjem push oznámení s důležitými technickými zprávami a informacemi o aktualizacích (pomocí anonymního tokenu zařízení).</li>
+          </ul>
+          Více informací o ochraně soukromí ve službě Firebase: <a href="https://firebase.google.com/support/privacy" rel="noopener" target="_blank">Ochrana soukromí a zabezpečení ve službě Firebase</a>.
+        </li>
+        <li><strong>WebRTC (licence BSD):</strong> Pokročilý engine pro potlačení šumu a zpracování zvukových signálů v reálném čase. Níže je uvedeno úplné licenční ujednání:</li>
       </ul>
       <pre>
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -124,24 +148,29 @@ Neither the name of Google nor the names of its contributors may be used to endo
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       </pre>
       <ul>
-        <li><strong>Google Play Billing Library:</strong> Pro zpracování předplatného a jednorázových nákupů. Transakce jsou bezpečně realizovány prostřednictvím systému Google Play.</li>
+        <li><strong>Google Play Billing Library:</strong> Bezpečná správa předplatných a jednorázových nákupů prostřednictvím infrastruktury Google Play.</li>
       </ul>
     </section>
 
     <section id="kontakt">
-      <h2>7. Kontakt</h2>
-      <p>V nastavení Aplikace je k dispozici záložka <em>Kontakt</em>, která otevře výchozí poštovní program s naší adresou v poli příjemce.</p>
-      <p>Kontaktní adresa: <a href="mailto:kontaktsoftnest@gmail.com">kontaktsoftnest@gmail.com</a></p>
+      <h2>8. Kontakt</h2>
+      <p>V nastavení Aplikace je k dispozici záložka <em>Kontakt</em>, která otevře výchozího e-mailového klienta ve vašem zařízení.</p>
+      <p>Kontaktní e-mailová adresa pro jakékoli dotazy týkající se soukromí a fungování aplikace: <a href="mailto:kontaktsoftnest@gmail.com">kontaktsoftnest@gmail.com</a></p>
     </section>
 
     <section id="bezpieczenstwo">
-      <h2>8. Bezpečnost</h2>
-      <p>Protože Aplikace neukládá osobní údaje ani je neodesílá na externí servery, je riziko narušení soukromí minimalizováno. Všechny zvukové údaje jsou zpracovávány lokálně na zařízení uživatele.</p>
+      <h2>9. Zabezpečení</h2>
+      <p>Uplatňujeme přísné standardy zabezpečení dat:</p>
+      <ul>
+        <li>Veškerá zvuková data jsou zpracovávána za běhu přímo v paměti RAM zařízení nebo ukládána lokálně v izolovaném prostoru aplikace.</li>
+        <li>Licenční klíče a citlivá místní nastavení jsou kryptograficky šifrována s využitím hardwarového úložiště klíčů Android KeyStore (<code>EncryptedSharedPreferences</code>).</li>
+        <li>Výměna telemetrických a konfiguračních dat se službami Google Firebase a Google Play probíhá výhradně prostřednictvím šifrovaných spojení protokolem HTTPS/TLS.</li>
+      </ul>
     </section>
 
     <section id="zmiany">
-      <h2>9. Změny v Zásadách</h2>
-      <p>Vyhrazujeme si právo provádět změny v těchto Zásadách ochrany osobních údajů, pokud to vyžadují změny v zákonech nebo vývoj funkčnosti Aplikace. Aktuální verze dokumentu bude k dispozici v Aplikaci a v popisu na Google Play.</p>
+      <h2>10. Změny zásad</h2>
+      <p>Vyhrazujeme si právo provádět změny v těchto Zásadách ochrany osobních údajů, pokud to budou vyžadovat změny v právních předpisech nebo vývoj funkcí Aplikace. Aktualizovaná verze dokumentu bude vždy zveřejněna na stejné adrese URL a bude přístupná přímo z Aplikace i z jejího profilu v obchodě Google Play.</p>
     </section>
 
     <footer>
@@ -153,4 +182,3 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
   </script>
 </body>
 </html>
-```
