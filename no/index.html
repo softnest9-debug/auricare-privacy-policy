@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Personvernerklæring – AuriCare - Hearing Amplifier</title>
-  <meta name="description" content="Personvernerklæring for AuriCare – Hearing Aid App" />
+  <meta name="description" content="Personvernerklæring for applikasjonen AuriCare – Hearing Aid App" />
   <style>
     :root {
       --bg: #0b1020;
@@ -47,72 +47,96 @@
     <header>
       <div class="badge">Personvernerklæring</div>
       <h1>AuriCare - Hearing Amplifier</h1>
-      <p class="subtitle">Sist oppdatert: <strong>8. oktober 2025</strong></p>
+      <p class="subtitle">Sist oppdatert: <strong>22. september 2026</strong></p>
     </header>
 
     <nav class="toc" aria-label="Innholdsfortegnelse">
       <ol>
         <li><a href="#info-ogolne">Generell informasjon</a></li>
-        <li><a href="#zakres-danych">Omfang og metode for databehandling</a></li>
-        <li><a href="#uprawnienia">Nødvendige app-tillatelser</a></li>
+        <li><a href="#zakres-danych">Omfang og metoder for databehandling</a></li>
+        <li><a href="#nagrania-audio">Lydopptaksfunksjon (lokale filer)</a></li>
+        <li><a href="#uprawnienia">Tillatelser som kreves av appen</a></li>
         <li><a href="#okres-probny">Prøveperiode og betalinger</a></li>
         <li><a href="#reklamy">Annonser og datainnsamling</a></li>
-        <li><a href="#zewnetrzne-uslugi">Eksterne tjenester og biblioteker</a></li>
+        <li><a href="#zewnetrzne-uslugi">Tredjepartstjenester og -biblioteker (Firebase, WebRTC)</a></li>
         <li><a href="#kontakt">Kontakt</a></li>
         <li><a href="#bezpieczenstwo">Sikkerhet</a></li>
-        <li><a href="#zmiany">Endringer i erklæringen</a></li>
+        <li><a href="#zmiany">Endringer i denne personvernerklæringen</a></li>
       </ol>
     </nav>
 
     <section id="info-ogolne">
       <h2>1. Generell informasjon</h2>
-      <p>Denne personvernerklæringen beskriver reglene for databehandling i mobilapplikasjonen <strong>AuriCare – Hearing Aid App</strong> (heretter: "Applikasjonen"). Vi verdsetter brukernes personvern og begrenser databehandlingen utelukkende til det som er nødvendig for at applikasjonen skal fungere.</p>
-      <p>Applikasjonen kjører lokalt på enheten – lyd behandles direkte i telefonens minne og <strong>blir ikke sendt til eller lagret på eksterne servere</strong>.</p>
+      <p>Denne personvernerklæringen beskriver reglene for behandling av data i mobilapplikasjonen <strong>AuriCare – Hearing Aid App</strong> (heretter kalt «appen»). Vi respekterer brukernes personvern og begrenser databehandlingen utelukkende til det som er strengt nødvendig for at appen skal fungere sikkert og optimalt.</p>
+      <p>Den primære lydbehandlingen foregår 100 % lokalt på enheten din – lydsignalet fra mikrofonen behandles i sanntid direkte i telefonens arbeidsminne (RAM), og <strong>sendes aldri eller strømmes til eksterne servere</strong>.</p>
     </section>
 
     <section id="zakres-danych">
-      <h2>2. Omfang og metode for databehandling</h2>
+      <h2>2. Omfang og metoder for databehandling</h2>
       <ul>
-        <li>Applikasjonen samler ikke inn, profilerer eller lagrer personopplysninger fra brukere på en permanent måte.</li>
-        <li>Lyd som fanges opp, brukes utelukkende til forsterkning/rensing og behandles lokalt.</li>
-        <li>Vi tar ikke opp lydfiler og sender dem ikke utenfor brukerens enhet.</li>
-        <li>Applikasjonen får ikke tilgang til brukerens posisjon eller data fra andre applikasjoner.</li>
+        <li>Appen samler ikke inn, profilerer ikke og lagrer ikke personlig identifiserbar informasjon om brukere permanent (slik som fornavn, etternavn, e-postadresse eller telefonnummer).</li>
+        <li>Lyd som fanges opp via mikrofonen, brukes utelukkende til sanntidsforsterkning, støyreduksjon og frekvensjustering direkte på enheten.</li>
+        <li>Appen samler ikke inn stemmeprøver og behandler ikke samtaleinnhold for analyse, markedsføring eller trening av modeller for kunstig intelligens (AI).</li>
+        <li>Appen har ikke tilgang til brukerens GPS-posisjon eller private data fra andre applikasjoner.</li>
+        <li>Appen behandler kun anonyme diagnose- og telemetridata som er nødvendige for å sikre systemstabilitet og forbedre programvarekvaliteten (se avsnitt 7 for detaljer).</li>
+      </ul>
+    </section>
+
+    <section id="nagrania-audio">
+      <h2>3. Lydopptaksfunksjon (lokale filer)</h2>
+      <p>Appen tilbyr en valgfri funksjon for opptak av lyd til lydfiler i WAV-format (PCM 48 kHz / 16-bit). Regler for opptak:</p>
+      <ul>
+        <li><strong>Manuell start:</strong> Opptak starter og stopper utelukkende på uttrykkelig, bevisst kommando fra brukeren (ved å trykke på opptaksknappen i appen). Appen gjør aldri lydopptak automatisk eller i bakgrunnen uten brukerens viten.</li>
+        <li><strong>Lokal lagring:</strong> Alle innspilte lydfiler lagres utelukkende i det lokale minnet på brukerens enhet (i en dedikert app-mappe).</li>
+        <li><strong>Ingen overføring til skyen:</strong> Innspilte lydfiler <strong>blir aldri automatisk sendt, synkronisert eller arkivert til eksterne servere</strong> eller skytjenester.</li>
+        <li><strong>Full brukerkontroll:</strong> Brukeren har full rett til å lytte til opptak via den innebygde avspilleren, slette dem permanent fra enhetens lagringsplass og dele dem manuelt med andre applikasjoner (f.eks. meldingsapper, e-postklienter) via Androids sikre systemdelingsmekanisme (<code>FileProvider</code>).</li>
       </ul>
     </section>
 
     <section id="uprawnienia">
-      <h2>3. Nødvendige app-tillatelser</h2>
-      <p>For å fungere korrekt, ber applikasjonen om følgende Android-systemtillatelser:</p>
+      <h2>4. Tillatelser som kreves av appen</h2>
+      <p>For å fungere korrekt ber appen om følgende Android-systemtillatelser:</p>
       <ul>
-        <li><strong>Lydopptak (mikrofon)</strong> – utelukkende for å fange opp omgivelseslyd og behandle den i sanntid på enheten.</li>
-        <li><strong>Finne/koble til enheter i nærheten (Bluetooth)</strong> – for å støtte hodetelefoner og lydtilbehør.</li>
-        <li><strong>Varsler</strong> – for å vise et permanent varsel som informerer om at applikasjonen er aktiv og kjører i bakgrunnen.</li>
-        <li><strong>Deaktivere batterioptimalisering (valgfritt, men anbefalt)</strong> – Applikasjonen kan be om å deaktivere batterioptimalisering for seg selv i Android-systemet. Dette er nødvendig for å sikre stabil og uavbrutt drift av lydbehandlingstjenesten når enhetens skjerm er av.</li>
+        <li><strong>Lydopptak / Mikrofon (<code>RECORD_AUDIO</code>, <code>FOREGROUND_SERVICE_MICROPHONE</code>)</strong> – utelukkende for å fange opp omgivelseslyd, behandle og forsterke den i sanntid, samt for å lagre lydopptak på brukerens forespørsel.</li>
+        <li><strong>Finne og koble til enheter i nærheten / Bluetooth (<code>BLUETOOTH_CONNECT</code>, <code>BLUETOOTH</code>)</strong> – for trådløs tilkobling til hodetelefoner, høreapparater og lydtilbehør.</li>
+        <li><strong>Varsler (<code>POST_NOTIFICATIONS</code>)</strong> – for å vise et fast varsel som informerer om at lydtjenesten i bakgrunnen er aktiv (et Android-systemkrav), samt for å motta informasjonsmeldinger og oppdateringsvarsler.</li>
+        <li><strong>Forhindre at prosessoren går i dvalemodus (<code>WAKE_LOCK</code>)</strong> – for å opprettholde kontinuerlig, uavbrutt lydbehandling med DSP-prosessoren når enhetens skjerm er slått av.</li>
+        <li><strong>Deaktivering av batterioptimalisering (valgfritt, anbefalt)</strong> – appen kan be om at batteribegrensninger deaktiveres i Android for å forhindre at smarttelefonprodusentens strømsparingsfunksjoner uventet avslutter bakgrunnslydtjenesten.</li>
       </ul>
-      <p class="muted">Å nekte viktige tillatelser (mikrofon, Bluetooth, varsler) vil gjøre det umulig å bruke applikasjonens grunnleggende funksjoner.</p>
+      <p class="muted">Å avslå viktige tillatelser (mikrofon, varsler, Bluetooth) vil gjøre det umulig å bruke appens kjernefunksjoner.</p>
     </section>
 
     <section id="okres-probny">
-      <h2>4. Prøveperiode og betalinger</h2>
-      <p>Applikasjonen tilbyr en <strong>7-dagers gratis prøveperiode</strong>. Etter at den er avsluttet, kan brukeren velge et abonnement eller et engangskjøp for å fortsette å bruke applikasjonens fulle funksjonalitet.</p>
-      <p>Betalinger håndteres av <strong>Google Play</strong>. Googles personvernregler og vilkår gjelder for dette. Detaljer: <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Googles personvernerklæring</a>.</p>
+      <h2>5. Prøveperiode og betalinger</h2>
+      <p>Appen tilbyr en <strong>7-dagers gratis prøveperiode</strong> for PRO-abonnementet. Etter at prøveperioden er utløpt, kan brukeren velge et abonnement som fornyes automatisk eller kjøpe en livstidslisens (Lifetime) for å bruke full funksjonalitet uten begrensninger og reklame.</p>
+      <p>Alle betalingstransaksjoner behandles direkte og sikkert via <strong>Google Play Billing</strong>. Vi verken behandler eller lagrer betalingskortinformasjon eller faktureringsdetaljer fra brukere. For detaljer: <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Googles personvernerklæring</a>.</p>
     </section>
 
     <section id="reklamy">
-        <h2>5. Annonser og datainnsamling</h2>
-        <p>Gratisversjonen av applikasjonen (<code>Basic</code>-lisens) viser annonser levert av Google via <strong>AdMob</strong>-tjenesten. I forbindelse med dette brukes følgende teknologier i applikasjonen:</p>
-        <ul>
-            <li><strong>Google Mobile Ads SDK:</strong> Dette biblioteket kan samle inn og behandle data som enhetens unike annonserings-ID (Advertising ID), IP-adresse, informasjon om interaksjoner med annonser og omtrentlige posisjonsdata for å levere personlig tilpasset og relevant annonseinnhold.</li>
-            <li><strong>User Messaging Platform (UMP) SDK:</strong> I regioner som er underlagt GDPR (EØS og Storbritannia), bruker applikasjonen dette biblioteket til å innhente samtykke fra brukere for innsamling og bruk av data for annonsepersonalisering. Brukeren har mulighet til å administrere sine preferanser via samtykkeskjemaet.</li>
-        </ul>
-        <p>Vi har ikke direkte tilgang til dataene som samles inn av Google. Bruken av disse dataene er underlagt Googles personvernerklæring. For å lære mer om hvordan Google bruker data, se dokumentet: <a href="https://policies.google.com/technologies/ads" rel="noopener" target="_blank">Googles personvern og vilkår – Annonsering</a>.</p>
+      <h2>6. Annonser og datainnsamling</h2>
+      <p>Gratisversjonen av appen (lisens <code>FREE</code>) viser annonser levert av Google via tjenesten <strong>Google AdMob</strong>. I forbindelse med dette benyttes følgende teknologier:</p>
+      <ul>
+        <li><strong>Google Mobile Ads SDK:</strong> Dette biblioteket kan samle inn og behandle data som enhetens unike annonse-ID (Advertising ID), IP-adresse, data om interaksjon med annonser og omtrentlige diagnosedata for å levere og måle annonseinnhold.</li>
+        <li><strong>User Messaging Platform (UMP) SDK:</strong> I regioner som er underlagt GDPR/ePrivacy-regler (EØS og Storbritannia), bruker appen UMP-plattformen for å innhente og administrere brukersamtykker for datainnsamling og personalisering av annonser. Brukeren kan endre preferansene sine når som helst i appinnstillingene.</li>
+      </ul>
+      <p class="muted">Merk: De betalte versjonene (TRIAL, PRO, PRO LIFETIME) er helt fri for annonser, og modulen for visning av annonser er fullstendig deaktivert for disse.</p>
+      <p>Mer informasjon om hvordan Google bruker data: <a href="https://policies.google.com/technologies/ads" rel="noopener" target="_blank">Googles personvernregler og vilkår – Annonsering</a>.</p>
     </section>
 
     <section id="zewnetrzne-uslugi">
-      <h2>6. Eksterne tjenester og biblioteker</h2>
-      <p>Applikasjonen bruker følgende eksterne biblioteker:</p>
+      <h2>7. Tredjepartstjenester og -biblioteker</h2>
+      <p>For å sikre høyeste lydkvalitet, stabilitet og funksjonalitet benytter appen følgende eksterne tjenester og biblioteker:</p>
       <ul>
-        <li><strong>WebRTC (BSD-lisens):</strong> Brukes for avansert sanntids lydbehandling. Nedenfor er den fullstendige lisensinformasjonen:</li>
+        <li><strong>Google Firebase-tjenester:</strong>
+          <ul>
+            <li><strong>Firebase Analytics:</strong> Anonym bruksstatistikk for appen (f.eks. skjermvisninger, valg av lydmoduser, mikrofonkalibreringshendelser, kjøpshendelser). Analysemodulen samler <em>ikke</em> inn noen lyddata eller samtaleinnhold.</li>
+            <li><strong>Firebase Crashlytics &amp; Crashlytics NDK:</strong> Innsamling av anonyme krasjrapporter og feil i opprinnelig C++- og Kotlin-kode for rask feilretting. Registrerer tekniske diagnosedata (f.eks. enhetsmodell, Android-versjon, type tilkoblede hodetelefoner, samplingsfrekvens).</li>
+            <li><strong>Firebase Remote Config:</strong> Ekstern synkronisering av appkonfigurasjonsparametere (f.eks. tidsgrenser, grenser for opptakslengde i gratisversjonen).</li>
+            <li><strong>Firebase Cloud Messaging (FCM):</strong> Mottak av push-varsler med viktige tekniske meldinger og oppdateringsvarsler (ved hjelp av en anonym enhetstoken).</li>
+          </ul>
+          Mer informasjon om personvern i Firebase: <a href="https://firebase.google.com/support/privacy" rel="noopener" target="_blank">Personvern og sikkerhet i Firebase</a>.
+        </li>
+        <li><strong>WebRTC (BSD-lisens):</strong> Avansert motor for støyreduksjon og sanntids lydsignalbehandling. Nedenfor følger den fullstendige lisensmerknaden:</li>
       </ul>
       <pre>
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -124,24 +148,29 @@ Neither the name of Google nor the names of its contributors may be used to endo
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       </pre>
       <ul>
-        <li><strong>Google Play Billing Library:</strong> For å håndtere abonnementer og engangskjøp. Transaksjoner utføres sikkert gjennom Google Play-systemet.</li>
+        <li><strong>Google Play Billing Library:</strong> Sikker administrasjon av abonnementer og engangskjøp i appen via infrastrukturen til Google Play.</li>
       </ul>
     </section>
 
     <section id="kontakt">
-      <h2>7. Kontakt</h2>
-      <p>I applikasjonens innstillinger er det en <em>Kontakt</em>-fane som åpner standard e-postprogram med vår adresse i mottakerfeltet.</p>
-      <p>Kontaktadresse: <a href="mailto:kontaktsoftnest@gmail.com">kontaktsoftnest@gmail.com</a></p>
+      <h2>8. Kontakt</h2>
+      <p>I appinnstillingene finner du fanen <em>Kontakt</em>, som åpner standard e-postapp på enheten din.</p>
+      <p>Kontaktadresse for alle spørsmål om personvern og bruk av appen: <a href="mailto:kontaktsoftnest@gmail.com">kontaktsoftnest@gmail.com</a></p>
     </section>
 
     <section id="bezpieczenstwo">
-      <h2>8. Sikkerhet</h2>
-      <p>Siden applikasjonen ikke lagrer personopplysninger eller sender dem til eksterne servere, er risikoen for personvernbrudd minimert. All lyddata behandles lokalt på brukerens enhet.</p>
+      <h2>9. Sikkerhet</h2>
+      <p>Vi følger strenge standarder for datasikkerhet:</p>
+      <ul>
+        <li>Alle lyddata behandles fortløpende direkte i enhetens RAM-minne eller lagres lokalt i appens isolerte, beskyttede sandkasseområde.</li>
+        <li>Lisensnøkler og sensitive lokale innstillinger er kryptografisk kryptert ved hjelp av den maskinvarebaserte nøkkellagringen Android KeyStore (<code>EncryptedSharedPreferences</code>).</li>
+        <li>Utveksling av telemetri- og konfigurasjonsdata med Google Firebase- og Google Play-tjenester foregår utelukkende via krypterte HTTPS/TLS-tilkoblinger.</li>
+      </ul>
     </section>
 
     <section id="zmiany">
-      <h2>9. Endringer i erklæringen</h2>
-      <p>Vi forbeholder oss retten til å gjøre endringer i denne personvernerklæringen hvis lovendringer eller utviklingen av applikasjonens funksjonalitet krever det. Den gjeldende versjonen av dokumentet vil være tilgjengelig i applikasjonen og i beskrivelsen på Google Play.</p>
+      <h2>10. Endringer i denne personvernerklæringen</h2>
+      <p>Vi forbeholder oss retten til å gjøre endringer i denne personvernerklæringen dersom lovendringer eller utviklingen av appens funksjoner krever det. Den oppdaterte versjonen vil alltid publiseres på samme URL og være tilgjengelig direkte fra appen og på oppføringen i Google Play.</p>
     </section>
 
     <footer>
