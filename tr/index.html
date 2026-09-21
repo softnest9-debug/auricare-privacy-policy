@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Gizlilik Politikası – AuriCare - Hearing Amplifier</title>
-  <meta name="description" content="AuriCare – Hearing Aid App uygulaması için Gizlilik Politikası" />
+  <meta name="description" content="AuriCare – Hearing Aid App uygulamasının Gizlilik Politikası" />
   <style>
     :root {
       --bg: #0b1020;
@@ -47,72 +47,96 @@
     <header>
       <div class="badge">Gizlilik Politikası</div>
       <h1>AuriCare - Hearing Amplifier</h1>
-      <p class="subtitle">Son Güncelleme Tarihi: <strong>8 Ekim 2025</strong></p>
+      <p class="subtitle">Son güncelleme tarihi: <strong>22 Eylül 2026</strong></p>
     </header>
 
     <nav class="toc" aria-label="İçindekiler">
       <ol>
         <li><a href="#info-ogolne">Genel Bilgiler</a></li>
-        <li><a href="#zakres-danych">Veri İşlemenin Kapsamı ve Yöntemi</a></li>
-        <li><a href="#uprawnienia">Uygulamanın Gerektirdiği İzinler</a></li>
+        <li><a href="#zakres-danych">Veri İşleme Kapsamı ve Yöntemleri</a></li>
+        <li><a href="#nagrania-audio">Ses Kayıt Özelliği (Yerel Dosyalar)</a></li>
+        <li><a href="#uprawnienia">Uygulama Tarafından İstenen İzinler</a></li>
         <li><a href="#okres-probny">Deneme Süresi ve Ödemeler</a></li>
         <li><a href="#reklamy">Reklamlar ve Veri Toplama</a></li>
-        <li><a href="#zewnetrzne-uslugi">Harici Hizmetler ve Kütüphaneler</a></li>
+        <li><a href="#zewnetrzne-uslugi">Üçüncü Taraf Hizmetler ve Kütüphaneler (Firebase, WebRTC)</a></li>
         <li><a href="#kontakt">İletişim</a></li>
         <li><a href="#bezpieczenstwo">Güvenlik</a></li>
-        <li><a href="#zmiany">Politikadaki Değişiklikler</a></li>
+        <li><a href="#zmiany">Bu Politikadaki Değişiklikler</a></li>
       </ol>
     </nav>
 
     <section id="info-ogolne">
       <h2>1. Genel Bilgiler</h2>
-      <p>Bu Gizlilik Politikası, <strong>AuriCare – Hearing Aid App</strong> mobil uygulamasındaki (bundan sonra "Uygulama" olarak anılacaktır) veri işleme kurallarını açıklamaktadır. Kullanıcıların gizliliğine önem veriyoruz ve veri işlemeyi yalnızca Uygulamanın çalışması için gerekli olanla sınırlıyoruz.</p>
-      <p>Uygulama yerel olarak cihazda çalışır – ses doğrudan telefonun belleğinde işlenir ve <strong>herhangi bir harici sunucuya gönderilmez veya saklanmaz</strong>.</p>
+      <p>İşbu Gizlilik Politikası, <strong>AuriCare – Hearing Aid App</strong> mobil uygulamasındaki (bundan böyle: „Uygulama”) veri işleme esaslarını açıklamaktadır. Kullanıcı gizliliğine azami önem veriyor ve veri işlemeyi yalnızca Uygulamanın düzgün ve güvenli bir şekilde çalışabilmesi için zorunlu olanla sınırlandırıyoruz.</p>
+      <p>Ana ses işleme hattı, cihazınızda %100 yerel olarak çalışır – mikrofondan alınan ses sinyali doğrudan telefonun geçici belleğinde (RAM) gerçek zamanlı olarak işlenir ve <strong>hiçbir harici sunucuya iletilmez veya akış şeklinde aktarılmaz</strong>.</p>
     </section>
 
     <section id="zakres-danych">
-      <h2>2. Veri İşlemenin Kapsamı ve Yöntemi</h2>
+      <h2>2. Veri İşleme Kapsamı ve Yöntemleri</h2>
       <ul>
-        <li>Uygulama, kullanıcıların kişisel verilerini kalıcı olarak toplamaz, profillemez ve saklamaz.</li>
-        <li>Yakalanan ses yalnızca güçlendirme/temizleme için kullanılır ve yerel olarak işlenir.</li>
-        <li>Ses dosyalarını kaydetmiyoruz ve kullanıcı cihazının dışına göndermiyoruz.</li>
-        <li>Uygulama, kullanıcının konumuna veya diğer uygulamalardan gelen verilere erişmez.</li>
+        <li>Uygulama; kullanıcıların kişisel olarak tanımlanabilir bilgilerini (ad, soyad, e-posta adresi veya telefon numarası gibi) toplamaz, profil çıkarmaz ve kalıcı olarak saklamaz.</li>
+        <li>Mikrofondan yakalanan ses, yalnızca cihaz üzerinde doğrudan gerçek zamanlı ses yükseltme, gürültü engelleme ve frekans dengeleme (ekolayzır) işlemleri için kullanılır.</li>
+        <li>Uygulama, ses örnekleri toplamaz ve konuşma içeriklerini analiz, reklam veya yapay zeka (AI) modellerinin eğitimi amacıyla işlemez.</li>
+        <li>Uygulama, kullanıcının GPS konumuna veya diğer uygulamaların depoladığı özel verilere erişmez.</li>
+        <li>Uygulama, yalnızca yazılım kararlılığını sağlamak ve kaliteyi artırmak için gerekli olan anonim teşhis ve telemetri verilerini işler (ayrıntılar Bölüm 7'de).</li>
+      </ul>
+    </section>
+
+    <section id="nagrania-audio">
+      <h2>3. Ses Kayıt Özelliği (Yerel Dosyalar)</h2>
+      <p>Uygulama, seslerin WAV formatında (PCM 48 kHz / 16-bit) ses dosyalarına kaydedilmesine olanak tanıyan isteğe bağlı bir özellik sunar. Kayıtlarla ilgili kurallar:</p>
+      <ul>
+        <li><strong>Manuel Başlatma:</strong> Kayıt, yalnızca kullanıcının açık ve bilinçli talimatıyla (Uygulama içindeki kayıt düğmesine basılarak) başlar ve sona erer. Uygulama, kullanıcının bilgisi olmadan arka planda asla otomatik veya gizli olarak ses kaydetmez.</li>
+        <li><strong>Yerel Depolama:</strong> Kaydedilen tüm ses dosyaları, yalnızca kullanıcının cihazının yerel belleğinde (Uygulamaya özel korumalı dizinde) saklanır.</li>
+        <li><strong>Buluta Gönderim Yapılmaz:</strong> Kaydedilen ses dosyaları <strong>harici sunuculara veya bulut depolama hizmetlerine asla otomatik olarak gönderilmez, senkronize edilmez veya arşivlenmez</strong>.</li>
+        <li><strong>Tam Kullanıcı Kontrolü:</strong> Kullanıcı, kayıtları dahili oynatıcı üzerinden dinleme, cihaz hafızasından kalıcı olarak silme ve güvenli Android sistem paylaşım mekanizması (<code>FileProvider</code>) aracılığıyla diğer uygulamalarla (ör. mesajlaşma uygulamaları, e-posta istemcileri) manuel olarak paylaşma konusunda tam kontrole sahiptir.</li>
       </ul>
     </section>
 
     <section id="uprawnienia">
-      <h2>3. Uygulamanın Gerektirdiği İzinler</h2>
-      <p>Düzgün çalışması için Uygulama aşağıdaki Android sistem izinlerini ister:</p>
+      <h2>4. Uygulama Tarafından İstenen İzinler</h2>
+      <p>Düzgün çalışabilmesi için Uygulama aşağıdaki Android sistem izinlerini talep eder:</p>
       <ul>
-        <li><strong>Ses kaydı (mikrofon)</strong> – yalnızca ortam sesini yakalamak ve cihazda gerçek zamanlı olarak işlemek için.</li>
-        <li><strong>Yakındaki cihazları bulma/bağlanma (Bluetooth)</strong> – kulaklıkları ve ses aksesuarlarını desteklemek için.</li>
-        <li><strong>Bildirimler</strong> – Uygulamanın aktif olduğunu ve arka planda çalıştığını bildiren kalıcı bir bildirim görüntülemek için.</li>
-        <li><strong>Pil optimizasyonunu devre dışı bırakma (isteğe bağlı, ancak önerilir)</strong> – Uygulama, Android sisteminde kendisi için pil optimizasyonunu devre dışı bırakmanızı isteyebilir. Bu, cihaz ekranı kapalıyken ses işleme hizmetinin kararlı ve kesintisiz çalışmasını sağlamak için gereklidir.</li>
+        <li><strong>Ses Kaydı / Mikrofon (<code>RECORD_AUDIO</code>, <code>FOREGROUND_SERVICE_MICROPHONE</code>)</strong> – Yalnızca ortam sesini yakalamak, gerçek zamanlı olarak işleyip yükseltmek ve kullanıcının isteği üzerine ses kayıtlarını depolamak amacıyla kullanılır.</li>
+        <li><strong>Yakındaki Cihazları Bulma ve Bağlanma / Bluetooth (<code>BLUETOOTH_CONNECT</code>, <code>BLUETOOTH</code>)</strong> – Bluetooth kulaklıklar, işitme cihazları ve ses aksesuarlarıyla kablosuz bağlantı kurmak için gereklidir.</li>
+        <li><strong>Bildirimler (<code>POST_NOTIFICATIONS</code>)</strong> – Arka plandaki ses servisinin aktif olduğunu bildiren sabit bir durum bildirimi göstermek (Android sistem gereksinimi) ve bilgilendirme duyuruları ile güncelleme bildirimlerini almak için gereklidir.</li>
+        <li><strong>İşlemcinin Uyku Moduna Geçmesini Engelleme (<code>WAKE_LOCK</code>)</strong> – Cihaz ekranı kapalıyken DSP işlemcisi tarafından kesintisiz ve sürekli ses işleme yapılabilmesini sağlamak için gereklidir.</li>
+        <li><strong>Pil Optimizasyonunu Devre Dışı Bırakma (isteğe bağlı, önerilir)</strong> – Akıllı telefon üreticisinin güç tasarrufu mekanizmalarının arka plan ses servisini beklenmedik şekilde sonlandırmasını önlemek amacıyla Uygulama, Android pil kısıtlamalarının kaldırılmasını talep edebilir.</li>
       </ul>
-      <p class="muted">Önemli izinlerin (mikrofon, Bluetooth, bildirimler) verilmemesi, Uygulamanın temel işlevlerinin kullanılmasını imkansız hale getirecektir.</p>
+      <p class="muted">Temel izinlerin (mikrofon, bildirimler, Bluetooth) reddedilmesi, Uygulamanın ana işlevlerinin kullanılmasını imkansız hale getirecektir.</p>
     </section>
 
     <section id="okres-probny">
-      <h2>4. Deneme Süresi ve Ödemeler</h2>
-      <p>Uygulama, <strong>7 günlük ücretsiz deneme süresi</strong> sunar. Süre bittikten sonra kullanıcı, Uygulamanın tüm işlevlerini kullanmaya devam etmek için bir abonelik veya tek seferlik bir satın alma seçebilir.</p>
-      <p>Ödemeler <strong>Google Play</strong> tarafından işlenir. Bu konuda Google'ın gizlilik kuralları ve şartları geçerlidir. Ayrıntılar: <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google Gizlilik Politikası</a>.</p>
+      <h2>5. Deneme Süresi ve Ödemeler</h2>
+      <p>Uygulama, PRO aboneliği için <strong>7 günlük ücretsiz deneme süresi</strong> sunar. Bu süre sona erdiğinde kullanıcı, tüm özellikleri sınırsız ve reklamsız olarak kullanabilmek için otomatik yenilenen bir aboneliği veya ömür boyu lisansı (Lifetime) satın almayı seçebilir.</p>
+      <p>Tüm ödeme işlemleri doğrudan ve güvenli bir şekilde <strong>Google Play Billing</strong> üzerinden gerçekleştirilir. Kullanıcıların ödeme kartı bilgilerini veya fatura bilgilerini işlemiyor ve saklamıyoruz. Detaylar için: <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google Gizlilik Politikası</a>.</p>
     </section>
 
     <section id="reklamy">
-        <h2>5. Reklamlar ve Veri Toplama</h2>
-        <p>Uygulamanın ücretsiz sürümü (<code>Basic</code> lisansı), Google tarafından <strong>AdMob</strong> hizmeti aracılığıyla sağlanan reklamları gösterir. Bu bağlamda, Uygulamada aşağıdaki teknolojiler kullanılmaktadır:</p>
-        <ul>
-            <li><strong>Google Mobile Ads SDK:</strong> Bu kütüphane, kişiselleştirilmiş ve alakalı reklam içeriği sunmak için cihazın benzersiz reklam kimliği (Advertising ID), IP adresi, reklamlarla etkileşim bilgileri ve yaklaşık konum verileri gibi verileri toplayabilir ve işleyebilir.</li>
-            <li><strong>User Messaging Platform (UMP) SDK:</strong> GDPR'ye tabi bölgelerde (AEA ve Birleşik Krallık), Uygulama, reklam kişiselleştirme amacıyla veri toplanması ve kullanılması için kullanıcılardan onay almak üzere bu kütüphaneyi kullanır. Kullanıcı, onay formu aracılığıyla tercihlerini yönetme olanağına sahiptir.</li>
-        </ul>
-        <p>Google tarafından toplanan verilere doğrudan erişimimiz yoktur. Bu verilerin kullanımı Google'ın gizlilik politikasına tabidir. Google'ın verileri nasıl kullandığı hakkında daha fazla bilgi edinmek için şu belgeye bakın: <a href="https://policies.google.com/technologies/ads" rel="noopener" target="_blank">Google Gizlilik ve Şartlar – Reklamcılık</a>.</p>
+      <h2>6. Reklamlar ve Veri Toplama</h2>
+      <p>Uygulamanın ücretsiz sürümü (<code>FREE</code> lisansı), Google tarafından <strong>Google AdMob</strong> hizmeti aracılığıyla sağlanan reklamları görüntüler. Bu doğrultuda aşağıdaki teknolojiler kullanılmaktadır:</p>
+      <ul>
+        <li><strong>Google Mobile Ads SDK:</strong> Bu kütüphane; reklam içeriklerini sunmak ve ölçmek amacıyla cihazın benzersiz reklam kimliği (Advertising ID), IP adresi, reklam etkileşim verileri ve yaklaşık teşhis verileri gibi bilgileri toplayabilir ve işleyebilir.</li>
+        <li><strong>User Messaging Platform (UMP) SDK:</strong> GDPR/ePrivacy düzenlemelerine tabi bölgelerde (AEA ve Birleşik Krallık), Uygulama, veri toplama ve reklam kişiselleştirme konusunda kullanıcı onaylarını almak ve yönetmek için UMP platformunu kullanır. Kullanıcı, tercihlerini Uygulama ayarlarından dilediği zaman değiştirebilir.</li>
+      </ul>
+      <p class="muted">Not: Ücretli sürümler (TRIAL, PRO, PRO LIFETIME) tamamen reklamsızdır ve reklam gösterim modülü bu sürümler için tamamen devre dışı bırakılmıştır.</p>
+      <p>Google'ın verileri nasıl kullandığı hakkında daha fazla bilgi için: <a href="https://policies.google.com/technologies/ads" rel="noopener" target="_blank">Google Gizlilik ve Şartlar – Reklamcılık</a>.</p>
     </section>
 
     <section id="zewnetrzne-uslugi">
-      <h2>6. Harici Hizmetler ve Kütüphaneler</h2>
-      <p>Uygulama aşağıdaki harici kütüphaneleri kullanır:</p>
+      <h2>7. Üçüncü Taraf Hizmetler ve Kütüphaneler</h2>
+      <p>En yüksek ses kalitesini, sistem kararlılığını ve işlevselliği sağlamak amacıyla Uygulama aşağıdaki harici hizmet ve kütüphanelerden yararlanır:</p>
       <ul>
-        <li><strong>WebRTC (BSD lisansı):</strong> Gelişmiş gerçek zamanlı ses işleme için kullanılır. Aşağıda tam lisans bilgileri bulunmaktadır:</li>
+        <li><strong>Google Firebase Hizmetleri:</strong>
+          <ul>
+            <li><strong>Firebase Analytics:</strong> Anonim uygulama kullanım istatistikleri (ör. ekran görüntülemeleri, ses modu seçimleri, mikrofon kalibrasyon etkinlikleri, satın alma işlemleri). Analitik araçları hiçbir ses verisini veya konuşma içeriğini <em>toplamaz</em>.</li>
+            <li><strong>Firebase Crashlytics &amp; Crashlytics NDK:</strong> Sorunları hızla gidermek amacıyla anonim kilitlenme raporlarının ve yerel C++ ile Kotlin hatalarının toplanması. Teknik teşhis verilerini kaydeder (ör. cihaz modeli, Android sürümü, bağlı kulaklık türü, örnekleme hızı).</li>
+            <li><strong>Firebase Remote Config:</strong> Uygulama yapılandırma parametrelerinin uzaktan senkronizasyonu (ör. zaman eşikleri, ücretsiz sürümdeki kayıt süresi sınırları).</li>
+            <li><strong>Firebase Cloud Messaging (FCM):</strong> Önemli teknik mesajlar ve güncelleme uyarıları içeren anlık (push) bildirimlerin alınması (anonim bir cihaz belirteci kullanılarak).</li>
+          </ul>
+          Firebase'de gizlilik hakkında daha fazla bilgi: <a href="https://firebase.google.com/support/privacy" rel="noopener" target="_blank">Firebase'de Gizlilik ve Güvenlik</a>.
+        </li>
+        <li><strong>WebRTC (BSD Lisansı):</strong> Gelişmiş gerçek zamanlı ses sinyali işleme ve gürültü azaltma motoru. Lisans bildirimi aşağıdadır:</li>
       </ul>
       <pre>
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -124,24 +148,29 @@ Neither the name of Google nor the names of its contributors may be used to endo
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       </pre>
       <ul>
-        <li><strong>Google Play Billing Library:</strong> Abonelikleri ve tek seferlik satın alımları yönetmek için. İşlemler Google Play sistemi üzerinden güvenli bir şekilde gerçekleştirilir.</li>
+        <li><strong>Google Play Billing Library:</strong> Google Play altyapısı aracılığıyla aboneliklerin ve tek seferlik uygulama içi satın alımların güvenli yönetimi.</li>
       </ul>
     </section>
 
     <section id="kontakt">
-      <h2>7. İletişim</h2>
-      <p>Uygulama ayarlarında, alıcı alanında adresimizle birlikte varsayılan e-posta istemcisini açan bir <em>İletişim</em> sekmesi bulunmaktadır.</p>
-      <p>İletişim adresi: <a href="mailto:kontaktsoftnest@gmail.com">kontaktsoftnest@gmail.com</a></p>
+      <h2>8. İletişim</h2>
+      <p>Uygulama ayarlarında, cihazınızdaki varsayılan e-posta uygulamasını açan bir <em>İletişim</em> sekmesi bulunmaktadır.</p>
+      <p>Gizlilik ve uygulamanın çalışmasıyla ilgili tüm sorularınız için iletişim adresi: <a href="mailto:kontaktsoftnest@gmail.com">kontaktsoftnest@gmail.com</a></p>
     </section>
 
     <section id="bezpieczenstwo">
-      <h2>8. Güvenlik</h2>
-      <p>Uygulama kişisel verileri saklamadığı veya harici sunuculara göndermediği için gizlilik ihlali riski en aza indirilmiştir. Tüm ses verileri yerel olarak kullanıcının cihazında işlenir.</p>
+      <h2>9. Güvenlik</h2>
+      <p>Sıkı veri güvenliği standartları uygulamaktayız:</p>
+      <ul>
+        <li>Tüm ses verileri, geçici olarak doğrudan cihazın RAM belleğinde işlenir veya yerel olarak uygulamanın yalıtılmış, korumalı sanal alanında (sandbox) saklanır.</li>
+        <li>Lisans anahtarları ve hassas yerel ayarlar, Android donanım tabanlı anahtar deposu (<code>EncryptedSharedPreferences</code>) kullanılarak kriptografik olarak şifrelenir.</li>
+        <li>Google Firebase ve Google Play hizmetleriyle telemetri ve yapılandırma veri alışverişi, yalnızca HTTPS/TLS protokolüyle şifrelenmiş güvenli bağlantılar üzerinden gerçekleştirilir.</li>
+      </ul>
     </section>
 
     <section id="zmiany">
-      <h2>9. Politikadaki Değişiklikler</h2>
-      <p>Yasalardaki değişiklikler veya Uygulama işlevselliğinin geliştirilmesi gerektirdiğinde bu Gizlilik Politikasında değişiklik yapma hakkını saklı tutarız. Belgenin güncel sürümü Uygulamada ve Google Play'deki açıklamada mevcut olacaktır.</p>
+      <h2>10. Bu Politikadaki Değişiklikler</h2>
+      <p>Yasal düzenlemelerdeki değişiklikler veya Uygulama işlevlerinin geliştirilmesi gerektirdiğinde bu Gizlilik Politikasında değişiklik yapma hakkımız saklıdır. Güncellenen sürüm her zaman aynı URL adresinde yayınlanacak ve doğrudan Uygulama içinden ve Google Play mağaza sayfasından erişilebilir olacaktır.</p>
     </section>
 
     <footer>
