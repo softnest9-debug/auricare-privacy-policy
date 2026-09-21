@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Privacybeleid – AuriCare - Hearing Amplifier</title>
-  <meta name="description" content="Privacybeleid voor de AuriCare – Hearing Aid App" />
+  <meta name="description" content="Privacybeleid van de applicatie AuriCare – Hearing Aid App" />
   <style>
     :root {
       --bg: #0b1020;
@@ -47,72 +47,96 @@
     <header>
       <div class="badge">Privacybeleid</div>
       <h1>AuriCare - Hearing Amplifier</h1>
-      <p class="subtitle">Laatst bijgewerkt: <strong>8 oktober 2025</strong></p>
+      <p class="subtitle">Laatst bijgewerkt: <strong>22 september 2026</strong></p>
     </header>
 
     <nav class="toc" aria-label="Inhoudsopgave">
       <ol>
         <li><a href="#info-ogolne">Algemene informatie</a></li>
-        <li><a href="#zakres-danych">Omvang en wijze van gegevensverwerking</a></li>
-        <li><a href="#uprawnienia">Vereiste app-machtigingen</a></li>
+        <li><a href="#zakres-danych">Omvang en methoden van gegevensverwerking</a></li>
+        <li><a href="#nagrania-audio">Geluidsopnamefunctie (lokale bestanden)</a></li>
+        <li><a href="#uprawnienia">Door de app vereiste machtigingen</a></li>
         <li><a href="#okres-probny">Proefperiode en betalingen</a></li>
         <li><a href="#reklamy">Advertenties en gegevensverzameling</a></li>
-        <li><a href="#zewnetrzne-uslugi">Externe diensten en bibliotheken</a></li>
+        <li><a href="#zewnetrzne-uslugi">Diensten en bibliotheken van derden (Firebase, WebRTC)</a></li>
         <li><a href="#kontakt">Contact</a></li>
         <li><a href="#bezpieczenstwo">Beveiliging</a></li>
-        <li><a href="#zmiany">Wijzigingen in het beleid</a></li>
+        <li><a href="#zmiany">Wijzigingen in dit beleid</a></li>
       </ol>
     </nav>
 
     <section id="info-ogolne">
       <h2>1. Algemene informatie</h2>
-      <p>Dit privacybeleid beschrijft de regels voor gegevensverwerking in de mobiele applicatie <strong>AuriCare – Hearing Aid App</strong> (hierna: "Applicatie"). Wij hechten waarde aan de privacy van gebruikers en beperken de gegevensverwerking uitsluitend tot wat noodzakelijk is voor de werking van de Applicatie.</p>
-      <p>De Applicatie werkt lokaal op het apparaat – audio wordt rechtstreeks in het geheugen van de telefoon verwerkt en <strong>wordt niet verzonden naar of opgeslagen op externe servers</strong>.</p>
+      <p>Dit Privacybeleid beschrijft de regels voor gegevensverwerking in de mobiele applicatie <strong>AuriCare – Hearing Aid App</strong> (hierna: „de App”). Wij hechten veel waarde aan de privacy van onze gebruikers en beperken de gegevensverwerking uitsluitend tot wat strikt noodzakelijk is voor de goede en veilige werking van de App.</p>
+      <p>De primaire audioverwerkingspijplijn werkt voor 100% lokaal op uw apparaat – het audiosignaal van de microfoon wordt in realtime rechtstreeks in het werkgeheugen (RAM) van de telefoon bewerkt en <strong>wordt niet verzonden naar of gestreamd naar externe servers</strong>.</p>
     </section>
 
     <section id="zakres-danych">
-      <h2>2. Omvang en wijze van gegevensverwerking</h2>
+      <h2>2. Omvang en methoden van gegevensverwerking</h2>
       <ul>
-        <li>De Applicatie verzamelt, profileert en bewaart geen persoonlijke gegevens van gebruikers op een permanente manier.</li>
-        <li>Opgevangen audio wordt uitsluitend gebruikt voor versterking/zuivering en wordt lokaal verwerkt.</li>
-        <li>We nemen geen audiobestanden op en verzenden deze niet buiten het apparaat van de gebruiker.</li>
-        <li>De Applicatie heeft geen toegang tot de locatie van de gebruiker of gegevens van andere applicaties.</li>
+        <li>De App verzamelt, profileert of bewaart geen persoonsgegevens van gebruikers permanent (zoals voor- en achternaam, e-mailadres of telefoonnummer).</li>
+        <li>Het via de microfoon opgevangen geluid wordt uitsluitend gebruikt voor realtime geluidsversterking, ruisonderdrukking en frequentiecorrectie direct op het apparaat.</li>
+        <li>De App verzamelt geen stemmonsters en verwerkt geen gespreksinhoud voor analytische doeleinden, reclame of het trainen van modellen voor kunstmatige intelligentie (AI).</li>
+        <li>De App heeft geen toegang tot de GPS-locatie van de gebruiker of tot privégegevens van andere applicaties.</li>
+        <li>De App verwerkt uitsluitend anonieme diagnostische en telemetrische gegevens die noodzakelijk zijn voor het waarborgen van de stabiliteit en het verbeteren van de kwaliteit van de software (zie paragraaf 7 voor details).</li>
+      </ul>
+    </section>
+
+    <section id="nagrania-audio">
+      <h2>3. Geluidsopnamefunctie (lokale bestanden)</h2>
+      <p>De App biedt een optionele functie voor het opnemen van geluid naar audiobestanden in WAV-formaat (PCM 48 kHz / 16-bits). Regels omtrent opnamen:</p>
+      <ul>
+        <li><strong>Handmatige activering:</strong> Het opnemen start en stopt uitsluitend op uitdrukkelijk en bewust verzoek van de gebruiker (door op de opnameknop in de App te drukken). De App neemt nooit automatisch of op de achtergrond geluid op zonder medeweten van de gebruiker.</li>
+        <li><strong>Lokale opslag:</strong> Alle opgenomen audiobestanden worden uitsluitend opgeslagen in het lokale geheugen van het apparaat van de gebruiker (in een speciale applicatiemap).</li>
+        <li><strong>Geen overdracht naar de cloud:</strong> Opgenomen audiobestanden <strong>worden nooit automatisch verzonden, gesynchroniseerd of gearchiveerd op externe servers</strong> of clouddiensten.</li>
+        <li><strong>Volledige controle voor de gebruiker:</strong> De gebruiker heeft het volledige recht om opnames af te spelen via de ingebouwde speler, ze permanent uit het geheugen van het apparaat te verwijderen en ze handmatig te delen met andere applicaties (zoals chatapps of e-mailclients) via het veilige deelsysteem van Android (<code>FileProvider</code>).</li>
       </ul>
     </section>
 
     <section id="uprawnienia">
-      <h2>3. Vereiste app-machtigingen</h2>
-      <p>Voor een correcte werking vraagt de Applicatie om de volgende Android-systeemmachtigingen:</p>
+      <h2>4. Door de app vereiste machtigingen</h2>
+      <p>Voor een goede werking vraagt de App de volgende Android-systeemmachtigingen:</p>
       <ul>
-        <li><strong>Audio opnemen (microfoon)</strong> – uitsluitend voor het opvangen van omgevingsgeluid en de real-time verwerking ervan op het apparaat.</li>
-        <li><strong>Apparaten in de buurt zoeken/verbinden (Bluetooth)</strong> – voor de ondersteuning van hoofdtelefoons en audio-accessoires.</li>
-        <li><strong>Meldingen</strong> – voor het weergeven van een permanente melding die aangeeft dat de Applicatie actief is en op de achtergrond draait.</li>
-        <li><strong>Uitschakelen van batterij-optimalisatie (optioneel, maar aanbevolen)</strong> – De Applicatie kan vragen om batterij-optimalisatie voor haar uit te schakelen in het Android-systeem. Dit is noodzakelijk om een stabiele en ononderbroken werking van de audioverwerkingsservice te garanderen wanneer het scherm van het apparaat is uitgeschakeld.</li>
+        <li><strong>Geluidsopname / Microfoon (<code>RECORD_AUDIO</code>, <code>FOREGROUND_SERVICE_MICROPHONE</code>)</strong> – uitsluitend voor het opvangen van omgevingsgeluid, de realtime verwerking en versterking ervan, en het opslaan van audio-opnames op verzoek van de gebruiker.</li>
+        <li><strong>Apparaten in de buurt zoeken en verbinden / Bluetooth (<code>BLUETOOTH_CONNECT</code>, <code>BLUETOOTH</code>)</strong> – voor draadloze verbinding met hoofdtelefoons, gehoorapparaten en audioaccessoires.</li>
+        <li><strong>Meldingen (<code>POST_NOTIFICATIONS</code>)</strong> – voor het tonen van een permanente statusmelding dat de audioservice op de achtergrond actief is (een Android-systeemvereiste) en voor het ontvangen van informatieve mededelingen en updateberichten.</li>
+        <li><strong>Slaapstand van processor voorkomen (<code>WAKE_LOCK</code>)</strong> – om een continue, ononderbroken audioverwerking door de DSP-processor te handhaven wanneer het scherm van het apparaat is uitgeschakeld.</li>
+        <li><strong>Batterijoptimalisatie uitschakelen (optioneel, aanbevolen)</strong> – de App kan vragen om batterijbeperkingen in Android uit te schakelen, om te voorkomen dat energiebesparingsmechanismen van de smartphonefabrikant de audioservice op de achtergrond voortijdig beëindigen.</li>
       </ul>
-      <p class="muted">Het weigeren van cruciale machtigingen (microfoon, Bluetooth, meldingen) maakt het onmogelijk om de basisfuncties van de Applicatie te gebruiken.</p>
+      <p class="muted">Het weigeren van cruciale machtigingen (microfoon, meldingen, Bluetooth) maakt het gebruik van de basisfuncties van de App onmogelijk.</p>
     </section>
 
     <section id="okres-probny">
-      <h2>4. Proefperiode en betalingen</h2>
-      <p>De Applicatie biedt een <strong>gratis proefperiode van 7 dagen</strong>. Na afloop kan de gebruiker kiezen voor een abonnement of een eenmalige aankoop om de volledige functionaliteit van de Applicatie te blijven gebruiken.</p>
-      <p>Betalingen worden afgehandeld door <strong>Google Play</strong>. Hiervoor gelden de privacyregels en voorwaarden van Google. Details: <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google Privacybeleid</a>.</p>
+      <h2>5. Proefperiode en betalingen</h2>
+      <p>De App biedt een <strong>gratis proefperiode van 7 dagen</strong> voor het PRO-abonnement. Na afloop van deze periode kan de gebruiker kiezen voor een automatisch verlengend abonnement of de aankoop van een permanente licentie (Lifetime) om zonder beperkingen en advertentievrij gebruik te maken van de volledige functionaliteit.</p>
+      <p>Alle betalingstransacties worden rechtstreeks en veilig afgehandeld via <strong>Google Play Billing</strong>. Wij verwerken of bewaren geen betaalkaartgegevens of factuurgegevens van gebruikers. Details: <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Privacybeleid van Google</a>.</p>
     </section>
 
     <section id="reklamy">
-        <h2>5. Advertenties en gegevensverzameling</h2>
-        <p>De gratis versie van de Applicatie (licentie <code>Basic</code>) toont advertenties die worden geleverd door Google via de <strong>AdMob</strong>-service. In verband hiermee worden de volgende technologieën in de Applicatie gebruikt:</p>
-        <ul>
-            <li><strong>Google Mobile Ads SDK:</strong> Deze bibliotheek kan gegevens verzamelen en verwerken, zoals de unieke advertentie-ID van het apparaat (Advertising ID), het IP-adres, informatie over interacties met advertenties en geschatte locatiegegevens om gepersonaliseerde en relevante advertentie-inhoud te leveren.</li>
-            <li><strong>User Messaging Platform (UMP) SDK:</strong> In regio's die onder de AVG vallen (EER en het VK), gebruikt de Applicatie deze bibliotheek om toestemming van gebruikers te verkrijgen voor het verzamelen en gebruiken van gegevens voor advertentiepersonalisatie. De gebruiker heeft de mogelijkheid om zijn voorkeuren te beheren via het toestemmingsformulier.</li>
-        </ul>
-        <p>Wij hebben geen directe toegang tot de gegevens die door Google worden verzameld. Het gebruik van deze gegevens is onderworpen aan het privacybeleid van Google. Voor meer informatie over hoe Google gegevens gebruikt, raadpleeg het document: <a href="https://policies.google.com/technologies/ads" rel="noopener" target="_blank">Privacy- en servicevoorwaarden van Google – Advertenties</a>.</p>
+      <h2>6. Advertenties en gegevensverzameling</h2>
+      <p>De gratis versie van de App (licentie <code>FREE</code>) toont advertenties die door Google worden geleverd via de dienst <strong>Google AdMob</strong>. Hiervoor worden de volgende technologieën gebruikt:</p>
+      <ul>
+        <li><strong>Google Mobile Ads SDK:</strong> Deze bibliotheek kan gegevens verzamelen en verwerken, zoals de unieke advertentie-ID van het apparaat (Advertising ID), IP-adres, gegevens over interacties met advertenties en geschatte diagnostische gegevens om advertenties weer te geven en te meten.</li>
+        <li><strong>User Messaging Platform (UMP) SDK:</strong> In regio's die onderworpen zijn aan de AVG/GDPR- en ePrivacy-wetgeving (EER en het VK) gebruikt de App het UMP-platform om toestemming van gebruikers te verkrijgen en te beheren met betrekking tot gegevensverzameling en advertentiepersonalisatie. De gebruiker kan zijn voorkeuren op elk moment aanpassen in de instellingen van de App.</li>
+      </ul>
+      <p class="muted">Opmerking: Betaalde versies (TRIAL, PRO, PRO LIFETIME) zijn volledig vrij van reclame; de module voor het weergeven van advertenties blijft voor deze versies volledig uitgeschakeld.</p>
+      <p>Meer informatie over hoe Google omgaat met gegevens: <a href="https://policies.google.com/technologies/ads" rel="noopener" target="_blank">Privacybeleid en servicevoorwaarden van Google – Advertenties</a>.</p>
     </section>
 
     <section id="zewnetrzne-uslugi">
-      <h2>6. Externe diensten en bibliotheken</h2>
-      <p>De Applicatie maakt gebruik van de volgende externe bibliotheken:</p>
+      <h2>7. Diensten en bibliotheken van derden</h2>
+      <p>Om de hoogste audiokwaliteit, stabiliteit en functionaliteit te waarborgen, maakt de App gebruik van de volgende externe diensten en bibliotheken:</p>
       <ul>
-        <li><strong>WebRTC (BSD-licentie):</strong> Gebruikt voor geavanceerde real-time audioverwerking. Hieronder vindt u de volledige licentie-informatie:</li>
+        <li><strong>Google Firebase-diensten:</strong>
+          <ul>
+            <li><strong>Firebase Analytics:</strong> Anonieme gebruiksstatistieken van de app (bijv. schermweergaven, selectie van audiomodi, microfoonkalibratiegebeurtenissen, aankoopacties). Analytics verzamelt <em>geen</em> audiogegevens of gespreksinhoud.</li>
+            <li><strong>Firebase Crashlytics &amp; Crashlytics NDK:</strong> Verzamelen van anonieme crashrapporten en native C++- en Kotlin-fouten om problemen snel op te sporen en te verhelpen. Registreert technische diagnostische gegevens (zoals apparaatmodel, Android-versie, type aangesloten hoofdtelefoon, bemonsteringsfrequentie).</li>
+            <li><strong>Firebase Remote Config:</strong> Externe synchronisatie van configuratieparameters van de App (bijv. tijdsdrempels, maximale opnameduur in de gratis versie).</li>
+            <li><strong>Firebase Cloud Messaging (FCM):</strong> Ontvangst van pushmeldingen met belangrijke technische mededelingen en updateberichten (met behulp van een anoniem apparaattoken).</li>
+          </ul>
+          Meer informatie over gegevensbescherming in Firebase: <a href="https://firebase.google.com/support/privacy" rel="noopener" target="_blank">Privacy en beveiliging in Firebase</a>.
+        </li>
+        <li><strong>WebRTC (BSD-licentie):</strong> Geavanceerde engine voor realtime ruisonderdrukking en audiosignaalverwerking. Hieronder volgt de volledige licentiemelding:</li>
       </ul>
       <pre>
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -124,24 +148,29 @@ Neither the name of Google nor the names of its contributors may be used to endo
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       </pre>
       <ul>
-        <li><strong>Google Play Billing Library:</strong> Voor het afhandelen van abonnementen en eenmalige aankopen. Transacties worden veilig uitgevoerd via het Google Play-systeem.</li>
+        <li><strong>Google Play Billing Library:</strong> Veilige afhandeling van abonnementen en eenmalige in-app aankopen via de Google Play-infrastructuur.</li>
       </ul>
     </section>
 
     <section id="kontakt">
-      <h2>7. Contact</h2>
-      <p>In de instellingen van de Applicatie is een tabblad <em>Contact</em> beschikbaar, dat het standaard e-mailprogramma opent met ons adres in het ontvangersveld.</p>
-      <p>Contactadres: <a href="mailto:kontaktsoftnest@gmail.com">kontaktsoftnest@gmail.com</a></p>
+      <h2>8. Contact</h2>
+      <p>In de instellingen van de App is het tabblad <em>Contact</em> beschikbaar, dat het standaard e-mailprogramma op uw apparaat opent.</p>
+      <p>Contactadres voor alle vragen met betrekking tot privacy en de werking van de applicatie: <a href="mailto:kontaktsoftnest@gmail.com">kontaktsoftnest@gmail.com</a></p>
     </section>
 
     <section id="bezpieczenstwo">
-      <h2>8. Beveiliging</h2>
-      <p>Omdat de Applicatie geen persoonlijke gegevens opslaat of naar externe servers verzendt, is het risico op privacyschending geminimaliseerd. Alle audiogegevens worden lokaal op het apparaat van de gebruiker verwerkt.</p>
+      <h2>9. Beveiliging</h2>
+      <p>Wij hanteren strikte normen voor gegevensbeveiliging:</p>
+      <ul>
+        <li>Alle audiogegevens worden direct verwerkt in het vluchtige RAM-geheugen van het apparaat of lokaal opgeslagen in de geïsoleerde, beveiligde sandbox-omgeving van de app.</li>
+        <li>Licentiesleutels en gevoelige lokale instellingen worden cryptografisch versleuteld met behulp van de hardwarematige sleutelopslag Android KeyStore (<code>EncryptedSharedPreferences</code>).</li>
+        <li>De uitwisseling van telemetrie- en configuratiegegevens met de diensten van Google Firebase en Google Play verloopt uitsluitend via beveiligde, versleutelde HTTPS/TLS-verbindingen.</li>
+      </ul>
     </section>
 
     <section id="zmiany">
-      <h2>9. Wijzigingen in het beleid</h2>
-      <p>Wij behouden ons het recht voor om wijzigingen aan te brengen in dit privacybeleid als dit vereist is door wetswijzigingen of de ontwikkeling van de functionaliteit van de Applicatie. De huidige versie van het document zal beschikbaar zijn in de Applicatie en in de beschrijving op Google Play.</p>
+      <h2>10. Wijzigingen in dit beleid</h2>
+      <p>Wij behouden ons het recht voor om wijzigingen aan te brengen in dit Privacybeleid indien wetswijzigingen of de verdere ontwikkeling van de functies van de App dit vereisen. De bijgewerkte versie zal telkens onder dezelfde URL worden gepubliceerd en rechtstreeks toegankelijk zijn vanuit de App en op de pagina in Google Play.</p>
     </section>
 
     <footer>
