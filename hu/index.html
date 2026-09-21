@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Adatvédelmi irányelvek – AuriCare - Hearing Amplifier</title>
-  <meta name="description" content="Az AuriCare – Hearing Aid App adatvédelmi irányelvei" />
+  <title>Adatvédelmi szabályzat – AuriCare - Hearing Amplifier</title>
+  <meta name="description" content="Az AuriCare – Hearing Aid App alkalmazás adatvédelmi szabályzata" />
   <style>
     :root {
       --bg: #0b1020;
@@ -45,74 +45,98 @@
 <body>
   <div class="container">
     <header>
-      <div class="badge">Adatvédelmi irányelvek</div>
+      <div class="badge">Adatvédelmi szabályzat</div>
       <h1>AuriCare - Hearing Amplifier</h1>
-      <p class="subtitle">Utolsó frissítés: <strong>2025. október 8.</strong></p>
+      <p class="subtitle">Utolsó frissítés dátuma: <strong>2026. szeptember 22.</strong></p>
     </header>
 
     <nav class="toc" aria-label="Tartalomjegyzék">
       <ol>
-        <li><a href="#altalanos-informaciok">Általános információk</a></li>
-        <li><a href="#adatkezeles-hatokore">Adatkezelés hatóköre és módja</a></li>
-        <li><a href="#engedelyek">Az alkalmazás által igényelt engedélyek</a></li>
-        <li><a href="#probaidoszak-fizetesek">Próbaidőszak és fizetések</a></li>
-        <li><a href="#hirdetesek-adatgyujtes">Hirdetések és adatgyűjtés</a></li>
-        <li><a href="#kulso-szolgaltatasok">Külső szolgáltatások és könyvtárak</a></li>
-        <li><a href="#kapcsolat">Kapcsolat</a></li>
-        <li><a href="#biztonsag">Biztonság</a></li>
-        <li><a href="#modositasok">Az irányelvek módosítása</a></li>
+        <li><a href="#info-ogolne">Általános információk</a></li>
+        <li><a href="#zakres-danych">Az adatkezelés köre és módja</a></li>
+        <li><a href="#nagrania-audio">Hangrögzítési funkció (helyi fájlok)</a></li>
+        <li><a href="#uprawnienia">Az alkalmazás által igényelt engedélyek</a></li>
+        <li><a href="#okres-probny">Próbaidőszak és fizetések</a></li>
+        <li><a href="#reklamy">Hirdetések és adatgyűjtés</a></li>
+        <li><a href="#zewnetrzne-uslugi">Külső szolgáltatások és programkönyvtárak (Firebase, WebRTC)</a></li>
+        <li><a href="#kontakt">Kapcsolat</a></li>
+        <li><a href="#bezpieczenstwo">Biztonság</a></li>
+        <li><a href="#zmiany">A szabályzat módosításai</a></li>
       </ol>
     </nav>
 
-    <section id="altalanos-informaciok">
+    <section id="info-ogolne">
       <h2>1. Általános információk</h2>
-      <p>Jelen Adatvédelmi irányelvek az <strong>AuriCare – Hearing Aid App</strong> mobilalkalmazás (a továbbiakban: „Alkalmazás”) adatkezelési elveit írják le. Törődünk a felhasználók magánéletével, és az adatkezelést kizárólag arra korlátozzuk, ami az Alkalmazás működéséhez szükséges.</p>
-      <p>Az Alkalmazás helyileg, az eszközön működik – a hang feldolgozása közvetlenül a telefon memóriájában történik, és <strong>nem kerül továbbításra vagy tárolásra semmilyen külső szerveren</strong>.</p>
+      <p>Jelen Adatvédelmi szabályzat ismerteti az adatkezelési elveket az <strong>AuriCare – Hearing Aid App</strong> mobilalkalmazásban (a továbbiakban: „Alkalmazás”). Kiemelten védjük a felhasználók magánéletét, és az adatkezelést kizárólag arra korlátozzuk, ami az Alkalmazás megfelelő és biztonságos működéséhez elengedhetetlenül szükséges.</p>
+      <p>A fő hangfeldolgozási folyamat 100%-ban helyileg működik az eszközén – a mikrofonból érkező hangjelet a rendszer valós időben közvetlenül a telefon memóriájában (RAM) módosítja, és <strong>nem továbbítja, illetve nem streameli semmilyen külső szerverre</strong>.</p>
     </section>
 
-    <section id="adatkezeles-hatokore">
-      <h2>2. Adatkezelés hatóköre és módja</h2>
+    <section id="zakres-danych">
+      <h2>2. Az adatkezelés köre és módja</h2>
       <ul>
-        <li>Az Alkalmazás nem gyűjti, nem profilozza és nem tárolja tartósan a felhasználók személyes adatait.</li>
-        <li>A rögzített hangot kizárólag erősítésre/tisztításra használjuk, és helyben dolgozzuk fel.</li>
-        <li>Nem rögzítünk hangfájlokat, és nem továbbítjuk azokat a felhasználó eszközén kívülre.</li>
-        <li>Az Alkalmazás nem fér hozzá a felhasználó tartózkodási helyéhez vagy más alkalmazások adataihoz.</li>
+        <li>Az Alkalmazás nem gyűjti, nem profilozza és nem tárolja tartósan a felhasználók személyes azonosításra alkalmas adatait (például név, e-mail cím vagy telefonszám).</li>
+        <li>A mikrofon által rögzített hangot kizárólag valós idejű hangerősítésre, zajcsökkentésre és frekvenciaszabályozásra használjuk közvetlenül az eszközön.</li>
+        <li>Az Alkalmazás nem gyűjt hangmintákat, és nem dolgozza fel a beszélgetések tartalmát analitikai, hirdetési célból vagy mesterséges intelligencia (MI) modellek tanításához.</li>
+        <li>Az Alkalmazás nem fér hozzá a felhasználó GPS-helyzetéhez, sem más alkalmazások privát adataihoz.</li>
+        <li>Az Alkalmazás kizárólag olyan névtelen diagnosztikai és telemetriai adatokat dolgoz fel, amelyek elengedhetetlenek a szoftver stabilitásának biztosításához és a minőség javításához (részletek a 7. szakaszban).</li>
       </ul>
     </section>
 
-    <section id="engedelyek">
-      <h2>3. Az alkalmazás által igényelt engedélyek</h2>
+    <section id="nagrania-audio">
+      <h2>3. Hangrögzítési funkció (helyi fájlok)</h2>
+      <p>Az Alkalmazás opcionális hangrögzítési funkciót kínál WAV formátumú (PCM 48 kHz / 16 bites) hangfájlokba. A rögzítésekre vonatkozó szabályok:</p>
+      <ul>
+        <li><strong>Kézi indítás:</strong> A felvétel kizárólag a felhasználó kifejezett, tudatos utasítására indul el és fejeződik be (az Alkalmazásban található felvétel gomb megnyomásával). Az Alkalmazás soha nem rögzít hangot önállóan a háttérben a felhasználó tudta nélkül.</li>
+        <li><strong>Helyi tárolás:</strong> Minden rögzített hangfájl kizárólag a felhasználó eszközének helyi tárhelyére kerül mentésre (az Alkalmazás számára kijelölt mappába).</li>
+        <li><strong>Nincs felhőbe küldés:</strong> A rögzített hangfájlok <strong>soha nem kerülnek automatikusan továbbításra, szinkronizálásra vagy archiválásra semmilyen külső szerverre</strong> vagy felhőszolgáltatásba.</li>
+        <li><strong>Teljes felhasználói ellenőrzés:</strong> A felhasználónak teljes joga van a felvételek meghallgatására a beépített lejátszóval, azok végleges törlésére az eszköz tárhelyéről, valamint kézi megosztására más alkalmazásokkal (pl. üzenetküldőkkel, e-mail kliensekkel) a biztonságos Android rendszerbeli megosztási mechanizmuson (<code>FileProvider</code>) keresztül.</li>
+      </ul>
+    </section>
+
+    <section id="uprawnienia">
+      <h2>4. Az alkalmazás által igényelt engedélyek</h2>
       <p>A megfelelő működéshez az Alkalmazás a következő Android rendszerengedélyeket kéri:</p>
       <ul>
-        <li><strong>Hangrögzítés (mikrofon)</strong> – kizárólag a környezeti hangok rögzítésére és valós idejű feldolgozására az eszközön.</li>
-        <li><strong>Közeli eszközök keresése/csatlakoztatása (Bluetooth)</strong> – fejhallgatók és audio-kiegészítők kezeléséhez.</li>
-        <li><strong>Értesítések</strong> – egy állandó értesítés megjelenítéséhez, amely jelzi, hogy az Alkalmazás aktív és a háttérben fut.</li>
-        <li><strong>Akkumulátor-optimalizálás kikapcsolása (opcionális, de ajánlott)</strong> – Az Alkalmazás kérheti az akkumulátor-optimalizálás kikapcsolását az Android rendszerben. Ez szükséges a hangfeldolgozó szolgáltatás stabil és megszakítás nélküli működésének biztosításához, amikor az eszköz képernyője ki van kapcsolva.</li>
+        <li><strong>Hangrögzítés / Mikrofon (<code>RECORD_AUDIO</code>, <code>FOREGROUND_SERVICE_MICROPHONE</code>)</strong> – kizárólag a környezeti hangok rögzítésére, azok valós idejű feldolgozására és erősítésére, valamint a felhasználó kérésére történő hangfelvételek mentésére.</li>
+        <li><strong>Közeli eszközök keresése és csatlakozás / Bluetooth (<code>BLUETOOTH_CONNECT</code>, <code>BLUETOOTH</code>)</strong> – vezeték nélküli fejhallgatók, hallókészülékek és audiotartozékok kezeléséhez.</li>
+        <li><strong>Értesítések (<code>POST_NOTIFICATIONS</code>)</strong> – a háttérben futó aktív audioszolgáltatásról tájékoztató állandó értesítés megjelenítéséhez (Android rendszerkövetelmény), valamint tájékoztató jellegű értesítések és frissítési üzenetek fogadásához.</li>
+        <li><strong>Processzor alvó állapotának megakadályozása (<code>WAKE_LOCK</code>)</strong> – a DSP processzor általi folyamatos, zavartalan hangfeldolgozás fenntartásához, amikor az eszköz képernyője ki van kapcsolva.</li>
+        <li><strong>Akkumulátor-optimalizálás kikapcsolása (opcionális, ajánlott)</strong> – az Alkalmazás kérheti az Android akkumulátorkorlátozásainak feloldását, ami megakadályozza, hogy az okostelefon gyártójának energiatakarékos mechanizmusai idő előtt leállítsák a háttérben futó audioszolgáltatást.</li>
       </ul>
-      <p class="muted">A kulcsfontosságú engedélyek (mikrofon, Bluetooth, értesítések) megadásának megtagadása megakadályozza az Alkalmazás alapvető funkcióinak használatát.</p>
+      <p class="muted">A kulcsfontosságú engedélyek (mikrofon, értesítések, Bluetooth) megtagadása ellehetetleníti az Alkalmazás alapvető funkcióinak használatát.</p>
     </section>
 
-    <section id="probaidoszak-fizetesek">
-      <h2>4. Próbaidőszak és fizetések</h2>
-      <p>Az Alkalmazás <strong>7 napos ingyenes próbaidőszakot</strong> kínál. Ennek lejárta után a felhasználó előfizetést vagy egyszeri vásárlást választhat az Alkalmazás teljes funkcionalitásának további használatához.</p>
-      <p>A fizetéseket a <strong>Google Play</strong> kezeli. E tekintetben a Google adatvédelmi irányelvei és szolgáltatási feltételei érvényesek. Részletek: <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">A Google adatvédelmi irányelvei</a>.</p>
+    <section id="okres-probny">
+      <h2>5. Próbaidőszak és fizetések</h2>
+      <p>Az Alkalmazás <strong>7 napos ingyenes próbaidőszakot</strong> kínál a PRO előfizetéshez. Ennek lejárta után a felhasználó választhat az automatikusan megújuló előfizetés vagy az élethosszig tartó licenc (Lifetime) megvásárlása között, hogy korlátozások nélkül és hirdetésmentesen élvezhesse a teljes funkcionalitást.</p>
+      <p>Minden fizetési tranzakció közvetlenül és biztonságosan a <strong>Google Play Billing</strong> rendszerén keresztül történik. Nem kezelünk és nem tárolunk semmilyen bankkártyaadatot vagy felhasználói számlázási információt. Részletek: <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google Adatvédelmi irányelvek</a>.</p>
     </section>
 
-    <section id="hirdetesek-adatgyujtes">
-        <h2>5. Hirdetések és adatgyűjtés</h2>
-        <p>Az Alkalmazás ingyenes verziója (<code>Basic</code> licenc) a Google által az <strong>AdMob</strong> szolgáltatáson keresztül biztosított hirdetéseket jelenít meg. Ezzel összefüggésben az Alkalmazás a következő technológiákat használja:</p>
-        <ul>
-            <li><strong>Google Mobile Ads SDK:</strong> Ez a könyvtár gyűjthet és feldolgozhat olyan adatokat, mint az eszköz egyedi hirdetési azonosítója (Advertising ID), IP-cím, a hirdetésekkel való interakciókra vonatkozó információk és hozzávetőleges helyadatok a személyre szabott és releváns hirdetési tartalmak megjelenítése érdekében.</li>
-            <li><strong>User Messaging Platform (UMP) SDK:</strong> A GDPR hatálya alá tartozó régiókban (EGT és Egyesült Királyság) az Alkalmazás ezt a könyvtárat használja a felhasználók hozzájárulásának megszerzéséhez a hirdetések személyre szabása céljából történő adatgyűjtéshez és -felhasználáshoz. A felhasználónak lehetősége van a hozzájárulási űrlapon keresztül kezelni preferenciáit.</li>
-        </ul>
-        <p>Nincs közvetlen hozzáférésünk a Google által gyűjtött adatokhoz. Ezen adatok felhasználására a Google adatvédelmi irányelvei vonatkoznak. Ha többet szeretne megtudni arról, hogyan használja a Google az adatokat, kérjük, olvassa el a következő dokumentumot: <a href="https://policies.google.com/technologies/ads" rel="noopener" target="_blank">Google Adatvédelem és Általános Szerződési Feltételek – Hirdetések</a>.</p>
-    </section>
-
-    <section id="kulso-szolgaltatasok">
-      <h2>6. Külső szolgáltatások és könyvtárak</h2>
-      <p>Az Alkalmazás a következő külső könyvtárakat használja:</p>
+    <section id="reklamy">
+      <h2>6. Hirdetések és adatgyűjtés</h2>
+      <p>Az Alkalmazás ingyenes verziója (<code>FREE</code> licenc) a Google által a <strong>Google AdMob</strong> szolgáltatáson keresztül biztosított hirdetéseket jelenít meg. Ezzel összefüggésben a következő technológiák kerülnek felhasználásra:</p>
       <ul>
-        <li><strong>WebRTC (BSD licenc):</strong> Fejlett, valós idejű hangfeldolgozásra használatos. Az alábbiakban található a teljes licencinformáció:</li>
+        <li><strong>Google Mobile Ads SDK:</strong> Ez a programkönyvtár olyan adatokat gyűjthet és dolgozhat fel hirdetések megjelenítése és mérése céljából, mint az eszköz egyedi hirdetésazonosítója (Advertising ID), az IP-cím, a hirdetésekkel való interakciókra vonatkozó adatok, valamint hozzávetőleges diagnosztikai információk.</li>
+        <li><strong>User Messaging Platform (UMP) SDK:</strong> A GDPR/e-adatvédelmi szabályozás hatálya alá tartozó régiókban (EGT és Egyesült Királyság) az Alkalmazás a UMP platformot használja az adatgyűjtéshez és a személyre szabott hirdetésekhez szükséges felhasználói hozzájárulások beszerzésére és kezelésére. A felhasználó az Alkalmazás beállításaiban bármikor módosíthatja preferenciáit.</li>
+      </ul>
+      <p class="muted">Megjegyzés: A fizetős verziók (TRIAL, PRO, PRO LIFETIME) teljesen reklámmentesek, és a hirdetésmegjelenítő modul ezeknél a licenceknél teljesen deaktiválva marad.</p>
+      <p>További információ arról, hogyan használja fel a Google az adatokat: <a href="https://policies.google.com/technologies/ads" rel="noopener" target="_blank">Google Adatvédelem és Általános Szerződési Feltételek – Hirdetések</a>.</p>
+    </section>
+
+    <section id="zewnetrzne-uslugi">
+      <h2>7. Külső szolgáltatások és programkönyvtárak</h2>
+      <p>A legmagasabb hangminőség, a stabilitás és a funkcionalitás biztosítása érdekében az Alkalmazás a következő külső szolgáltatásokat és könyvtárakat veszi igénybe:</p>
+      <ul>
+        <li><strong>Google Firebase szolgáltatások:</strong>
+          <ul>
+            <li><strong>Firebase Analytics:</strong> Névtelen alkalmazáshasználati statisztikák (pl. képernyőmegtekintések, hangmód-választások, mikrofon-kalibrációs események, vásárlási események). Az analitika <em>nem gyűjt</em> semmilyen hangadatot vagy beszélgetési tartalmat.</li>
+            <li><strong>Firebase Crashlytics &amp; Crashlytics NDK:</strong> Névtelen összeomlási jelentések, valamint natív C++ és Kotlin hibák gyűjtése a hibák azonnali javítása érdekében. Műszaki diagnosztikai adatokat rögzít (pl. készülékmodell, Android verzió, csatlakoztatott fejhallgató típusa, mintavételezési frekvencia).</li>
+            <li><strong>Firebase Remote Config:</strong> Az Alkalmazás konfigurációs paramétereinek távoli szinkronizálása (pl. időkorlátok, felvételhossz-korlátozások az ingyenes verzióban).</li>
+            <li><strong>Firebase Cloud Messaging (FCM):</strong> Push-értesítések fogadása fontos technikai üzenetekkel és frissítési figyelmeztetésekkel (névtelen eszköztoken segítségével).</li>
+          </ul>
+          További információ a Firebase-ben történő adatvédelemről: <a href="https://firebase.google.com/support/privacy" rel="noopener" target="_blank">Adatvédelem és biztonság a Firebase-ben</a>.
+        </li>
+        <li><strong>WebRTC (BSD licenc):</strong> Fejlett valós idejű hangjelfeldolgozó és zajcsökkentő motor. Az alábbiakban a teljes licencközlemény olvasható:</li>
       </ul>
       <pre>
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -124,24 +148,29 @@ Neither the name of Google nor the names of its contributors may be used to endo
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       </pre>
       <ul>
-        <li><strong>Google Play Billing Library:</strong> Előfizetések és egyszeri vásárlások kezelésére. A tranzakciókat a Google Play rendszere biztonságosan dolgozza fel.</li>
+        <li><strong>Google Play Billing Library:</strong> Az előfizetések és az egyszeri alkalmazáson belüli vásárlások biztonságos kezelése a Google Play infrastruktúráján keresztül.</li>
       </ul>
     </section>
 
-    <section id="kapcsolat">
-      <h2>7. Kapcsolat</h2>
-      <p>Az Alkalmazás beállításaiban található egy <em>Kapcsolat</em> fül, amely megnyitja az alapértelmezett levelezőprogramot a mi címünkkel a címzett mezőben.</p>
-      <p>Kapcsolattartási cím: <a href="mailto:kontaktsoftnest@gmail.com">kontaktsoftnest@gmail.com</a></p>
+    <section id="kontakt">
+      <h2>8. Kapcsolat</h2>
+      <p>Az Alkalmazás beállításaiban elérhető egy <em>Kapcsolat</em> menüpont, amely megnyitja az eszköz alapértelmezett e-mail kliensét.</p>
+      <p>Kapcsolattartási e-mail-cím az adatvédelemmel és az alkalmazás működésével kapcsolatos bármely kérdés esetén: <a href="mailto:kontaktsoftnest@gmail.com">kontaktsoftnest@gmail.com</a></p>
     </section>
 
-    <section id="biztonsag">
-      <h2>8. Biztonság</h2>
-      <p>Mivel az Alkalmazás nem tárol személyes adatokat és nem továbbítja azokat külső szerverekre, az adatvédelmi incidens kockázata minimális. Minden hangadat helyileg, a felhasználó eszközén kerül feldolgozásra.</p>
+    <section id="bezpieczenstwo">
+      <h2>9. Biztonság</h2>
+      <p>Szigorú adatbiztonsági szabványokat alkalmazunk:</p>
+      <ul>
+        <li>Minden hangadat közvetlenül az eszköz RAM memóriájában, menet közben kerül feldolgozásra, vagy helyileg, az alkalmazás elszigetelt, védett tárhelyén tárolódik.</li>
+        <li>A licenckulcsok és az érzékeny helyi beállítások kriptográfiailag titkosítva vannak az Android hardveres kulcstárolójának (<code>EncryptedSharedPreferences</code>) használatával.</li>
+        <li>A telemetriai és konfigurációs adatok cseréje a Google Firebase és a Google Play szolgáltatásokkal kizárólag titkosított HTTPS/TLS protokollon keresztül zajlik.</li>
+      </ul>
     </section>
 
-    <section id="modositasok">
-      <h2>9. Az irányelvek módosítása</h2>
-      <p>Fenntartjuk a jogot, hogy módosítsuk jelen Adatvédelmi irányelveket, ha azt a jogszabályi változások vagy az Alkalmazás funkcionalitásának fejlesztése megköveteli. A dokumentum aktuális verziója elérhető lesz az Alkalmazásban és a Google Play leírásában.</p>
+    <section id="zmiany">
+      <h2>10. A szabályzat módosításai</h2>
+      <p>Fenntartjuk a jogot a jelen Adatvédelmi szabályzat módosítására, amennyiben azt jogszabályi változások vagy az Alkalmazás funkcióinak fejlesztése megköveteli. A dokumentum frissített változata minden esetben ugyanazon az URL-címen kerül közzétételre, valamint közvetlenül elérhető lesz az Alkalmazásból és annak Google Play áruházi adatlapjáról.</p>
     </section>
 
     <footer>
@@ -153,4 +182,3 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
   </script>
 </body>
 </html>
-```
