@@ -47,17 +47,18 @@
     <header>
       <div class="badge">Polityka prywatności</div>
       <h1>AuriCare - Hearing Amplifier</h1>
-      <p class="subtitle">Data ostatniej aktualizacji: <strong>6 sierpnia 2026</strong></p>
+      <p class="subtitle">Data ostatniej aktualizacji: <strong>22 września 2026</strong></p>
     </header>
 
     <nav class="toc" aria-label="Spis treści">
       <ol>
         <li><a href="#info-ogolne">Informacje ogólne</a></li>
         <li><a href="#zakres-danych">Zakres i sposób przetwarzania danych</a></li>
+        <li><a href="#nagrania-audio">Funkcja nagrywania dźwięku (pliki lokalne)</a></li>
         <li><a href="#uprawnienia">Uprawnienia wymagane przez aplikację</a></li>
         <li><a href="#okres-probny">Okres próbny i płatności</a></li>
         <li><a href="#reklamy">Reklamy i gromadzenie danych</a></li>
-        <li><a href="#zewnetrzne-uslugi">Usługi i biblioteki zewnętrzne</a></li>
+        <li><a href="#zewnetrzne-uslugi">Usługi i biblioteki zewnętrzne (Firebase, WebRTC)</a></li>
         <li><a href="#kontakt">Kontakt</a></li>
         <li><a href="#bezpieczenstwo">Bezpieczeństwo</a></li>
         <li><a href="#zmiany">Zmiany w Polityce</a></li>
@@ -66,53 +67,76 @@
 
     <section id="info-ogolne">
       <h2>1. Informacje ogólne</h2>
-      <p>Niniejsza Polityka prywatności opisuje zasady przetwarzania danych w aplikacji mobilnej <strong>AuriCare – Hearing Aid App</strong> (dalej: „Aplikacja”). Dbamy o prywatność użytkowników i ograniczamy przetwarzanie danych wyłącznie do tego, co jest niezbędne do działania Aplikacji.</p>
-      <p>Aplikacja działa lokalnie na urządzeniu – dźwięk jest przetwarzany bezpośrednio w pamięci telefonu i <strong>nie jest przesyłany ani przechowywany na żadnych zewnętrznych serwerach</strong>.</p>
+      <p>Niniejsza Polityka prywatności opisuje zasady przetwarzania danych w aplikacji mobilnej <strong>AuriCare – Hearing Aid App</strong> (dalej: „Aplikacja”). Dbamy o prywatność użytkowników i ograniczamy przetwarzanie danych wyłącznie do tego, co jest niezbędne do prawidłowego i bezpiecznego działania Aplikacji.</p>
+      <p>Główny potok przetwarzania dźwięku działa w 100% lokalnie na urządzeniu – sygnał audio z mikrofonu jest modyfikowany bezpośrednio w pamięci operacyjnej (RAM) telefonu w czasie rzeczywistym i <strong>nie jest przesyłany ani strumieniowany na żadne zewnętrzne serwery</strong>.</p>
     </section>
 
     <section id="zakres-danych">
       <h2>2. Zakres i sposób przetwarzania danych</h2>
       <ul>
-        <li>Aplikacja nie gromadzi, nie profiluje i nie przechowuje w sposób trwały danych osobowych użytkowników.</li>
-        <li>Przechwytywany dźwięk wykorzystywany jest wyłącznie do wzmocnienia/oczyszczania i przetwarzany lokalnie.</li>
-        <li>Nie rejestrujemy plików audio i nie przesyłamy ich poza urządzenie użytkownika.</li>
-        <li>Aplikacja nie uzyskuje dostępu do lokalizacji użytkownika ani do danych z innych aplikacji.</li>
+        <li>Aplikacja nie gromadzi, nie profiluje i nie przechowuje w sposób trwały danych osobowych użytkowników (takich jak imię, nazwisko, adres e-mail czy numer telefonu).</li>
+        <li>Przechwytywany dźwięk z mikrofonu wykorzystywany jest wyłącznie do wzmocnienia, oczyszczania i korekcji w czasie rzeczywistym na urządzeniu.</li>
+        <li>Aplikacja nie gromadzi próbek głosu ani nie przetwarza treści rozmów w celach analitycznych, reklamowych czy uczenia modeli AI.</li>
+        <li>Aplikacja nie uzyskuje dostępu do lokalizacji GPS użytkownika ani do prywatnych danych z innych aplikacji.</li>
+        <li>Aplikacja przetwarza wyłącznie anonimowe dane diagnostyczne i telemetryczne niezbędne do zapewnienia stabilności i poprawy jakości oprogramowania (szczegóły w sekcji 7).</li>
+      </ul>
+    </section>
+
+    <section id="nagrania-audio">
+      <h2>3. Funkcja nagrywania dźwięku (pliki lokalne)</h2>
+      <p>Aplikacja udostępnia funkcję opcjonalnego nagrywania dźwięku do plików audio w formacie WAV (PCM 48 kHz / 16-bit). Zasady dotyczące nagrań:</p>
+      <ul>
+        <li><strong>Ręczna inicjalizacja:</strong> Nagrywanie rozpoczyna się i kończy wyłącznie na wyraźne, świadome polecenie użytkownika (poprzez naciśnięcie przycisku nagrywania w Aplikacji). Aplikacja nigdy nie nagrywa dźwięku samoczynnie w tle bez wiedzy użytkownika.</li>
+        <li><strong>Lokalne przechowywanie:</strong> Wszystkie zarejestrowane pliki audio zapisywane są wyłącznie w pamięci lokalnej urządzenia użytkownika (w dedykowanym katalogu aplikacji).</li>
+        <li><strong>Brak wysyłki do chmury:</strong> Zarejestrowane pliki audio <strong>nigdy nie są automatycznie przesyłane, synchronizowane ani archiwizowane na żadnych zewnętrznych serwerach</strong> czy usługach chmurowych.</li>
+        <li><strong>Pełna kontrola użytkownika:</strong> Użytkownik ma pełne prawo do odsłuchiwania nagrań z poziomu wbudowanego odtwarzacza, ich trwałego usuwania z pamięci urządzenia oraz ręcznego udostępniania innym aplikacjom (np. komunikatorom, klientom poczty) za pośrednictwem bezpiecznego systemowego mechanizmu udostępniania systemu Android (<code>FileProvider</code>).</li>
       </ul>
     </section>
 
     <section id="uprawnienia">
-      <h2>3. Uprawnienia wymagane przez aplikację</h2>
+      <h2>4. Uprawnienia wymagane przez aplikację</h2>
       <p>Do prawidłowego działania Aplikacja prosi o następujące uprawnienia systemowe Android:</p>
       <ul>
-        <li><strong>Nagrywanie dźwięku (mikrofon)</strong> – wyłącznie do przechwytywania dźwięku z otoczenia i jego przetwarzania w czasie rzeczywistym na urządzeniu.</li>
-        <li><strong>Znajdowanie/łączenie z urządzeniami w pobliżu (Bluetooth)</strong> – do obsługi słuchawek i akcesoriów audio.</li>
-        <li><strong>Powiadomienia</strong> – do wyświetlania stałego powiadomienia informującego, że Aplikacja jest aktywna i działa w tle.</li>
-        <li><strong>Wyłączenie optymalizacji baterii (opcjonalne, ale zalecane)</strong> – Aplikacja może poprosić o wyłączenie dla niej optymalizacji baterii w systemie Android. Jest to konieczne, aby zapewnić stabilne i nieprzerwane działanie serwisu przetwarzania dźwięku, gdy ekran urządzenia jest wyłączony.</li>
+        <li><strong>Nagrywanie dźwięku / Mikrofon (<code>RECORD_AUDIO</code>, <code>FOREGROUND_SERVICE_MICROPHONE</code>)</strong> – wyłącznie do przechwytywania dźwięku z otoczenia, jego przetwarzania i wzmacniania w czasie rzeczywistym oraz do rejestrowania nagrań audio na żądanie użytkownika.</li>
+        <li><strong>Znajdowanie i łączenie z urządzeniami w pobliżu / Bluetooth (<code>BLUETOOTH_CONNECT</code>, <code>BLUETOOTH</code>)</strong> – do bezprzewodowej obsługi słuchawek, aparatów słuchowych i akcesoriów audio.</li>
+        <li><strong>Powiadomienia (<code>POST_NOTIFICATIONS</code>)</strong> – do wyświetlania stałego powiadomienia informującego o aktywnym serwisie audio w tle (wymóg systemu Android) oraz do odbioru powiadomień informacyjnych i komunikatów o aktualizacjach.</li>
+        <li><strong>Blokada uśpienia procesora (<code>WAKE_LOCK</code>)</strong> – do utrzymania ciągłego, niezakłóconego przetwarzania dźwięku przez procesor DSP, gdy ekran urządzenia jest wygaszony.</li>
+        <li><strong>Wyłączenie optymalizacji baterii (opcjonalne, zalecane)</strong> – Aplikacja może poprosić o wyłączenie dla niej ograniczeń bateryjnych w systemie Android, co zapobiega ubijaniu serwisu audio w tle przez mechanizmy oszczędzania energii producenta smartfona.</li>
       </ul>
-      <p class="muted">Odmowa udzielenia kluczowych uprawnień (mikrofon, Bluetooth, powiadomienia) uniemożliwi korzystanie z podstawowych funkcji Aplikacji.</p>
+      <p class="muted">Odmowa udzielenia kluczowych uprawnień (mikrofon, powiadomienia, Bluetooth) uniemożliwi korzystanie z podstawowych funkcji Aplikacji.</p>
     </section>
 
     <section id="okres-probny">
-      <h2>4. Okres próbny i płatności</h2>
-      <p>Aplikacja oferuje <strong>7‑dniowy darmowy okres próbny</strong>. Po jego zakończeniu użytkownik może wybrać subskrypcję lub zakup jednorazowy, aby nadal korzystać z pełnej funkcjonalności Aplikacji.</p>
-      <p>Płatności obsługuje <strong>Google Play</strong>. W tym zakresie stosowane są zasady prywatności i regulaminy Google. Szczegóły: <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Polityka prywatności Google</a>.</p>
+      <h2>5. Okres próbny i płatności</h2>
+      <p>Aplikacja oferuje <strong>7‑dniowy darmowy okres próbny</strong> dla subskrypcji PRO. Po jego zakończeniu użytkownik może wybrać subskrypcję odnawialną lub zakup licencji wieczystej (Lifetime), aby korzystać z pełnej funkcjonalności bez ograniczeń i bez reklam.</p>
+      <p>Wszystkie transakcje płatnicze są realizowane bezpośrednio i bezpiecznie przez <strong>Google Play Billing</strong>. Nie przetwarzamy ani nie przechowujemy danych kart płatniczych ani danych rozliczeniowych użytkowników. Szczegóły: <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Polityka prywatności Google</a>.</p>
     </section>
 
     <section id="reklamy">
-        <h2>5. Reklamy i gromadzenie danych</h2>
-        <p>Wersja darmowa Aplikacji (licencja <code>Basic</code>) wyświetla reklamy dostarczane przez firmę Google za pośrednictwem usługi <strong>AdMob</strong>. W związku z tym, w Aplikacji wykorzystywane są następujące technologie:</p>
-        <ul>
-            <li><strong>Google Mobile Ads SDK:</strong> Biblioteka ta może gromadzić i przetwarzać dane, takie jak unikalny identyfikator reklamowy urządzenia (Advertising ID), adres IP, informacje o interakcjach z reklamami oraz przybliżone dane o lokalizacji w celu dostarczania spersonalizowanych i trafnych treści reklamowych.</li>
-            <li><strong>User Messaging Platform (UMP) SDK:</strong> W regionach podlegających pod RODO (EOG i Wielka Brytania), Aplikacja korzysta z tej biblioteki do pozyskiwania od użytkowników zgody na gromadzenie i wykorzystywanie danych na potrzeby personalizacji reklam. Użytkownik ma możliwość zarządzania swoimi preferencjami za pośrednictwem formularza zgody.</li>
-        </ul>
-        <p>Nie mamy bezpośredniego dostępu do danych gromadzonych przez Google. Wykorzystywanie tych danych podlega polityce prywatności Google. Aby dowiedzieć się więcej o tym, jak Google wykorzystuje dane, zapoznaj się z dokumentem: <a href="https://policies.google.com/technologies/ads" rel="noopener" target="_blank">Polityka Prywatności i Warunki korzystania z usług Google – Reklamy</a>.</p>
+      <h2>6. Reklamy i gromadzenie danych</h2>
+      <p>Wersja darmowa Aplikacji (licencja <code>FREE</code>) wyświetla reklamy dostarczane przez firmę Google za pośrednictwem usługi <strong>Google AdMob</strong>. W związku z tym wykorzystywane są następujące technologie:</p>
+      <ul>
+        <li><strong>Google Mobile Ads SDK:</strong> Biblioteka ta może gromadzić i przetwarzać dane, takie jak unikalny identyfikator reklamowy urządzenia (Advertising ID), adres IP, informacje o interakcjach z reklamami oraz przybliżone dane diagnostyczne w celu dostarczania treści reklamowych.</li>
+        <li><strong>User Messaging Platform (UMP) SDK:</strong> W regionach podlegających przepisom RODO/GDPR (EOG i Wielka Brytania), Aplikacja wykorzystuje platformę UMP do pozyskiwania i zarządzania zgodami użytkowników na gromadzenie danych i personalizację reklam. Użytkownik może w dowolnym momencie zmienić swoje preferencje w ustawieniach Aplikacji.</li>
+      </ul>
+      <p class="muted">Uwaga: Wersje płatne (TRIAL, PRO, PRO LIFETIME) są całkowicie pozbawione jakichkolwiek reklam, a moduł wyświetlania reklam pozostaje dla nich całkowicie dezaktywowany.</p>
+      <p>Więcej informacji o tym, jak Google wykorzystuje dane: <a href="https://policies.google.com/technologies/ads" rel="noopener" target="_blank">Polityka Prywatności i Warunki korzystania z usług Google – Reklamy</a>.</p>
     </section>
 
     <section id="zewnetrzne-uslugi">
-      <h2>6. Usługi i biblioteki zewnętrzne</h2>
-      <p>Aplikacja korzysta z następujących zewnętrznych bibliotek:</p>
+      <h2>7. Usługi i biblioteki zewnętrzne</h2>
+      <p>W celu zapewnienia najwyższej jakości dźwięku, stabilności i funkcjonalności Aplikacja korzysta z następujących zewnętrznych usług i bibliotek:</p>
       <ul>
-        <li><strong>WebRTC (licencja BSD):</strong> Wykorzystywana do zaawansowanego przetwarzania dźwięku w czasie rzeczywistym. Poniżej znajduje się pełna informacja licencyjna:</li>
+        <li><strong>Usługi Google Firebase:</strong>
+          <ul>
+            <li><strong>Firebase Analytics:</strong> Anonimowe statystyki użytkowania aplikacji (np. wyświetlenia ekranów, wybór trybów dźwięku, zdarzenia kalibracji mikrofonu, zdarzenia zakupu). Analityka <em>nie gromadzi</em> żadnych danych audio ani treści rozmów.</li>
+            <li><strong>Firebase Crashlytics & Crashlytics NDK:</strong> Zbieranie anonimowych raportów o awariach i błędach natywnych C++ oraz Kotlin w celu natychmiastowego naprawiania usterek. Rejestruje techniczne dane diagnostyczne (np. model urządzenia, wersja Androida, typ podłączonych słuchawek, częstotliwość próbkowania).</li>
+            <li><strong>Firebase Remote Config:</strong> Zdalna synchronizacja parametrów konfiguracyjnych Aplikacji (np. progi czasowe, limity długości nagrań w wersji bezpłatnej).</li>
+            <li><strong>Firebase Cloud Messaging (FCM):</strong> Odbiór powiadomień push z ważnymi komunikatami technicznymi i informacjami o aktualizacjach (z wykorzystaniem anonimowego tokenu urządzenia).</li>
+          </ul>
+          Więcej informacji o prywatności w Firebase: <a href="https://firebase.google.com/support/privacy" rel="noopener" target="_blank">Prywatność i bezpieczeństwo w Firebase</a>.
+        </li>
+        <li><strong>WebRTC (licencja BSD):</strong> Zaawansowany silnik redukcji szumów i przetwarzania sygnałów audio w czasie rzeczywistym. Poniżej znajduje się pełna nota licencyjna:</li>
       </ul>
       <pre>
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -124,24 +148,29 @@ Neither the name of Google nor the names of its contributors may be used to endo
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       </pre>
       <ul>
-        <li><strong>Google Play Billing Library:</strong> Do obsługi subskrypcji i zakupów jednorazowych. Transakcje są realizowane bezpiecznie przez system Google Play.</li>
+        <li><strong>Google Play Billing Library:</strong> Bezpieczna obsługa subskrypcji i zakupów jednorazowych przez infrastrukturę Google Play.</li>
       </ul>
     </section>
 
     <section id="kontakt">
-      <h2>7. Kontakt</h2>
-      <p>W ustawieniach Aplikacji dostępna jest zakładka <em>Kontakt</em>, która otwiera domyślny program pocztowy z naszym adresem w polu odbiorcy.</p>
-      <p>Adres kontaktowy: <a href="mailto:kontaktsoftnest@gmail.com">kontaktsoftnest@gmail.com</a></p>
+      <h2>8. Kontakt</h2>
+      <p>W ustawieniach Aplikacji dostępna jest zakładka <em>Kontakt</em>, która otwiera domyślny program pocztowy na urządzeniu.</p>
+      <p>Adres kontaktowy dla wszelkich pytań dotyczących prywatności i działania aplikacji: <a href="mailto:kontaktsoftnest@gmail.com">kontaktsoftnest@gmail.com</a></p>
     </section>
 
     <section id="bezpieczenstwo">
-      <h2>8. Bezpieczeństwo</h2>
-      <p>Ponieważ Aplikacja nie przechowuje danych osobowych ani nie przesyła ich na zewnętrzne serwery, ryzyko naruszenia prywatności jest zminimalizowane. Wszystkie dane dźwiękowe są przetwarzane lokalnie na urządzeniu użytkownika.</p>
+      <h2>9. Bezpieczeństwo</h2>
+      <p>Stosujemy rygorystyczne standardy bezpieczeństwa danych:</p>
+      <ul>
+        <li>Wszystkie dane dźwiękowe są przetwarzane w locie w pamięci RAM urządzenia lub zapisywane lokalnie w izolowanej przestrzeni aplikacji.</li>
+        <li>Klucze licencyjne i wrażliwe ustawienia lokalne są szyfrowane kryptograficznie z wykorzystaniem bezpiecznego magazynu kluczy sprzętowych Android KeyStore (<code>EncryptedSharedPreferences</code>).</li>
+        <li>Wymiana danych telemetrycznych i konfiguracyjnych z usługami Google Firebase oraz Google Play odbywa się wyłącznie za pośrednictwem szyfrowanych połączeń protokołem HTTPS/TLS.</li>
+      </ul>
     </section>
 
     <section id="zmiany">
-      <h2>9. Zmiany w Polityce</h2>
-      <p>Zastrzegamy sobie prawo do wprowadzania zmian w niniejszej Polityce prywatności, jeśli wymagają tego zmiany w prawie lub rozwój funkcjonalności Aplikacji. Aktualna wersja dokumentu będzie dostępna w Aplikacji oraz w opisie w Google Play.</p>
+      <h2>10. Zmiany w Polityce</h2>
+      <p>Zastrzegamy sobie prawo do wprowadzania zmian w niniejszej Polityce prywatności, jeśli będą tego wymagały zmiany w przepisach prawa lub rozwój funkcjonalności Aplikacji. Zaktualizowana wersja dokumentu będzie każdorazowo publikowana pod tym samym adresem URL oraz dostępna bezpośrednio z poziomu Aplikacji i jej karty w Google Play.</p>
     </section>
 
     <footer>
