@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Datenschutzerklärung – AuriCare - Hearing Amplifier</title>
-  <meta name="description" content="Datenschutzerklärung für die App AuriCare – Hearing Aid App" />
+  <meta name="description" content="Datenschutzerklärung der Anwendung AuriCare – Hearing Aid App" />
   <style>
     :root {
       --bg: #0b1020;
@@ -47,72 +47,96 @@
     <header>
       <div class="badge">Datenschutzerklärung</div>
       <h1>AuriCare - Hearing Amplifier</h1>
-      <p class="subtitle">Letzte Aktualisierung: <strong>8. Oktober 2025</strong></p>
+      <p class="subtitle">Zuletzt aktualisiert: <strong>22. September 2026</strong></p>
     </header>
 
     <nav class="toc" aria-label="Inhaltsverzeichnis">
       <ol>
         <li><a href="#info-ogolne">Allgemeine Informationen</a></li>
         <li><a href="#zakres-danych">Umfang und Art der Datenverarbeitung</a></li>
+        <li><a href="#nagrania-audio">Audioaufnahmefunktion (lokale Dateien)</a></li>
         <li><a href="#uprawnienia">Von der App benötigte Berechtigungen</a></li>
         <li><a href="#okres-probny">Testzeitraum und Zahlungen</a></li>
         <li><a href="#reklamy">Werbung und Datenerfassung</a></li>
-        <li><a href="#zewnetrzne-uslugi">Externe Dienste und Bibliotheken</a></li>
+        <li><a href="#zewnetrzne-uslugi">Externe Dienste und Bibliotheken (Firebase, WebRTC)</a></li>
         <li><a href="#kontakt">Kontakt</a></li>
-        <li><a href="#bezpieczenstwo">Sicherheit</a></li>
-        <li><a href="#zmiany">Änderungen der Richtlinie</a></li>
+        <li><a href="#bezpieczenstwo">Datensicherheit</a></li>
+        <li><a href="#zmiany">Änderungen dieser Richtlinie</a></li>
       </ol>
     </nav>
 
     <section id="info-ogolne">
       <h2>1. Allgemeine Informationen</h2>
-      <p>Diese Datenschutzerklärung beschreibt die Regeln für die Datenverarbeitung in der mobilen Anwendung <strong>AuriCare – Hearing Aid App</strong> (im Folgenden „Anwendung“). Wir achten die Privatsphäre der Nutzer und beschränken die Datenverarbeitung ausschließlich auf das, was für den Betrieb der Anwendung notwendig ist.</p>
-      <p>Die Anwendung arbeitet lokal auf dem Gerät – der Ton wird direkt im Speicher des Telefons verarbeitet und <strong>wird nicht an externe Server gesendet oder dort gespeichert</strong>.</p>
+      <p>Diese Datenschutzerklärung beschreibt die Regeln für die Datenverarbeitung in der mobilen Anwendung <strong>AuriCare – Hearing Aid App</strong> (nachfolgend: „App“). Wir legen großen Wert auf die Privatsphäre der Nutzer und beschränken die Datenverarbeitung ausschließlich auf das Maß, das für den ordnungsgemäßen und sicheren Betrieb der App unerlässlich ist.</p>
+      <p>Die primäre Audioverarbeitungspipeline arbeitet zu 100 % lokal auf Ihrem Gerät – das Audiosignal des Mikrofons wird in Echtzeit direkt im Arbeitsspeicher (RAM) des Telefons modifiziert und <strong>wird weder an externe Server übertragen noch dorthin gestreamt</strong>.</p>
     </section>
 
     <section id="zakres-danych">
       <h2>2. Umfang und Art der Datenverarbeitung</h2>
       <ul>
-        <li>Die Anwendung sammelt, profiliert und speichert keine personenbezogenen Daten der Nutzer dauerhaft.</li>
-        <li>Der aufgenommene Ton wird ausschließlich zur Verstärkung/Bereinigung verwendet und lokal verarbeitet.</li>
-        <li>Wir zeichnen keine Audiodateien auf und senden sie nicht außerhalb des Geräts des Nutzers.</li>
-        <li>Die Anwendung greift nicht auf den Standort des Nutzers oder auf Daten aus anderen Anwendungen zu.</li>
+        <li>Die App erfasst, profiliert oder speichert keine personenbezogenen Daten von Nutzern dauerhaft (wie Name, E-Mail-Adresse oder Telefonnummer).</li>
+        <li>Der über das Mikrofon erfasste Ton wird ausschließlich zur Echtzeitverstärkung, Rauschunterdrückung und Frequenzanpassung direkt auf dem Gerät genutzt.</li>
+        <li>Die App erfasst keine Stimmproben und verarbeitet keine Gesprächsinhalte für Analyse-, Werbezwecke oder das Training von KI-Modellen.</li>
+        <li>Die App greift weder auf den GPS-Standort des Nutzers noch auf private Daten anderer Anwendungen zu.</li>
+        <li>Die App verarbeitet ausschließlich anonymisierte Diagnose- und Telemetriedaten, die zur Gewährleistung der Stabilität und zur Verbesserung der Softwarequalität erforderlich sind (Einzelheiten in Abschnitt 7).</li>
+      </ul>
+    </section>
+
+    <section id="nagrania-audio">
+      <h2>3. Audioaufnahmefunktion (lokale Dateien)</h2>
+      <p>Die App bietet eine optionale Funktion zur Audioaufnahme im WAV-Format (PCM 48 kHz / 16-Bit). Bestimmungen zu den Aufnahmen:</p>
+      <ul>
+        <li><strong>Manuelle Initiierung:</strong> Die Aufnahme beginnt und endet ausschließlich auf ausdrückliche, bewusste Anweisung des Nutzers (durch Betätigung der Aufnahmetaste in der App). Die App nimmt niemals eigenständig oder unbemerkt Audio im Hintergrund auf.</li>
+        <li><strong>Lokale Speicherung:</strong> Alle aufgenommenen Audiodateien werden ausschließlich im lokalen Speicher des Nutzergeräts gespeichert (in einem dedizierten Verzeichnis der App).</li>
+        <li><strong>Keine Übertragung in die Cloud:</strong> Aufgenommene Audiodateien <strong>werden niemals automatisch an externe Server oder Cloud-Dienste übertragen, synchronisiert oder archiviert</strong>.</li>
+        <li><strong>Vollständige Nutzerkontrolle:</strong> Der Nutzer hat das uneingeschränkte Recht, Aufnahmen über den integrierten Player anzuhören, sie dauerhaft aus dem Gerätespeicher zu löschen und über den sicheren Android-Systemfreigabemechanismus (<code>FileProvider</code>) manuell mit anderen Apps (z. B. Messengern, E-Mail-Programmen) zu teilen.</li>
       </ul>
     </section>
 
     <section id="uprawnienia">
-      <h2>3. Von der App benötigte Berechtigungen</h2>
-      <p>Für den ordnungsgemäßen Betrieb bittet die Anwendung um die folgenden Android-Systemberechtigungen:</p>
+      <h2>4. Von der App benötigte Berechtigungen</h2>
+      <p>Für den ordnungsgemäßen Betrieb benötigt die App die folgenden Android-Systemberechtigungen:</p>
       <ul>
-        <li><strong>Audio aufnehmen (Mikrofon)</strong> – ausschließlich zur Erfassung von Umgebungsgeräuschen und deren Verarbeitung in Echtzeit auf dem Gerät.</li>
-        <li><strong>Geräte in der Nähe finden/verbinden (Bluetooth)</strong> – zur Unterstützung von Kopfhörern und Audiozubehör.</li>
-        <li><strong>Benachrichtigungen</strong> – zur Anzeige einer dauerhaften Benachrichtigung, die darüber informiert, dass die Anwendung aktiv ist und im Hintergrund läuft.</li>
-        <li><strong>Akku-Optimierung deaktivieren (optional, aber empfohlen)</strong> – Die Anwendung kann darum bitten, die Akku-Optimierung für sie im Android-System zu deaktivieren. Dies ist notwendig, um einen stabilen und ununterbrochenen Betrieb des Audioverarbeitungsdienstes zu gewährleisten, wenn der Bildschirm des Geräts ausgeschaltet ist.</li>
+        <li><strong>Audioaufnahme / Mikrofon (<code>RECORD_AUDIO</code>, <code>FOREGROUND_SERVICE_MICROPHONE</code>)</strong> – ausschließlich zur Erfassung des Umgebungstons, seiner Verarbeitung und Verstärkung in Echtzeit sowie zum Speichern von Audioaufnahmen auf Wunsch des Nutzers.</li>
+        <li><strong>Geräte in der Nähe finden und verbinden / Bluetooth (<code>BLUETOOTH_CONNECT</code>, <code>BLUETOOTH</code>)</strong> – für die drahtlose Verbindung mit Kopfhörern, Hörgeräten und Audiozubehör.</li>
+        <li><strong>Benachrichtigungen (<code>POST_NOTIFICATIONS</code>)</strong> – zur Anzeige einer dauerhaften Benachrichtigung über den aktiven Audio-Hintergrunddienst (Voraussetzung des Android-Systems) sowie für den Empfang von technischen Hinweisen und Update-Benachrichtigungen.</li>
+        <li><strong>Ruhezustand des Prozessors verhindern (<code>WAKE_LOCK</code>)</strong> – zur Aufrechterhaltung einer kontinuierlichen, unterbrechungsfreien Audioverarbeitung durch den DSP-Prozessor bei ausgeschaltetem Bildschirm.</li>
+        <li><strong>Akku-Optimierung deaktivieren (optional, empfohlen)</strong> – Die App kann darum bitten, Akkubeschränkungen in Android aufzuheben, um zu verhindern, dass herstellerspezifische Energiesparmechanismen den Audio-Hintergrunddienst vorzeitig beenden.</li>
       </ul>
-      <p class="muted">Die Verweigerung der Erteilung von Schlüsselberechtigungen (Mikrofon, Bluetooth, Benachrichtigungen) macht die Nutzung der Grundfunktionen der Anwendung unmöglich.</p>
+      <p class="muted">Die Verweigerung wichtiger Berechtigungen (Mikrofon, Benachrichtigungen, Bluetooth) macht die Nutzung der Kernfunktionen der App unmöglich.</p>
     </section>
 
     <section id="okres-probny">
-      <h2>4. Testzeitraum und Zahlungen</h2>
-      <p>Die Anwendung bietet einen <strong>7-tägigen kostenlosen Testzeitraum</strong>. Nach dessen Ablauf kann der Nutzer ein Abonnement oder einen einmaligen Kauf wählen, um die volle Funktionalität der Anwendung weiterhin zu nutzen.</p>
-      <p>Zahlungen werden von <strong>Google Play</strong> abgewickelt. In diesem Zusammenhang gelten die Datenschutzrichtlinien und Nutzungsbedingungen von Google. Details: <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google-Datenschutzerklärung</a>.</p>
+      <h2>5. Testzeitraum und Zahlungen</h2>
+      <p>Die App bietet einen <strong>7-tägigen kostenlosen Testzeitraum</strong> für das PRO-Abonnement. Nach dessen Ablauf kann der Nutzer zwischen einem automatischen Verlängerungsabonnement oder dem Kauf einer Lifetime-Lizenz wählen, um alle Funktionen uneingeschränkt und werbefrei zu nutzen.</p>
+      <p>Alle Zahlungstransaktionen werden direkt und sicher über <strong>Google Play Billing</strong> abgewickelt. Wir verarbeiten oder speichern keine Zahlungskartendaten oder Abrechnungsinformationen von Nutzern. Einzelheiten: <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google-Datenschutzerklärung</a>.</p>
     </section>
 
     <section id="reklamy">
-        <h2>5. Werbung und Datenerfassung</h2>
-        <p>Die kostenlose Version der Anwendung (<code>Basic</code>-Lizenz) zeigt Werbung an, die von Google über den <strong>AdMob</strong>-Dienst bereitgestellt wird. In diesem Zusammenhang werden in der Anwendung die folgenden Technologien verwendet:</p>
-        <ul>
-            <li><strong>Google Mobile Ads SDK:</strong> Diese Bibliothek kann Daten wie die eindeutige Werbe-ID des Geräts (Advertising ID), die IP-Adresse, Informationen über Interaktionen mit Anzeigen und ungefähre Standortdaten erfassen und verarbeiten, um personalisierte und relevante Werbeinhalte bereitzustellen.</li>
-            <li><strong>User Messaging Platform (UMP) SDK:</strong> In Regionen, die der DSGVO unterliegen (EWR und Großbritannien), verwendet die Anwendung diese Bibliothek, um die Zustimmung der Nutzer zur Erfassung und Verwendung von Daten für die Personalisierung von Werbung einzuholen. Der Nutzer hat die Möglichkeit, seine Präferenzen über das Zustimmungsformular zu verwalten.</li>
-        </ul>
-        <p>Wir haben keinen direkten Zugriff auf die von Google erfassten Daten. Die Verwendung dieser Daten unterliegt der Datenschutzerklärung von Google. Um mehr darüber zu erfahren, wie Google Daten verwendet, lesen Sie bitte das Dokument: <a href="https://policies.google.com/technologies/ads" rel="noopener" target="_blank">Datenschutzerklärung & Nutzungsbedingungen von Google – Werbung</a>.</p>
+      <h2>6. Werbung und Datenerfassung</h2>
+      <p>Die kostenlose Version der App (Lizenz <code>FREE</code>) zeigt Werbeanzeigen an, die von Google über den Dienst <strong>Google AdMob</strong> bereitgestellt werden. Zu diesem Zweck werden folgende Technologien eingesetzt:</p>
+      <ul>
+        <li><strong>Google Mobile Ads SDK:</strong> Diese Bibliothek kann Daten wie die eindeutige Werbe-ID des Geräts (Advertising ID), die IP-Adresse, Interaktionsdaten mit Werbeanzeigen sowie ungefähre Diagnosedaten erfassen und verarbeiten, um Werbeinhalte bereitzustellen und zu messen.</li>
+        <li><strong>User Messaging Platform (UMP) SDK:</strong> In Regionen, die der DSGVO/GDPR bzw. den ePrivacy-Richtlinien unterliegen (EWR und Vereinigtes Königreich), verwendet die App die UMP-Plattform, um Nutzerwahrnehmungen und Einwilligungen zur Datenerfassung und Werbepersonalisierung einzuholen und zu verwalten. Der Nutzer kann seine Einstellungen jederzeit in den App-Einstellungen ändern.</li>
+      </ul>
+      <p class="muted">Hinweis: Die kostenpflichtigen Versionen (TRIAL, PRO, PRO LIFETIME) sind vollständig werbefrei; das Werbeanzeigemodul bleibt bei diesen Versionen vollständig deaktiviert.</p>
+      <p>Weitere Informationen darüber, wie Google Daten verwendet: <a href="https://policies.google.com/technologies/ads" rel="noopener" target="_blank">Datenschutzerklärung und Nutzungsbedingungen von Google – Werbung</a>.</p>
     </section>
 
     <section id="zewnetrzne-uslugi">
-      <h2>6. Externe Dienste und Bibliotheken</h2>
-      <p>Die Anwendung verwendet die folgenden externen Bibliotheken:</p>
+      <h2>7. Externe Dienste und Bibliotheken</h2>
+      <p>Um höchste Klangqualität, Systemstabilität und Funktionalität zu gewährleisten, verwendet die App folgende externe Dienste und Bibliotheken:</p>
       <ul>
-        <li><strong>WebRTC (BSD-Lizenz):</strong> Wird für die fortgeschrittene Audioverarbeitung in Echtzeit verwendet. Nachfolgend finden Sie die vollständigen Lizenzinformationen:</li>
+        <li><strong>Google Firebase-Dienste:</strong>
+          <ul>
+            <li><strong>Firebase Analytics:</strong> Anonyme Nutzungsstatistiken der App (z. B. Bildschirmaufrufe, Auswahl von Audiomodi, Mikrofonkalibrierungsereignisse, Kaufereignisse). Die Analytik erfasst <em>keine</em> Audiodaten oder Gesprächsinhalte.</li>
+            <li><strong>Firebase Crashlytics &amp; Crashlytics NDK:</strong> Erfassung anonymer Berichte über Abstürze sowie native C++- und Kotlin-Fehler zur zeitnahen Fehlerbehebung. Erfasst technische Diagnosedaten (z. B. Gerätemodell, Android-Version, Typ der verbundenen Kopfhörer, Abtastrate).</li>
+            <li><strong>Firebase Remote Config:</strong> Remote-Synchronisierung von App-Konfigurationsparametern (z. B. Zeitschwellen, Längenbegrenzungen für Aufnahmen in der kostenlosen Version).</li>
+            <li><strong>Firebase Cloud Messaging (FCM):</strong> Empfang von Push-Benachrichtigungen mit wichtigen technischen Mitteilungen und Update-Informationen (unter Verwendung eines anonymen Geräte-Tokens).</li>
+          </ul>
+          Weitere Informationen zum Datenschutz bei Firebase: <a href="https://firebase.google.com/support/privacy" rel="noopener" target="_blank">Datenschutz und Sicherheit in Firebase</a>.
+        </li>
+        <li><strong>WebRTC (BSD-Lizenz):</strong> Fortschrittliche Engine zur Rauschunterdrückung und Audiosignalverarbeitung in Echtzeit. Nachfolgend finden Sie den vollständigen Lizenzhinweis:</li>
       </ul>
       <pre>
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -124,24 +148,29 @@ Neither the name of Google nor the names of its contributors may be used to endo
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       </pre>
       <ul>
-        <li><strong>Google Play Billing Library:</strong> Zur Abwicklung von Abonnements und einmaligen Käufen. Transaktionen werden sicher über das Google Play-System abgewickelt.</li>
+        <li><strong>Google Play Billing Library:</strong> Sichere Abwicklung von Abonnements und Einmalkäufen über die Infrastruktur von Google Play.</li>
       </ul>
     </section>
 
     <section id="kontakt">
-      <h2>7. Kontakt</h2>
-      <p>In den Einstellungen der Anwendung gibt es einen Reiter <em>Kontakt</em>, der das Standard-E-Mail-Programm mit unserer Adresse im Empfängerfeld öffnet.</p>
-      <p>Kontaktadresse: <a href="mailto:kontaktsoftnest@gmail.com">kontaktsoftnest@gmail.com</a></p>
+      <h2>8. Kontakt</h2>
+      <p>In den App-Einstellungen steht die Registerkarte <em>Kontakt</em> zur Verfügung, die das standardmäßige E-Mail-Programm auf Ihrem Gerät öffnet.</p>
+      <p>Kontaktadresse für alle Fragen zum Datenschutz und zur Funktionsweise der App: <a href="mailto:kontaktsoftnest@gmail.com">kontaktsoftnest@gmail.com</a></p>
     </section>
 
     <section id="bezpieczenstwo">
-      <h2>8. Sicherheit</h2>
-      <p>Da die Anwendung keine personenbezogenen Daten speichert oder an externe Server sendet, wird das Risiko einer Datenschutzverletzung minimiert. Alle Audiodaten werden lokal auf dem Gerät des Nutzers verarbeitet.</p>
+      <h2>9. Datensicherheit</h2>
+      <p>Wir wenden strenge Standards für die Datensicherheit an:</p>
+      <ul>
+        <li>Alle Audiodaten werden flüchtig direkt im RAM-Speicher des Geräts verarbeitet oder lokal im isolierten Speicherbereich der App abgelegt.</li>
+        <li>Lizenzschlüssel und sensible lokale Einstellungen werden unter Verwendung des hardwarebasierten Schlüsselspeichers Android KeyStore (<code>EncryptedSharedPreferences</code>) kryptografisch verschlüsselt.</li>
+        <li>Der Austausch von Telemetrie- und Konfigurationsdaten mit den Diensten von Google Firebase und Google Play erfolgt ausschließlich über verschlüsselte HTTPS/TLS-Verbindungen.</li>
+      </ul>
     </section>
 
     <section id="zmiany">
-      <h2>9. Änderungen der Richtlinie</h2>
-      <p>Wir behalten uns das Recht vor, Änderungen an dieser Datenschutzerklärung vorzunehmen, wenn dies durch Gesetzesänderungen oder die Weiterentwicklung der Anwendungsfunktionalität erforderlich wird. Die aktuelle Version des Dokuments wird in der Anwendung und in der Beschreibung bei Google Play verfügbar sein.</p>
+      <h2>10. Änderungen dieser Richtlinie</h2>
+      <p>Wir behalten uns das Recht vor, Änderungen an dieser Datenschutzerklärung vorzunehmen, sollten Gesetzesänderungen oder Weiterentwicklungen der App-Funktionen dies erfordern. Die aktualisierte Version wird stets unter derselben URL veröffentlicht und ist direkt über die App sowie auf ihrer Google Play Store-Präsenz abrufbar.</p>
     </section>
 
     <footer>
@@ -153,4 +182,3 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
   </script>
 </body>
 </html>
-```
